@@ -5,12 +5,23 @@ import java.io.File;
 import javax.annotation.Nonnull;
 
 import org.apache.jena.query.*;
+import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.StringDocumentSource;
+import org.semanticweb.owlapi.model.EntityType;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
+import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLDataPropertyRangeAxiom;
+import org.semanticweb.owlapi.model.OWLDatatype;
+import org.semanticweb.owlapi.model.OWLDeclarationAxiom;
+import org.semanticweb.owlapi.model.OWLEntity;
+import org.semanticweb.owlapi.model.OWLObjectProperty;
+import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom;
+import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -21,7 +32,11 @@ import org.semanticweb.owlapi.util.DefaultPrefixManager;
 import java.util.*;
 
 public class Main {
-
+	static final OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+	static final OWLDataFactory factory = manager.getOWLDataFactory();
+	static String dbpedia = "http://dbpedia.org/sparql";
+	static String wikidata = "https://query.wikidata.org/sparql";
+	static String mondial = "http://servolis.irisa.fr/mondial/sparql";
 	@Nonnull
 	private static final String KOALA = "<?xml version=\"1.0\"?>\n"
 			+ "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns=\"http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#\" xml:base=\"http://protege.stanford.edu/plugins/owl/owl-library/koala.owl\">\n"
@@ -51,60 +66,82 @@ public class Main {
 			+ "  <owl:FunctionalProperty rdf:ID=\"isHardWorking\"><rdfs:range rdf:resource=\"http://www.w3.org/2001/XMLSchema#boolean\"/><rdfs:domain rdf:resource=\"#Person\"/><rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#DatatypeProperty\"/></owl:FunctionalProperty>\n"
 			+ "  <Degree rdf:ID=\"MA\"/>\n</rdf:RDF>";
 
-	static final OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-
-	@Nonnull
-	static OWLOntology load(@Nonnull OWLOntologyManager manager) throws OWLOntologyCreationException {
-		// in this test, the ontology is loaded from a string
-		return manager.loadOntologyFromOntologyDocument(new StringDocumentSource(KOALA));
-	}
-
-	public static void saveOntology() throws OWLOntologyStorageException, OWLOntologyCreationException {
-		// Get hold of an ontology manager
-		OWLOntology ontology = load(manager);
-		// Now save a local copy of the ontology. (Specify a path appropriate to
-		// your setup)
-		File directory = new File(".");
-		File file = new File(directory + File.separator + "ontology.owl");
-		manager.saveOntology(ontology, IRI.create(file.toURI()));
-	}
-
-	public void createClass() {
-		// We can get a reference to a data factory from an OWLOntologyManager.
-		OWLDataFactory factory = manager.getOWLDataFactory();
-
-		IRI iri = IRI.create("http://www.semanticweb.org/owlapi/ontologies/ontology#A");
-		// Now we create the class
-		OWLClass clsAMethodA = factory.getOWLClass(iri);
-		// The second is to use a prefix manager and specify abbreviated IRIs.
-		// This is useful for creating lots of entities with the same prefix
-		// IRIs. First create our prefix manager and specify that the default
-		// prefix IRI (bound to the empty prefix name) is
-		// http://www.semanticweb.org/owlapi/ontologies/ontology#
-		PrefixManager pm = new DefaultPrefixManager(null, null,
-				"http://www.semanticweb.org/owlapi/ontologies/ontology#");
-		// Now we use the prefix manager and just specify an abbreviated IRI
-		OWLClass clsAMethodB = factory.getOWLClass(":A", pm);
-	}
-
-	static public void main(String... argv) throws OWLOntologyStorageException, OWLOntologyCreationException {
-		// Endpoints--> http://sparql.bioontology.org/ , http://dbpedia.org/sparql
-
-		String sparqlQueryString1 = "PREFIX dbont: <http://dbpedia.org/ontology/> "
-				+ "PREFIX dbp: <http://dbpedia.org/property/>"
-				+ "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>" + "SELECT ?musician  ?place"
-				+ "   WHERE { " + " ?musician dbont:birthPlace ?place ." + "}";
-		String query2 = "";
-		String instanciasUrl = "http://dbpedia.org/class/yago/WikicatCapitalsInEurope";
-		String ontologyUrl = "http://dbpedia.org/sparql";
-
-		Query query = QueryFactory.create(query2);
-		QueryExecution qexec = QueryExecutionFactory.sparqlService(instanciasUrl, query);
+	public ResultSet getCountries() {
+		String countryQuery = "PREFIX n1: <http://www.semwebtech.org/mondial/10/meta#>"
+                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/>"
+                + "SELECT DISTINCT *"
+                + "WHERE { ?country a n1:Country ."
+                + " ?country n1:name ?name_21 ."
+                + "}"
+                + "LIMIT 200";
+		QueryExecution qexec = QueryExecutionFactory.sparqlService("http://servolis.irisa.fr/mondial/sparql", countryQuery); // Query
 
 		ResultSet results = qexec.execSelect();
-		ResultSetFormatter.out(System.out, results, query);
+		return results;
+//		while (results.hasNext()) {
+//			QuerySolution soln = results.nextSolution();
+//			System.out.println(soln.getLiteral("name_21"));
+//		}
+	}
+	static public ResultSet getActores() {
+		String actoresQuery = "PREFIX dbo: <http://dbpedia.org/ontology/>\n" + "SELECT DISTINCT ?Actor_1\n"
+				+ "WHERE { ?Actor_1 a dbo:Actor .\n"
+				+ "        FILTER ( NOT EXISTS { ?Actor_1 dbo:activeYearsEndYear ?activeYearsEndYear_21 . } ) }\n"
+				+ "LIMIT 200";
 
+		Query query = QueryFactory.create(actoresQuery);
+		QueryExecution qexec = QueryExecutionFactory.sparqlService(dbpedia, query);
+
+		ResultSet results = qexec.execSelect();
 		qexec.close();
-		saveOntology();
+		return results;
+	}
+	public ResultSet getPeliculas() {
+		String filmQueryString = "PREFIX wd: <http://www.wikidata.org/entity/>"
+				+ "PREFIX wdt: <http://www.wikidata.org/prop/direct/>" + "PREFIX wikibase: <http://wikiba.se/ontology#>"
+				+ "PREFIX p: <http://www.wikidata.org/prop/>" + "PREFIX v: <http://www.wikidata.org/prop/statement/>"
+				+ "PREFIX q: <http://www.wikidata.org/prop/qualifier/>"
+				+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" + "SELECT DISTINCT ?q ?film_title ?actor ?genre"
+				+ "WHERE {" + " ?q wdt:P31 wd:Q11424."
+				+ "?q rdfs:label ?film_title filter (lang(?film_title) = \"en\")." + "?q wdt:P136 ?genreID."
+				+ "?genreID rdfs:label ?genre filter (lang(?genre) = \"en\")." + "?q wdt:P161 ?actorID."
+				+ " ?actorID rdfs:label ?actor filter (lang(?actor) = \"en\")." + "}limit 100";
+		Query filmQuery = QueryFactory.create(filmQueryString);
+		QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org/sparql", filmQuery); // Query
+		ResultSet results = qexec.execSelect();
+		return results;
+
+	}
+	
+
+
+	static public void main(String... argv) throws OWLOntologyStorageException, OWLOntologyCreationException {
+		File directory = new File(".");
+		File file = new File(directory + File.separator + "ontology.owl");
+		PrefixManager dbpm = new DefaultPrefixManager("<http://dbpedia.org/ontology/>");
+
+//		OWLOntology onto = manager.loadOntologyFromOntologyDocument(file);
+		OWLClass actorClass = factory.getOWLClass("Actor");
+		OWLObjectProperty hacePeliculas = factory.getOWLObjectProperty("hacePeliculas");
+		OWLObjectPropertyDomainAxiom rangeAxiom = factory.getOWLObjectPropertyDomainAxiom(hacePeliculas, actorClass);
+		OWLObjectPropertyRangeAxiom domainAxiom = factory.getOWLObjectPropertyRangeAxiom(hacePeliculas, actorClass);
+		OWLDataProperty pelis = factory.getOWLDataProperty("pelis");
+        OWLDatatype integerDatatype = factory.getIntegerOWLDatatype();
+
+        OWLDataPropertyRangeAxiom pelisRange = factory.getOWLDataPropertyRangeAxiom(pelis, integerDatatype);
+        
+		OWLDeclarationAxiom declarationAxiom = factory.getOWLDeclarationAxiom(actorClass);
+		OWLOntology ontology = manager.createOntology();
+
+        manager.addAxiom(ontology, rangeAxiom);
+        manager.addAxiom(ontology, domainAxiom);
+        manager.addAxiom(ontology, pelisRange);
+        manager.addAxiom(ontology, declarationAxiom);
+		
+        manager.saveOntology(ontology, IRI.create(file.toURI()));
+        
+		
+
+		
 	}
 }
