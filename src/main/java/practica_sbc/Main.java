@@ -97,23 +97,33 @@ public class Main {
 		ArrayList<String> actores = new ArrayList<String>();
 		while (results.hasNext()) {
 			QuerySolution soln = results.nextSolution();
-			actores.add(soln.getLiteral("nombre").toString().split("@en")[0]);
+			actores.add(formatString(soln.getLiteral("nombre").toString()));
 		}
 		qexec.close();
 		return actores;
 	}
 	
-	static public void mappingInstances (OWLClass ontologyClass, ArrayList<String> instances, PrefixManager dbpm, OWLOntology ontology) {
+	static public void mappingInstances (OWLClass ontologyClass, ArrayList<String> instances, PrefixManager dbpm, OWLOntology ontology, String type) {
 		for (int i = 0; i < instances.size(); i++) {
 			String name = instances.get(i);
 			OWLNamedIndividual instance = factory.getOWLNamedIndividual("#" + name.toString(), dbpm);
-			OWLClassAssertionAxiom isActor = factory.getOWLClassAssertionAxiom(ontologyClass, instance);
-			manager.addAxiom(ontology, isActor);
+			if(type.equals("actores")){
+				OWLClassAssertionAxiom isActor = factory.getOWLClassAssertionAxiom(ontologyClass, instance);
+				manager.addAxiom(ontology, isActor);
+			} else if(type.equals("peliculas")) {
+				OWLClassAssertionAxiom isPelicula = factory.getOWLClassAssertionAxiom(ontologyClass, instance);
+				manager.addAxiom(ontology, isPelicula);
+			}
+			
 		}
 		
 	}
+	
+	static public String formatString (String stringToFormat){
+		return stringToFormat.split("@en")[0];
+	}
 
-	public ResultSet getPeliculas() {
+	static public ArrayList<String> getPeliculas() {
 		String filmQueryString = "PREFIX wd: <http://www.wikidata.org/entity/>"
 				+ "PREFIX wdt: <http://www.wikidata.org/prop/direct/>" + "PREFIX wikibase: <http://wikiba.se/ontology#>"
 				+ "PREFIX p: <http://www.wikidata.org/prop/>" + "PREFIX v: <http://www.wikidata.org/prop/statement/>"
@@ -122,11 +132,16 @@ public class Main {
 				+ "SELECT DISTINCT ?q ?film_title ?actor ?genre" + "WHERE {" + " ?q wdt:P31 wd:Q11424."
 				+ "?q rdfs:label ?film_title filter (lang(?film_title) = \"en\")." + "?q wdt:P136 ?genreID."
 				+ "?genreID rdfs:label ?genre filter (lang(?genre) = \"en\")." + "?q wdt:P161 ?actorID."
-				+ " ?actorID rdfs:label ?actor filter (lang(?actor) = \"en\")." + "}limit 100";
+				+ " ?actorID rdfs:label ?actor filter (lang(?actor) = \"en\")." + "}limit 200";
 		Query filmQuery = QueryFactory.create(filmQueryString);
 		QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org/sparql", filmQuery); // Query
 		ResultSet results = qexec.execSelect();
-		return results;
+		ArrayList<String> peliculas = new ArrayList<String>();
+		while (results.hasNext()) {
+			QuerySolution soln = results.nextSolution();
+			peliculas.add(formatString(soln.getLiteral("film_title").toString()));
+		}
+		return peliculas;
 
 	}
 
@@ -137,6 +152,7 @@ public class Main {
 
 		// OWLOntology onto = manager.loadOntologyFromOntologyDocument(file);
 		OWLClass actorClass = factory.getOWLClass("Actor");
+		OWLClass peliculaClass = factory.getOWLClass("Pelicula");
 		OWLObjectProperty hacePeliculas = factory.getOWLObjectProperty("hacePeliculas");
 		OWLObjectPropertyDomainAxiom rangeAxiom = factory.getOWLObjectPropertyDomainAxiom(hacePeliculas, actorClass);
 		OWLObjectPropertyRangeAxiom domainAxiom = factory.getOWLObjectPropertyRangeAxiom(hacePeliculas, actorClass);
@@ -146,15 +162,19 @@ public class Main {
 		OWLDataPropertyRangeAxiom pelisRange = factory.getOWLDataPropertyRangeAxiom(pelis, integerDatatype);
 
 		OWLDeclarationAxiom declarationAxiom = factory.getOWLDeclarationAxiom(actorClass);
+		OWLDeclarationAxiom declarationAxiomPelicula = factory.getOWLDeclarationAxiom(peliculaClass);
 		OWLOntology ontology = manager.createOntology();
 
 		manager.addAxiom(ontology, rangeAxiom);
 		manager.addAxiom(ontology, domainAxiom);
 		manager.addAxiom(ontology, pelisRange);
 		manager.addAxiom(ontology, declarationAxiom);
+		manager.addAxiom(ontology, declarationAxiomPelicula);
 
 		ArrayList<String> actores = getActores();
-		mappingInstances(actorClass, actores, dbpm, ontology);
+		ArrayList<String> peliculas = getPeliculas();
+		mappingInstances(actorClass, actores, dbpm, ontology, "actores");
+		mappingInstances(peliculaClass, peliculas, dbpm, ontology, "peliculas");
 		for (OWLAxiom ax : ontology.getLogicalAxioms()) {
 			System.out.println(ax);
 		}

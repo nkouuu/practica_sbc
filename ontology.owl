@@ -72,6 +72,13 @@
     
 
 
+    <!-- Pelicula -->
+
+
+    <Class rdf:about="Pelicula"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -84,11 +91,29 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Brazil -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Brazil">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Choc7 -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Choc7">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Domino -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Domino">
+        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
@@ -111,11 +136,29 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jaded -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jaded">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Kym -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kym">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lincoln -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lincoln">
+        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
@@ -134,6 +177,24 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mihiro">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Scarface -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Scarface">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Shaolin -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Shaolin">
+        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
@@ -480,6 +541,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Anatomy of Hell -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Anatomy of Hell">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Aria Giovanni -->
 
 
@@ -624,6 +694,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Citizen Kane -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Citizen Kane">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Cyrille Bara -->
 
 
@@ -701,6 +780,15 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Essy Persson">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Fat Girl -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Fat Girl">
+        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
@@ -1101,6 +1189,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#July 14 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#July 14">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Jǐng Bórán -->
 
 
@@ -1344,6 +1441,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Maximum Overdrive -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Maximum Overdrive">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#MeiMei Kuo -->
 
 
@@ -1542,6 +1648,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Planet of the apes -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Planet of the apes">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Princess Donna -->
 
 
@@ -1592,6 +1707,15 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Rie Kanda">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Roadside Romeo -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Roadside Romeo">
+        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
@@ -1686,6 +1810,24 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Small Cuts -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Small Cuts">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Stash House -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Stash House">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Stephen Marchant -->
 
 
@@ -1718,6 +1860,33 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Takayasu Usui">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#The Escort -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#The Escort">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#The Broken Coin -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#The Broken Coin">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#The Last Winter -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#The Last Winter">
+        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
@@ -1763,6 +1932,15 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Tsutomu Kitagawa">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Una spina nel cuore -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Una spina nel cuore">
+        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
