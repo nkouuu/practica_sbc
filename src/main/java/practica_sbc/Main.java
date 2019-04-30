@@ -68,7 +68,7 @@ public class Main {
 			+ "  <owl:FunctionalProperty rdf:ID=\"isHardWorking\"><rdfs:range rdf:resource=\"http://www.w3.org/2001/XMLSchema#boolean\"/><rdfs:domain rdf:resource=\"#Person\"/><rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#DatatypeProperty\"/></owl:FunctionalProperty>\n"
 			+ "  <Degree rdf:ID=\"MA\"/>\n</rdf:RDF>";
 
-	public ResultSet getCountries() {
+	static public ArrayList<String> getPaises() {
 		String countryQuery = "PREFIX n1: <http://www.semwebtech.org/mondial/10/meta#>"
 				+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT *" + "WHERE { ?country a n1:Country ."
 				+ " ?country n1:name ?name_21 ." + "}" + "LIMIT 200";
@@ -76,11 +76,12 @@ public class Main {
 				countryQuery); // Query
 
 		ResultSet results = qexec.execSelect();
-		return results;
-		// while (results.hasNext()) {
-		// QuerySolution soln = results.nextSolution();
-		// System.out.println(soln.getLiteral("name_21"));
-		// }
+		ArrayList<String> paises = new ArrayList<String>();
+		while (results.hasNext()) {
+			QuerySolution soln = results.nextSolution();
+			paises.add(soln.getLiteral("name_21").toString());
+		}
+		return paises;
 	}
 
 	static public ArrayList<String> getActores() {
@@ -113,6 +114,9 @@ public class Main {
 			} else if(type.equals("peliculas")) {
 				OWLClassAssertionAxiom isPelicula = factory.getOWLClassAssertionAxiom(ontologyClass, instance);
 				manager.addAxiom(ontology, isPelicula);
+			} else if(type.equals("paises")){
+				OWLClassAssertionAxiom isPais = factory.getOWLClassAssertionAxiom(ontologyClass, instance);
+				manager.addAxiom(ontology, isPais);
 			}
 			
 		}
@@ -153,6 +157,7 @@ public class Main {
 		// OWLOntology onto = manager.loadOntologyFromOntologyDocument(file);
 		OWLClass actorClass = factory.getOWLClass("Actor");
 		OWLClass peliculaClass = factory.getOWLClass("Pelicula");
+		OWLClass paisClass = factory.getOWLClass("Pais");
 		OWLObjectProperty hacePeliculas = factory.getOWLObjectProperty("hacePeliculas");
 		OWLObjectPropertyDomainAxiom rangeAxiom = factory.getOWLObjectPropertyDomainAxiom(hacePeliculas, actorClass);
 		OWLObjectPropertyRangeAxiom domainAxiom = factory.getOWLObjectPropertyRangeAxiom(hacePeliculas, actorClass);
@@ -163,6 +168,7 @@ public class Main {
 
 		OWLDeclarationAxiom declarationAxiom = factory.getOWLDeclarationAxiom(actorClass);
 		OWLDeclarationAxiom declarationAxiomPelicula = factory.getOWLDeclarationAxiom(peliculaClass);
+		OWLDeclarationAxiom declarationAxiomPais = factory.getOWLDeclarationAxiom(paisClass);
 		OWLOntology ontology = manager.createOntology();
 
 		manager.addAxiom(ontology, rangeAxiom);
@@ -170,11 +176,14 @@ public class Main {
 		manager.addAxiom(ontology, pelisRange);
 		manager.addAxiom(ontology, declarationAxiom);
 		manager.addAxiom(ontology, declarationAxiomPelicula);
+		manager.addAxiom(ontology, declarationAxiomPais);
 
 		ArrayList<String> actores = getActores();
 		ArrayList<String> peliculas = getPeliculas();
+		ArrayList<String> paises = getPaises();
 		mappingInstances(actorClass, actores, dbpm, ontology, "actores");
 		mappingInstances(peliculaClass, peliculas, dbpm, ontology, "peliculas");
+		mappingInstances(paisClass, paises, dbpm, ontology, "paises");
 		for (OWLAxiom ax : ontology.getLogicalAxioms()) {
 			System.out.println(ax);
 		}

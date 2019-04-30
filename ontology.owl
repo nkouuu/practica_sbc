@@ -72,6 +72,13 @@
     
 
 
+    <!-- Pais -->
+
+
+    <Class rdf:about="Pais"/>
+    
+
+
     <!-- Pelicula -->
 
 
@@ -91,11 +98,254 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Albania -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Albania">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Andorra -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Andorra">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Angola -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Angola">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Anguilla -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Anguilla">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Argentina -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Argentina">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Aruba -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Aruba">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Australia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Australia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Azerbaijan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Azerbaijan">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Bahamas -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bahamas">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Bahrain -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bahrain">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Bangladesh -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bangladesh">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Barbados -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Barbados">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Belarus -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Belarus">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Belgium -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Belgium">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Belize -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Belize">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Bermuda -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bermuda">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Bhutan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bhutan">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Bolivia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bolivia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Brazil -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Brazil">
-        <rdf:type rdf:resource="Pelicula"/>
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Bulgaria -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bulgaria">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Burundi -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Burundi">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cambodia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cambodia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cameroon -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cameroon">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Canada -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Canada">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ceuta -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ceuta">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Chad -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Chad">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Chile -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Chile">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#China -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#China">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -109,11 +359,128 @@
     
 
 
-    <!-- &lt;http://dbpedia.org/ontology/&gt;#Domino -->
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Colombia -->
 
 
-    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Domino">
-        <rdf:type rdf:resource="Pelicula"/>
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Colombia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Comoros -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Comoros">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Congo -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Congo">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cuba -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cuba">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Curacao -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Curacao">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cyprus -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cyprus">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Denmark -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Denmark">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Djibouti -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Djibouti">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Dominica -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Dominica">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ecuador -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ecuador">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Egypt -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Egypt">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ethiopia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ethiopia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Fiji -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Fiji">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#France -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#France">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -127,6 +494,150 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Gabon -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Gabon">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Gambia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Gambia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Georgia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Georgia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Germany -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Germany">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ghana -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ghana">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Greece -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Greece">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Greenland -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Greenland">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guadeloupe -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guadeloupe">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guam -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guam">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guatemala -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guatemala">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guernsey -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guernsey">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guinea -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guinea">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guinea-Bissau -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guinea-Bissau">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guyana -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guyana">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Haiti -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Haiti">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Honduras -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Honduras">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Honoka -->
 
 
@@ -136,11 +647,146 @@
     
 
 
-    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jaded -->
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Iceland -->
 
 
-    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jaded">
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Iceland">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#India -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#India">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Indonesia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Indonesia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Iran -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Iran">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Iraq -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Iraq">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Israel -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Israel">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Italy -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Italy">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jamaica -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jamaica">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Japan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Japan">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jordan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jordan">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kazakhstan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kazakhstan">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kenya -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kenya">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kick-Ass -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kick-Ass">
         <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kiribati -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kiribati">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kosovo -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kosovo">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kuwait -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kuwait">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -154,11 +800,182 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kyrgyzstan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kyrgyzstan">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Laos -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Laos">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Latvia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Latvia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lebanon -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lebanon">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lesotho -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lesotho">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Liberia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Liberia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Libya -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Libya">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Liechtenstein -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Liechtenstein">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Lincoln -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lincoln">
         <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Luxembourg -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Luxembourg">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Macao -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Macao">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Macedonia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Macedonia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Madagascar -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Madagascar">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Malawi -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Malawi">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Malaysia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Malaysia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Mali -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mali">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Malta -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Malta">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Mauritania -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mauritania">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Mauritius -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mauritius">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Mayotte -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mayotte">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -172,6 +989,33 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Melilla -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Melilla">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Mexico -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mexico">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Micronesia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Micronesia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Mihiro -->
 
 
@@ -181,11 +1025,245 @@
     
 
 
-    <!-- &lt;http://dbpedia.org/ontology/&gt;#Scarface -->
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Mongolia -->
 
 
-    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Scarface">
-        <rdf:type rdf:resource="Pelicula"/>
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mongolia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Montenegro -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Montenegro">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Montserrat -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Montserrat">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Morocco -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Morocco">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Namibia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Namibia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Nauru -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Nauru">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Nepal -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Nepal">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Netherlands -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Netherlands">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Nicaragua -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Nicaragua">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Niger -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Niger">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Nigeria -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Nigeria">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Niue -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Niue">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Norway -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Norway">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Oman -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Oman">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Paraguay -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Paraguay">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Peru -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Peru">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Philippines -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Philippines">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Pitcairn -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Pitcairn">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Poland -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Poland">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Portugal -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Portugal">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Qatar -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Qatar">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Reunion -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Reunion">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Romania -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Romania">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Russia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Russia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Samoa -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Samoa">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Senegal -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Senegal">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Serbia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Serbia">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -199,11 +1277,281 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Singapore -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Singapore">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Slovakia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Slovakia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Slovenia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Slovenia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Somalia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Somalia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Spain -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Spain">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Svalbard -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Svalbard">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Swaziland -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Swaziland">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Sweden -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Sweden">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Switzerland -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Switzerland">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Syria -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Syria">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Tajikistan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Tajikistan">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Tanzania -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Tanzania">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Thailand -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Thailand">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Timor-Leste -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Timor-Leste">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Togo -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Togo">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Tokelau -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Tokelau">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Tonga -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Tonga">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Turkmenistan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Turkmenistan">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Tuvalu -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Tuvalu">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Uganda -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Uganda">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ukraine -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ukraine">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Uruguay -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Uruguay">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Uzbekistan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Uzbekistan">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Vanuatu -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Vanuatu">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Venezuela -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Venezuela">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Vietnam -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Vietnam">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Yemen -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Yemen">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#You -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#You">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Zaire -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Zaire">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Zambia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Zambia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Zimbabwe -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Zimbabwe">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -478,6 +1826,24 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#12 Angry Men -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#12 Angry Men">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#A Gang Story -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#A Gang Story">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Adele Wong -->
 
 
@@ -528,6 +1894,15 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Allie Haze">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#American Samoa -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#American Samoa">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -613,11 +1988,29 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Bosnia and Herzegovina -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bosnia and Herzegovina">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Brian Trueman -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Brian Trueman">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#British Virgin Islands -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#British Virgin Islands">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -631,11 +2024,29 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Burkina Faso -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Burkina Faso">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Bái Wēixìu -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bái Wēixìu">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cape Verde -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cape Verde">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -654,6 +2065,24 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Caryn Richman">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cayman Islands -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cayman Islands">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Central African Republic -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Central African Republic">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -685,6 +2114,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Christmas Island -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Christmas Island">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Chuy Bravo -->
 
 
@@ -694,11 +2132,38 @@
     
 
 
-    <!-- &lt;http://dbpedia.org/ontology/&gt;#Citizen Kane -->
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cocos Islands -->
 
 
-    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Citizen Kane">
-        <rdf:type rdf:resource="Pelicula"/>
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cocos Islands">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cook Islands -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cook Islands">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Costa Rica -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Costa Rica">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cote dIvoire -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cote dIvoire">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -708,6 +2173,15 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cyrille Bara">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Czech Republic -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Czech Republic">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -748,6 +2222,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Dominican Republic -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Dominican Republic">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Dylan Kuo -->
 
 
@@ -757,11 +2240,29 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#El Salvador -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#El Salvador">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Emily Zheng -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Emily Zheng">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Equatorial Guinea -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Equatorial Guinea">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -780,6 +2281,24 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Essy Persson">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Family Plot -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Family Plot">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Faroe Islands -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Faroe Islands">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -847,6 +2366,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#French Guiana -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#French Guiana">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Fukumi Kuroda -->
 
 
@@ -865,11 +2393,29 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Gaza Strip -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Gaza Strip">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Go Jibiki -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Go Jibiki">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Gone with the Wind -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Gone with the Wind">
+        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
@@ -973,6 +2519,24 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Holy See -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Holy See">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Hong Kong -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Hong Kong">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Huáng Huì -->
 
 
@@ -1041,6 +2605,15 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Isako Washio">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Isle of Man -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Isle of Man">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -1423,6 +2996,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Marshall Islands -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Marshall Islands">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Masaki Okada -->
 
 
@@ -1437,15 +3019,6 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Max Hardcore">
         <rdf:type rdf:resource="Actor"/>
-    </NamedIndividual>
-    
-
-
-    <!-- &lt;http://dbpedia.org/ontology/&gt;#Maximum Overdrive -->
-
-
-    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Maximum Overdrive">
-        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
@@ -1594,6 +3167,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#New Caledonia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#New Caledonia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Ng Hui -->
 
 
@@ -1630,11 +3212,29 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#North Korea -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#North Korea">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Paige Chua -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Paige Chua">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Papua New Guinea -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Papua New Guinea">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -1684,6 +3284,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Red Sun -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Red Sun">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Renée Faure -->
 
 
@@ -1707,15 +3316,6 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Rie Kanda">
         <rdf:type rdf:resource="Actor"/>
-    </NamedIndividual>
-    
-
-
-    <!-- &lt;http://dbpedia.org/ontology/&gt;#Roadside Romeo -->
-
-
-    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Roadside Romeo">
-        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
@@ -1756,11 +3356,92 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Saint Barthelemy -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Saint Barthelemy">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Saint Lucia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Saint Lucia">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Saint Martin -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Saint Martin">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Saint Kitts and Nevis -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Saint Kitts and Nevis">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Saint Pierre and Miquelon -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Saint Pierre and Miquelon">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Saint Vincent and the Grenadines -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Saint Vincent and the Grenadines">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Samuel Haus -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Samuel Haus">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#San Marino -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#San Marino">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Sao Tome and Principe -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Sao Tome and Principe">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Saudi Arabia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Saudi Arabia">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -1792,6 +3473,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Sierra Leone -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Sierra Leone">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Simon Cook -->
 
 
@@ -1815,6 +3505,51 @@
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Small Cuts">
         <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Solomon Islands -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Solomon Islands">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#South Africa -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#South Africa">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#South Korea -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#South Korea">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#South Sudan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#South Sudan">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Sri Lanka -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Sri Lanka">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -1855,11 +3590,29 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Swept Away -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Swept Away">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Takayasu Usui -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Takayasu Usui">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Taxi Driver -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Taxi Driver">
+        <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
 
@@ -1873,19 +3626,10 @@
     
 
 
-    <!-- &lt;http://dbpedia.org/ontology/&gt;#The Broken Coin -->
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#The Intouchables -->
 
 
-    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#The Broken Coin">
-        <rdf:type rdf:resource="Pelicula"/>
-    </NamedIndividual>
-    
-
-
-    <!-- &lt;http://dbpedia.org/ontology/&gt;#The Last Winter -->
-
-
-    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#The Last Winter">
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#The Intouchables">
         <rdf:type rdf:resource="Pelicula"/>
     </NamedIndividual>
     
@@ -1918,6 +3662,15 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Trinidad and Tobago -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Trinidad and Tobago">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Tsutomu Kashiwakura -->
 
 
@@ -1936,11 +3689,47 @@
     
 
 
-    <!-- &lt;http://dbpedia.org/ontology/&gt;#Una spina nel cuore -->
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Turks and Caicos Islands -->
 
 
-    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Una spina nel cuore">
-        <rdf:type rdf:resource="Pelicula"/>
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Turks and Caicos Islands">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#United States -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#United States">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#United Arab Emirates -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#United Arab Emirates">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Virgin Islands -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Virgin Islands">
+        <rdf:type rdf:resource="Pais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Wallis and Futuna -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Wallis and Futuna">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
@@ -1954,11 +3743,29 @@
     
 
 
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#We Live in Public -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#We Live in Public">
+        <rdf:type rdf:resource="Pelicula"/>
+    </NamedIndividual>
+    
+
+
     <!-- &lt;http://dbpedia.org/ontology/&gt;#Wendy Williams -->
 
 
     <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Wendy Williams">
         <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Western Sahara -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Western Sahara">
+        <rdf:type rdf:resource="Pais"/>
     </NamedIndividual>
     
 
