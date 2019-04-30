@@ -5,7 +5,6 @@ import java.io.File;
 import javax.annotation.Nonnull;
 
 import org.apache.jena.query.*;
-import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.StringDocumentSource;
 import org.semanticweb.owlapi.model.IRI;
