@@ -13,12 +13,14 @@ import org.semanticweb.owlapi.model.EntityType;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLDataPropertyRangeAxiom;
 import org.semanticweb.owlapi.model.OWLDatatype;
 import org.semanticweb.owlapi.model.OWLDeclarationAxiom;
 import org.semanticweb.owlapi.model.OWLEntity;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom;
 import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom;
@@ -83,9 +85,11 @@ public class Main {
 //			System.out.println(soln.getLiteral("name_21"));
 //		}
 	}
-	static public ResultSet getActores() {
-		String actoresQuery = "PREFIX dbo: <http://dbpedia.org/ontology/>\n" + "SELECT DISTINCT ?Actor_1\n"
+	static public ArrayList<String> getActores() {
+		String actoresQuery = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
+				+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT ?Actor_1 ?nombre \n"
 				+ "WHERE { ?Actor_1 a dbo:Actor .\n"
+				+ "?Actor_1 foaf:name ?nombre."
 				+ "        FILTER ( NOT EXISTS { ?Actor_1 dbo:activeYearsEndYear ?activeYearsEndYear_21 . } ) }\n"
 				+ "LIMIT 200";
 
@@ -93,8 +97,13 @@ public class Main {
 		QueryExecution qexec = QueryExecutionFactory.sparqlService(dbpedia, query);
 
 		ResultSet results = qexec.execSelect();
+		ArrayList<String> actores = new ArrayList<String>();
+		while (results.hasNext()) {
+			QuerySolution soln = results.nextSolution();
+			actores.add(soln.getLiteral("nombre").toString().split("@en")[0]);
+		}
 		qexec.close();
-		return results;
+		return actores;
 	}
 	public ResultSet getPeliculas() {
 		String filmQueryString = "PREFIX wd: <http://www.wikidata.org/entity/>"
@@ -138,10 +147,20 @@ public class Main {
         manager.addAxiom(ontology, pelisRange);
         manager.addAxiom(ontology, declarationAxiom);
 		
-        manager.saveOntology(ontology, IRI.create(file.toURI()));
         
-		
-
+        
+		ArrayList<String> actores = getActores();
+		for(int i = 0; i < actores.size(); i++){
+			String actor = actores.get(i);
+			OWLNamedIndividual act =
+		       		  factory.getOWLNamedIndividual("#"+actor.toString(), dbpm); 
+			OWLClassAssertionAxiom isActor = factory.getOWLClassAssertionAxiom(actorClass, act);
+			manager.addAxiom(ontology, isActor);
+		}
+		for(OWLAxiom ax:ontology.getLogicalAxioms()) {
+			 System.out.println(ax);
+			 }
+		manager.saveOntology(ontology, IRI.create(file.toURI()));
 		
 	}
 }

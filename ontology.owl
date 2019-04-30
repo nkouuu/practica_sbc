@@ -69,6 +69,1809 @@
 
 
     <Class rdf:about="Actor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Choc7 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Choc7">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#G.E.M. -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#G.E.M.">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Honoka -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Honoka">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kym -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kym">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#MeiMei -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#MeiMei">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Mihiro -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mihiro">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#You -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#You">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#chénchùhé -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#chénchùhé">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#井柏然 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#井柏然">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#刘美君 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#刘美君">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#孔琳 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#孔琳">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#孟佳 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#孟佳">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#张钧甯 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#张钧甯">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#張鈞甯 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#張鈞甯">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#李思捷 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#李思捷">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#李香琴 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#李香琴">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#杨洋 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#杨洋">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#王惠珊 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#王惠珊">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#王敏德 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#王敏德">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#白薇秀 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#白薇秀">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#蔡琦慧 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#蔡琦慧">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#謝宛諭 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#謝宛諭">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#谢宛谕 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#谢宛谕">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#超克7 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#超克7">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#郭品超 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#郭品超">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#郭婕祈 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#郭婕祈">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#鄧紫棋 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#鄧紫棋">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#金莎 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#金莎">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#陈楚河 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#陈楚河">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#陳楚河 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#陳楚河">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#馬天宇 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#馬天宇">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#駱應鈞 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#駱應鈞">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#马天宇 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#马天宇">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#骆应钧 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#骆应钧">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#黃長發 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#黃長發">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#黄慧 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#黄慧">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#(Jin Sha) -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#(Jin Sha)">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Adele Wong -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Adele Wong">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Akari Hibino -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Akari Hibino">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Akiho Yoshizawa -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Akiho Yoshizawa">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Alex Winters -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Alex Winters">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Alexis Amore -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Alexis Amore">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Allie Haze -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Allie Haze">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Anastasia Mayo -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Anastasia Mayo">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Aria Giovanni -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Aria Giovanni">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ariel Rebel -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ariel Rebel">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Babben Larsson -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Babben Larsson">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Baron Chen -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Baron Chen">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Barrett Long -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Barrett Long">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Beckett Bould -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Beckett Bould">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ben Cartwright -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ben Cartwright">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Brian Trueman -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Brian Trueman">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Bunko Kanazawa -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bunko Kanazawa">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Bái Wēixìu -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Bái Wēixìu">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Carter Stevens -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Carter Stevens">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Caryn Richman -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Caryn Richman">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Chao Ke Qi -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Chao Ke Qi">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Chen Si-Ya -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Chen Si-Ya">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Choky Ice -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Choky Ice">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Chuy Bravo -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Chuy Bravo">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cyrille Bara -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cyrille Bara">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Cài Qíhuì -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Cài Qíhuì">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Céline Bara -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Céline Bara">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Debbie Moore -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Debbie Moore">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Diesel Washington -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Diesel Washington">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Dylan Kuo -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Dylan Kuo">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Emily Zheng -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Emily Zheng">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Erika Mabuchi -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Erika Mabuchi">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Essy Persson -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Essy Persson">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Felix Lok -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Felix Lok">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Fiona Xie -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Fiona Xie">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Francesco Malcom -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Francesco Malcom">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#François Huỳnh -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#François Huỳnh">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#François Wong -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#François Wong">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Frederick William Matthiessen -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Frederick William Matthiessen">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Fukumi Kuroda -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Fukumi Kuroda">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Gary Bakewell -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Gary Bakewell">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Go Jibiki -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Go Jibiki">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Gorō Ibuki -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Gorō Ibuki">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guy Boyd -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guy Boyd">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guy Buyd -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guy Buyd">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guō Jiéqǐ -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guō Jiéqǐ">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Guō Pǐnchāo -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Guō Pǐnchāo">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Gwok3 Ban2-ciu1 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Gwok3 Ban2-ciu1">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Haruna Yabuki -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Haruna Yabuki">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Helen Atkinson-Wood -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Helen Atkinson-Wood">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Hideo Kanze -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Hideo Kanze">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Hideo Murota -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Hideo Murota">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Hitomi Kudo -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Hitomi Kudo">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Huáng Huì -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Huáng Huì">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ikki Sawamura -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ikki Sawamura">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ilona Staller -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ilona Staller">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Isabelle Amyes -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Isabelle Amyes">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Isabelle Corey -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Isabelle Corey">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Isabelle Nanty -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Isabelle Nanty">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Isabelle Sadoyan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Isabelle Sadoyan">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Isako Washio -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Isako Washio">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jack Lawrence -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jack Lawrence">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jacqueline Lorains -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jacqueline Lorains">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jacqueline Lorians -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jacqueline Lorians">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#James Deen -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#James Deen">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#James Lindsay -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#James Lindsay">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#James Ryan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#James Ryan">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jamie Gillis -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jamie Gillis">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jamie Treacher -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jamie Treacher">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Janina Faye -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Janina Faye">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Janine Chang -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Janine Chang">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jin Sha -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jin Sha">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jing Boran -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jing Boran">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Joanne Peh -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Joanne Peh">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#John Light -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#John Light">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Johnson Lee -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Johnson Lee">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jonathan Scott -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jonathan Scott">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Jǐng Bórán -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Jǐng Bórán">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Katsuo Nakamura -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Katsuo Nakamura">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Keni Styles -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Keni Styles">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kento Nakajima -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kento Nakajima">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kong Lin -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kong Lin">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kurumi Morishita -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kurumi Morishita">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Kǒng Lín -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Kǒng Lín">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lau4 Mei5 Gwan1 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lau4 Mei5 Gwan1">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lee Heung-kam -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lee Heung-kam">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lei5 Hoeng1 Kam4 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lei5 Hoeng1 Kam4">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lexi Belle -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lexi Belle">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lisa S. -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lisa S.">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Liú Měijūn -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Liú Měijūn">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lord Tim Hudson -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lord Tim Hudson">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Louann von Brochwitz -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Louann von Brochwitz">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Louisa Moritz -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Louisa Moritz">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Loulou von Brochwitz -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Loulou von Brochwitz">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lysa Thatcher -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lysa Thatcher">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lǐ Sījié -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lǐ Sījié">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Lǐ Xiāngqín -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Lǐ Xiāngqín">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ma Tianyu -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ma Tianyu">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ma Tiānyǔ -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ma Tiānyǔ">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Machiko Washio -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Machiko Washio">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Madeleine Boyd -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Madeleine Boyd">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Maria Whittaker -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Maria Whittaker">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Masaki Okada -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Masaki Okada">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Max Hardcore -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Max Hardcore">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#MeiMei Kuo -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#MeiMei Kuo">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Meng Jia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Meng Jia">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Michael Culkin -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Michael Culkin">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Michael Wong -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Michael Wong">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Michael G. Aamodt -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Michael G. Aamodt">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Michela Miti -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Michela Miti">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Mike Aamodt -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mike Aamodt">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Minami Aoyama -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Minami Aoyama">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Minase Yashiro -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Minase Yashiro">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Minoru Shiraishi -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Minoru Shiraishi">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Mirei Kuroda -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mirei Kuroda">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Miwa Oshiro -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Miwa Oshiro">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Mèng Jia -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Mèng Jia">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Nana Natsume -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Nana Natsume">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Naoki Kawano -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Naoki Kawano">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Natasja Vermeer -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Natasja Vermeer">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ng Hui -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ng Hui">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Nick Patrick -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Nick Patrick">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Nina Mercedez -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Nina Mercedez">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Norma Stitz -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Norma Stitz">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Paige Chua -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Paige Chua">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Per Eggers -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Per Eggers">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Princess Donna -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Princess Donna">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Prudence Liew -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Prudence Liew">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Rashami Desai -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Rashami Desai">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Renée Faure -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Renée Faure">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Rie Ishizuka -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Rie Ishizuka">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Rie Kanda -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Rie Kanda">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Robert Baldwin -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Robert Baldwin">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Robert Hirsch -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Robert Hirsch">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ryōko Mitake -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ryōko Mitake">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Ryōko Nagata -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Ryōko Nagata">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Samuel Haus -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Samuel Haus">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Shigeo Kiyama -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Shigeo Kiyama">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Shiro Kishibe -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Shiro Kishibe">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Si Ya -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Si Ya">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Simon Cook -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Simon Cook">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Sir George White, 1st Baronet -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Sir George White, 1st Baronet">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Stephen Marchant -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Stephen Marchant">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Stuart Smith -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Stuart Smith">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Suzy Mandel -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Suzy Mandel">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Takayasu Usui -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Takayasu Usui">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Thibault Vinçon -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Thibault Vinçon">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Tim Hudson -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Tim Hudson">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Tomiko Ishii -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Tomiko Ishii">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Tsutomu Kashiwakura -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Tsutomu Kashiwakura">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Tsutomu Kitagawa -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Tsutomu Kitagawa">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Wang Yan -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Wang Yan">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Wendy Williams -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Wendy Williams">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Wáng Huìshān -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Wáng Huìshān">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Wáng Yàn -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Wáng Yàn">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Xiè Wǎnyù -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Xiè Wǎnyù">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Yang Yang -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Yang Yang">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Youki Kudoh -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Youki Kudoh">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Yáng Yáng -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Yáng Yáng">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Zhāng Jūnníng -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Zhāng Jūnníng">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#lei5 si1 zit3 -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#lei5 si1 zit3">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#mr. Pam -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#mr. Pam">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- &lt;http://dbpedia.org/ontology/&gt;#Édouard Collin -->
+
+
+    <NamedIndividual rdf:about="&lt;http://dbpedia.org/ontology/&gt;#Édouard Collin">
+        <rdf:type rdf:resource="Actor"/>
+    </NamedIndividual>
 </rdf:RDF>
 
 
