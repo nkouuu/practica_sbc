@@ -70,26 +70,23 @@ public class Main {
 
 	public ResultSet getCountries() {
 		String countryQuery = "PREFIX n1: <http://www.semwebtech.org/mondial/10/meta#>"
-                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/>"
-                + "SELECT DISTINCT *"
-                + "WHERE { ?country a n1:Country ."
-                + " ?country n1:name ?name_21 ."
-                + "}"
-                + "LIMIT 200";
-		QueryExecution qexec = QueryExecutionFactory.sparqlService("http://servolis.irisa.fr/mondial/sparql", countryQuery); // Query
+				+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT *" + "WHERE { ?country a n1:Country ."
+				+ " ?country n1:name ?name_21 ." + "}" + "LIMIT 200";
+		QueryExecution qexec = QueryExecutionFactory.sparqlService("http://servolis.irisa.fr/mondial/sparql",
+				countryQuery); // Query
 
 		ResultSet results = qexec.execSelect();
 		return results;
-//		while (results.hasNext()) {
-//			QuerySolution soln = results.nextSolution();
-//			System.out.println(soln.getLiteral("name_21"));
-//		}
+		// while (results.hasNext()) {
+		// QuerySolution soln = results.nextSolution();
+		// System.out.println(soln.getLiteral("name_21"));
+		// }
 	}
+
 	static public ArrayList<String> getActores() {
 		String actoresQuery = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
 				+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT ?Actor_1 ?nombre \n"
-				+ "WHERE { ?Actor_1 a dbo:Actor .\n"
-				+ "?Actor_1 foaf:name ?nombre."
+				+ "WHERE { ?Actor_1 a dbo:Actor .\n" + "?Actor_1 foaf:name ?nombre."
 				+ "        FILTER ( NOT EXISTS { ?Actor_1 dbo:activeYearsEndYear ?activeYearsEndYear_21 . } ) }\n"
 				+ "LIMIT 200";
 
@@ -105,13 +102,24 @@ public class Main {
 		qexec.close();
 		return actores;
 	}
+	
+	static public void mappingInstances (OWLClass ontologyClass, ArrayList<String> instances, PrefixManager dbpm, OWLOntology ontology) {
+		for (int i = 0; i < instances.size(); i++) {
+			String name = instances.get(i);
+			OWLNamedIndividual instance = factory.getOWLNamedIndividual("#" + name.toString(), dbpm);
+			OWLClassAssertionAxiom isActor = factory.getOWLClassAssertionAxiom(ontologyClass, instance);
+			manager.addAxiom(ontology, isActor);
+		}
+		
+	}
+
 	public ResultSet getPeliculas() {
 		String filmQueryString = "PREFIX wd: <http://www.wikidata.org/entity/>"
 				+ "PREFIX wdt: <http://www.wikidata.org/prop/direct/>" + "PREFIX wikibase: <http://wikiba.se/ontology#>"
 				+ "PREFIX p: <http://www.wikidata.org/prop/>" + "PREFIX v: <http://www.wikidata.org/prop/statement/>"
 				+ "PREFIX q: <http://www.wikidata.org/prop/qualifier/>"
-				+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" + "SELECT DISTINCT ?q ?film_title ?actor ?genre"
-				+ "WHERE {" + " ?q wdt:P31 wd:Q11424."
+				+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
+				+ "SELECT DISTINCT ?q ?film_title ?actor ?genre" + "WHERE {" + " ?q wdt:P31 wd:Q11424."
 				+ "?q rdfs:label ?film_title filter (lang(?film_title) = \"en\")." + "?q wdt:P136 ?genreID."
 				+ "?genreID rdfs:label ?genre filter (lang(?genre) = \"en\")." + "?q wdt:P161 ?actorID."
 				+ " ?actorID rdfs:label ?actor filter (lang(?actor) = \"en\")." + "}limit 100";
@@ -121,46 +129,37 @@ public class Main {
 		return results;
 
 	}
-	
-
 
 	static public void main(String... argv) throws OWLOntologyStorageException, OWLOntologyCreationException {
 		File directory = new File(".");
 		File file = new File(directory + File.separator + "ontology.owl");
 		PrefixManager dbpm = new DefaultPrefixManager("<http://dbpedia.org/ontology/>");
 
-//		OWLOntology onto = manager.loadOntologyFromOntologyDocument(file);
+		// OWLOntology onto = manager.loadOntologyFromOntologyDocument(file);
 		OWLClass actorClass = factory.getOWLClass("Actor");
 		OWLObjectProperty hacePeliculas = factory.getOWLObjectProperty("hacePeliculas");
 		OWLObjectPropertyDomainAxiom rangeAxiom = factory.getOWLObjectPropertyDomainAxiom(hacePeliculas, actorClass);
 		OWLObjectPropertyRangeAxiom domainAxiom = factory.getOWLObjectPropertyRangeAxiom(hacePeliculas, actorClass);
 		OWLDataProperty pelis = factory.getOWLDataProperty("pelis");
-        OWLDatatype integerDatatype = factory.getIntegerOWLDatatype();
+		OWLDatatype integerDatatype = factory.getIntegerOWLDatatype();
 
-        OWLDataPropertyRangeAxiom pelisRange = factory.getOWLDataPropertyRangeAxiom(pelis, integerDatatype);
-        
+		OWLDataPropertyRangeAxiom pelisRange = factory.getOWLDataPropertyRangeAxiom(pelis, integerDatatype);
+
 		OWLDeclarationAxiom declarationAxiom = factory.getOWLDeclarationAxiom(actorClass);
 		OWLOntology ontology = manager.createOntology();
 
-        manager.addAxiom(ontology, rangeAxiom);
-        manager.addAxiom(ontology, domainAxiom);
-        manager.addAxiom(ontology, pelisRange);
-        manager.addAxiom(ontology, declarationAxiom);
-		
-        
-        
+		manager.addAxiom(ontology, rangeAxiom);
+		manager.addAxiom(ontology, domainAxiom);
+		manager.addAxiom(ontology, pelisRange);
+		manager.addAxiom(ontology, declarationAxiom);
+
 		ArrayList<String> actores = getActores();
-		for(int i = 0; i < actores.size(); i++){
-			String actor = actores.get(i);
-			OWLNamedIndividual act =
-		       		  factory.getOWLNamedIndividual("#"+actor.toString(), dbpm); 
-			OWLClassAssertionAxiom isActor = factory.getOWLClassAssertionAxiom(actorClass, act);
-			manager.addAxiom(ontology, isActor);
+		mappingInstances(actorClass, actores, dbpm, ontology);
+		for (OWLAxiom ax : ontology.getLogicalAxioms()) {
+			System.out.println(ax);
 		}
-		for(OWLAxiom ax:ontology.getLogicalAxioms()) {
-			 System.out.println(ax);
-			 }
-		manager.saveOntology(ontology, IRI.create(file.toURI()));
 		
+		manager.saveOntology(ontology, IRI.create(file.toURI()));
+
 	}
 }
