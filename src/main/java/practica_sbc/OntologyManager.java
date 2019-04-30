@@ -16,6 +16,7 @@ import org.semanticweb.owlapi.model.OWLDataPropertyRangeAxiom;
 import org.semanticweb.owlapi.model.OWLDatatype;
 import org.semanticweb.owlapi.model.OWLDatatypeRestriction;
 import org.semanticweb.owlapi.model.OWLDeclarationAxiom;
+import org.semanticweb.owlapi.model.OWLDocumentFormat;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom;
@@ -58,9 +59,9 @@ public class OntologyManager {
 	}
 
 	// Para crear DataProperties con restriccion
-	public OWLDataProperty createDataProperty(String name, OWLClass domainClass,OWLDatatypeRestriction restriction) {
+	public OWLDataProperty createDataProperty(String name, OWLClass domainClass, OWLDatatypeRestriction restriction) {
 		OWLDataProperty property = factory.getOWLDataProperty(":" + name, this.pm);
-		
+
 		OWLDataPropertyDomainAxiom domainAxiom = factory.getOWLDataPropertyDomainAxiom(property, domainClass);
 		OWLDataPropertyRangeAxiom rangeAxiom = factory.getOWLDataPropertyRangeAxiom(property, restriction);
 		manager.addAxiom(this.ontology, rangeAxiom);
@@ -69,9 +70,9 @@ public class OntologyManager {
 	}
 
 	// Para crear DataProperties sin restriccion
-	public OWLDataProperty createDataProperty(String name, OWLClass domainClass,OWLDatatype type) {
+	public OWLDataProperty createDataProperty(String name, OWLClass domainClass, OWLDatatype type) {
 		OWLDataProperty property = factory.getOWLDataProperty(":" + name, this.pm);
-		
+
 		OWLDataPropertyDomainAxiom domainAxiom = factory.getOWLDataPropertyDomainAxiom(property, domainClass);
 		OWLDataPropertyRangeAxiom rangeAxiom = factory.getOWLDataPropertyRangeAxiom(property, type);
 		manager.addAxiom(this.ontology, rangeAxiom);
@@ -83,18 +84,18 @@ public class OntologyManager {
 		OWLSubClassOfAxiom ax = factory.getOWLSubClassOfAxiom(c1, c2);
 		manager.addAxiom(this.ontology, ax);
 	}
-	
+
 	public void createSubclass(OWLClass c1, OWLClass c2) {
 		OWLSubClassOfAxiom ax = factory.getOWLSubClassOfAxiom(c1, c2);
 		manager.addAxiom(this.ontology, ax);
 	}
-	
-	public void mappingInstances(ResultSet results,OWLClass ontologyClass, String field){
+
+	public void mappingInstances(ResultSet results, OWLClass ontologyClass, String field) {
 		while (results.hasNext()) {
 			QuerySolution soln = results.nextSolution();
-				OWLIndividual ind = factory.getOWLNamedIndividual(soln.get(field).toString());
-				OWLClassAssertionAxiom ax = factory.getOWLClassAssertionAxiom(ontologyClass, ind);
-				manager.addAxiom(this.ontology, ax);
+			OWLIndividual ind = factory.getOWLNamedIndividual(soln.get(field).toString());
+			OWLClassAssertionAxiom ax = factory.getOWLClassAssertionAxiom(ontologyClass, ind);
+			manager.addAxiom(this.ontology, ax);
 		}
 	}
 
@@ -118,6 +119,13 @@ public class OntologyManager {
 		File file = new File(filePath);
 
 		manager.saveOntology(this.ontology, IRI.create(file.toURI()));
+
+	}
+
+	public void saveOntology(String filePath, OWLDocumentFormat format) throws OWLOntologyStorageException {
+		File file = new File(filePath);
+
+		manager.saveOntology(this.ontology, format, IRI.create(file.toURI()));
 
 	}
 }
