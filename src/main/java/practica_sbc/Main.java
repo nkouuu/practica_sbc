@@ -50,16 +50,17 @@ public class Main {
 	static OWLObjectProperty grabadaEn ;
 	static OWLObjectProperty haActuadoEn ;
 	static OWLObjectProperty haTriunfadoGraciasA;
+	static OWLObjectProperty famosoPor;
 	
 	// Queries
 	static String dbpedia = "http://dbpedia.org/sparql";
 	static String wikidata = "https://query.wikidata.org/sparql";
 	static String mondial = "http://servolis.irisa.fr/mondial/sparql";
 	static String actoresQuery = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
-			+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT ?Actor_1 ?nombre ?activeYearsStartYear \n"
-			+ "WHERE { ?Actor_1 a dbo:Actor .\n" + "?Actor_1 foaf:name ?nombre."
-			+ "        FILTER ( NOT EXISTS { ?Actor_1 dbo:activeYearsEndYear ?activeYearsEndYear_21 . } )"
-			+ " ?Actor_1 dbo:activeYearsStartYear ?activeYearsStartYear ."
+			+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT ?actor ?nombre ?activeYearsStartYear \n"
+			+ "WHERE { ?actor a dbo:Actor .\n" + "?actor foaf:name ?nombre."
+			+ "        FILTER ( NOT EXISTS { ?actor dbo:activeYearsEndYear ?activeYearsEndYear_21 . } )"
+			+ " ?actor dbo:activeYearsStartYear ?activeYearsStartYear ."
 			+ " }\n"
 			+ "LIMIT 200";
 	static String countryQuery = "PREFIX n1: <http://www.semwebtech.org/mondial/10/meta#>"
@@ -98,6 +99,7 @@ public class Main {
 		 grabadaEn = manager.createObjectProperty("grabadaEn", peliculaClass, paisClass);
 		 haActuadoEn = manager.createObjectProperty("haActuadoEn", actorClass, paisClass);
 		 haTriunfadoGraciasA = manager.createObjectProperty("haTriunfadoGraciasA", peliculaClass, actorClass);
+		 famosoPor = manager.createObjectProperty("famosoPor", actorClass,peliculaClass );
 	}
 
 	static public String formatString(String stringToFormat) {
@@ -130,7 +132,7 @@ public class Main {
 		ResultSet peliculas = getData(filmQueryString, wikidata);
 		ResultSet paises = getData(countryQuery, mondial);
 		
-		manager.mappingInstances(actores, actorClass, "Actor_1");
+		manager.mappingInstances(actores, actorClass, "actor");
 		manager.mappingInstances(peliculas, peliculaClass, "q");
 		manager.mappingInstances(paises, paisClass, "country");
 		
@@ -140,28 +142,28 @@ public class Main {
 //        actorProperties.add(new Property("activeYearsStartYear",type));
 //		manager.mappingInstancesWithProperties(actores, actorClass, "Actor_1", actorProperties);
 
-//		// Create an ELK reasoner.
-//		Reasoner elkReasoner = new Reasoner(ontology);
-//		// Classify the ontology.
-//		elkReasoner.classifyOntology();
-//		// To generate an inferred ontology we use implementations of
-//		// inferred axiom generators
-//		List<InferredAxiomGenerator<? extends OWLAxiom>> gens = elkReasoner.generateInferredAxioms();
-//		
-//		// Put the inferred axioms into a fresh empty ontology.
-//		OWLOntology infOnt = outputOntologyManager.getOntology();
-//		elkReasoner.generateInferredOntology(infOnt, gens,outputOntologyManager.manager );
-//		for (OWLAxiom ax : infOnt.getLogicalAxioms()) {
-//			System.out.println(ax);
-//		}
+		// Create an ELK reasoner.
+		Reasoner elkReasoner = new Reasoner(ontology);
+		// Classify the ontology.
+		elkReasoner.classifyOntology();
+		// To generate an inferred ontology we use implementations of
+		// inferred axiom generators
+		List<InferredAxiomGenerator<? extends OWLAxiom>> gens = elkReasoner.generateInferredAxioms();
+		
+		// Put the inferred axioms into a fresh empty ontology.
+		OWLOntology infOnt = outputOntologyManager.getOntology();
+		elkReasoner.generateInferredOntology(infOnt, gens,outputOntologyManager.manager );
+		for (OWLAxiom ax : infOnt.getLogicalAxioms()) {
+			System.out.println(ax);
+		}
 		String filePath = directory + File.separator + "ontology";
 
 		TurtleDocumentFormat turtleFormat = new TurtleDocumentFormat();
 		OWLDocumentFormat ontologyFormat = new RDFJsonLDDocumentFormat();
 
-		outputOntologyManager.saveOntology(filePath + ".jsonld", ontologyFormat);
-		outputOntologyManager.saveOntology(filePath + ".ttl", turtleFormat);
-		outputOntologyManager.saveOntology(filePath + ".owl");
+		manager.saveOntology(filePath + ".jsonld", ontologyFormat);
+		manager.saveOntology(filePath + ".ttl", turtleFormat);
+		manager.saveOntology(filePath + ".owl");
 		elkReasoner.finishReasonerThreads();
 	}
 }

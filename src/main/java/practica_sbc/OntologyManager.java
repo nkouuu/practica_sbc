@@ -149,10 +149,10 @@ public class OntologyManager {
 			Iterator<String> it = soln.varNames();
 			while (it.hasNext()) {
 				String prop = it.next();
-//				OWLDatatype type = soln.get(prop);
-//				OWLDataProperty property = this.createDataProperty(prop, ontologyClass, type);
-//				OWLLiteral value = factory.getOWLLiteral(soln.get(prop).toString());
-//				this.addDataPropertyToInstance(property, ind, value);			
+				OWLDatatype type =  factory.getIntegerOWLDatatype();
+				OWLDataProperty property = this.createDataProperty(prop, ontologyClass, type);
+				OWLLiteral value = factory.getOWLLiteral(soln.get(prop).toString());
+				this.addDataPropertyToInstance(property, ind, value);			
 			}
 		}
 	}
@@ -168,18 +168,18 @@ public class OntologyManager {
 	 * @param properties    Conjunto de propiedades cada una con su nombre de la
 	 *                      query y su tipo de dato
 	 */
-	public void mappingInstancesWithProperties(ResultSet results, OWLClass ontologyClass, String field,
-			ArrayList<Property> properties) {
-		while (results.hasNext()) {
-			QuerySolution soln = results.nextSolution();
-			OWLIndividual ind = this.addInstance(ontologyClass, soln.get(field).toString());
-			for (Property prop : properties) {
-				OWLDataProperty property = this.createDataProperty(prop.getName(), ontologyClass, prop.getType());
-				OWLLiteral value = factory.getOWLLiteral(soln.get(prop.getName()).toString());
-				this.addDataPropertyToInstance(property, ind, value);
-			}
-		}
-	}
+//	public void mappingInstancesWithProperties(ResultSet results, OWLClass ontologyClass, String field,
+//			ArrayList<Property> properties) {
+//		while (results.hasNext()) {
+//			QuerySolution soln = results.nextSolution();
+//			OWLIndividual ind = this.addInstance(ontologyClass, soln.get(field).toString());
+//			for (Property prop : properties) {
+//				OWLDataProperty property = this.createDataProperty(prop.getName(), ontologyClass, prop.getType());
+//				OWLLiteral value = factory.getOWLLiteral(soln.get(prop.getName()).toString());
+//				this.addDataPropertyToInstance(property, ind, value);
+//			}
+//		}
+//	}
 
 	/**
 	 * Añadir una instancia de una clase
