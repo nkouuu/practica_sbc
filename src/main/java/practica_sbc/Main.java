@@ -122,6 +122,7 @@ public class Main {
 		// Put the inferred axioms into a fresh empty ontology.
 		OWLOntology infOnt = outputOntologyManager.getOntology();
 		elkReasoner.generateInferredOntology(infOnt, gens,outputOntologyManager.manager );
+		System.out.println(elkReasoner.getReasoner().getInstances(actorClass));
 		for (OWLAxiom ax : infOnt.getLogicalAxioms()) {
 			System.out.println(ax);
 		}
