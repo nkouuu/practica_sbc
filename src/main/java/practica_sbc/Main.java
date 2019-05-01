@@ -147,7 +147,7 @@ public class Main {
 		
 		// Put the inferred axioms into a fresh empty ontology.
 		OWLOntology infOnt = outputOntologyManager.getOntology();
-		elkReasoner.generateInferredOntology(infOnt, gens,outputOntologyManager.manager );
+		elkReasoner.generateInferredOntology(infOnt, gens, outputOntologyManager.getManager() );
 		System.out.println(elkReasoner.getReasoner().getInstances(actorClass));
 		for (OWLAxiom ax : infOnt.getLogicalAxioms()) {
 			System.out.println(ax);
@@ -157,9 +157,9 @@ public class Main {
 		TurtleDocumentFormat turtleFormat = new TurtleDocumentFormat();
 		OWLDocumentFormat ontologyFormat = new RDFJsonLDDocumentFormat();
 
-		manager.saveOntology(filePath + ".jsonld", ontologyFormat);
-		manager.saveOntology(filePath + ".ttl", turtleFormat);
-		manager.saveOntology(filePath + ".owl");
-
+		outputOntologyManager.saveOntology(filePath + ".jsonld", ontologyFormat);
+		outputOntologyManager.saveOntology(filePath + ".ttl", turtleFormat);
+		outputOntologyManager.saveOntology(filePath + ".owl");
+		elkReasoner.finishReasonerThreads();
 	}
 }
