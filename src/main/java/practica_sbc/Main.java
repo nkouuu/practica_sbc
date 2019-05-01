@@ -7,8 +7,12 @@ import org.semanticweb.owlapi.formats.RDFJsonLDDocumentFormat;
 import org.semanticweb.owlapi.formats.TurtleDocumentFormat;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLDataRange;
 import org.semanticweb.owlapi.model.OWLDatatype;
 import org.semanticweb.owlapi.model.OWLDatatypeRestriction;
 import org.semanticweb.owlapi.model.OWLDocumentFormat;
@@ -26,6 +30,8 @@ import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.model.PrefixManager;
 import org.semanticweb.owlapi.util.DefaultPrefixManager;
 import org.semanticweb.owlapi.util.InferredAxiomGenerator;
+import org.semanticweb.owlapi.vocab.XSDVocabulary;
+
 import java.util.*;
 
 public class Main {
@@ -50,9 +56,11 @@ public class Main {
 	static String wikidata = "https://query.wikidata.org/sparql";
 	static String mondial = "http://servolis.irisa.fr/mondial/sparql";
 	static String actoresQuery = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
-			+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT ?Actor_1 ?nombre \n"
+			+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT ?Actor_1 ?nombre ?activeYearsStartYear \n"
 			+ "WHERE { ?Actor_1 a dbo:Actor .\n" + "?Actor_1 foaf:name ?nombre."
-			+ "        FILTER ( NOT EXISTS { ?Actor_1 dbo:activeYearsEndYear ?activeYearsEndYear_21 . } ) }\n"
+			+ "        FILTER ( NOT EXISTS { ?Actor_1 dbo:activeYearsEndYear ?activeYearsEndYear_21 . } )"
+			+ " ?Actor_1 dbo:activeYearsStartYear ?activeYearsStartYear ."
+			+ " }\n"
 			+ "LIMIT 200";
 	static String countryQuery = "PREFIX n1: <http://www.semwebtech.org/mondial/10/meta#>"
 			+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT *" + "WHERE { ?country a n1:Country ."
@@ -103,6 +111,8 @@ public class Main {
 		OWLDataFactory factory = manager.getFactory();
 		OWLOntology ontology = manager.getOntology();
 		PrefixManager dbpm = new DefaultPrefixManager("<http://dbpedia.org/ontology/>");
+		
+		//Creamos la ontologia creado las clases y las propiedades entre ellas
 		addClases();
 		addProperties();
 
@@ -110,45 +120,40 @@ public class Main {
 
 		OWLDatatypeRestriction minRestriction = factory.getOWLDatatypeMinInclusiveRestriction(2);
 		OWLDataProperty haHechoPeliculas = manager.createDataProperty("haHechoPeliculas", actorClass, integerDatatype);
-		manager.createDataProperty("haHechoPeliculas", actorFamosoClass, minRestriction);
-//		manager.createDataProperty("comenzoATrabajarComoAdulto", actorClass, minRestriction);
-		
-//		Añadir propiedad a instancia
-		OWLIndividual act = factory.getOWLNamedIndividual(":"+"Actor de prueba",manager.getPm());
-		OWLClassAssertionAxiom ax1 = factory.getOWLClassAssertionAxiom(actorClass, act);
-//		OWLIndividual peli = factory.getOWLNamedIndividual(":"+"Pelicula de prueba",manager.getPm());
-//		OWLClassAssertionAxiom ax2 = factory.getOWLClassAssertionAxiom(actorClass, peli);
-		manager.getManager().addAxiom(manager.getOntology(), ax1);
-//		manager.getManager().addAxiom(manager.getOntology(), ax2);
-		OWLDataPropertyAssertionAxiom propertyAssertion = factory.getOWLDataPropertyAssertionAxiom(haHechoPeliculas, act,4);
-	    manager.getManager().addAxiom(ontology, propertyAssertion);
 
-//        OWLClassExpression hasPartSomeNose = factory.getOWLObjectSomeValuesFrom(hasPart, nose);
-
-//		OWLDataRange intGreaterThan2 = factory.getOWLDatatypeMinInclusiveRestriction(2);
+	
+		OWLDataRange intGreaterThan2 = factory.getOWLDatatypeMinInclusiveRestriction(2);
 //		OWLClassExpression actorFamoso = factory.getOWLDataSomeValuesFrom(haHechoPeliculas, intGreaterThan2);
 
+		//Hacemos las querys por los tres tipos de datos
 		ResultSet actores = getData(actoresQuery, dbpedia);
 		ResultSet peliculas = getData(filmQueryString, wikidata);
 		ResultSet paises = getData(countryQuery, mondial);
+		
 		manager.mappingInstances(actores, actorClass, "Actor_1");
 		manager.mappingInstances(peliculas, peliculaClass, "q");
 		manager.mappingInstances(paises, paisClass, "country");
 		
-		// Create an ELK reasoner.
-		Reasoner elkReasoner = new Reasoner(ontology);
-		// Classify the ontology.
-		elkReasoner.classifyOntology();
-		// To generate an inferred ontology we use implementations of
-		// inferred axiom generators
-		List<InferredAxiomGenerator<? extends OWLAxiom>> gens = elkReasoner.generateInferredAxioms();
-		
-		// Put the inferred axioms into a fresh empty ontology.
-		OWLOntology infOnt = outputOntologyManager.getOntology();
-		elkReasoner.generateInferredOntology(infOnt, gens,outputOntologyManager.manager );
-		for (OWLAxiom ax : infOnt.getLogicalAxioms()) {
-			System.out.println(ax);
-		}
+		//Creamos listas con las propiedades que hay que guardar de cada 
+//		ArrayList<Property> actorProperties = new ArrayList();
+//        OWLDatatype type = factory.getOWLDatatype(XSDVocabulary.G_YEAR.getIRI());
+//        actorProperties.add(new Property("activeYearsStartYear",type));
+//		manager.mappingInstancesWithProperties(actores, actorClass, "Actor_1", actorProperties);
+
+//		// Create an ELK reasoner.
+//		Reasoner elkReasoner = new Reasoner(ontology);
+//		// Classify the ontology.
+//		elkReasoner.classifyOntology();
+//		// To generate an inferred ontology we use implementations of
+//		// inferred axiom generators
+//		List<InferredAxiomGenerator<? extends OWLAxiom>> gens = elkReasoner.generateInferredAxioms();
+//		
+//		// Put the inferred axioms into a fresh empty ontology.
+//		OWLOntology infOnt = outputOntologyManager.getOntology();
+//		elkReasoner.generateInferredOntology(infOnt, gens,outputOntologyManager.manager );
+//		for (OWLAxiom ax : infOnt.getLogicalAxioms()) {
+//			System.out.println(ax);
+//		}
 		String filePath = directory + File.separator + "ontology";
 
 		TurtleDocumentFormat turtleFormat = new TurtleDocumentFormat();

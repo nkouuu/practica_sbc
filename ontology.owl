@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://urjc_sbc.com/owl/1#"
-     xml:base="http://urjc_sbc.com/owl/1"
+<rdf:RDF xmlns="http://urjc_sbc.com/owl/1/"
+     xml:base="http://urjc_sbc.com/owl/1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:owl1="http://urjc_sbc.com/owl/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://urjc_sbc.com/owl/1"/>
+    <owl:Ontology rdf:about="http://urjc_sbc.com/owl/1/"/>
     
 
 
@@ -23,52 +22,52 @@
     
 
 
-    <!-- http://urjc_sbc.com/owl/1actuaEn -->
+    <!-- http://urjc_sbc.com/owl/1/actuaEn -->
 
 
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1actuaEn">
-        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
-        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
+    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/actuaEn">
+        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
+        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1grabadaEn -->
+    <!-- http://urjc_sbc.com/owl/1/grabadaEn -->
 
 
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1grabadaEn">
-        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/grabadaEn">
+        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
+        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1haActuadoEn -->
+    <!-- http://urjc_sbc.com/owl/1/haActuadoEn -->
 
 
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1haActuadoEn">
-        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
-        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/haActuadoEn">
+        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
+        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1haTriunfadoGraciasA -->
+    <!-- http://urjc_sbc.com/owl/1/haTriunfadoGraciasA -->
 
 
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1haTriunfadoGraciasA">
-        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/haTriunfadoGraciasA">
+        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
+        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1premioPor -->
+    <!-- http://urjc_sbc.com/owl/1/premioPor -->
 
 
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1premioPor">
-        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
-        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
+    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/premioPor">
+        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
+        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:ObjectProperty>
     
 
@@ -85,23 +84,12 @@
     
 
 
-    <!-- http://urjc_sbc.com/owl/1haHechoPeliculas -->
+    <!-- http://urjc_sbc.com/owl/1/haHechoPeliculas -->
 
 
-    <owl:DatatypeProperty rdf:about="http://urjc_sbc.com/owl/1haHechoPeliculas">
-        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
-        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1ActorFamoso"/>
+    <owl:DatatypeProperty rdf:about="http://urjc_sbc.com/owl/1/haHechoPeliculas">
+        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </rdfs:range>
     </owl:DatatypeProperty>
     
 
@@ -118,33 +106,33 @@
     
 
 
-    <!-- http://urjc_sbc.com/owl/1Actor -->
+    <!-- http://urjc_sbc.com/owl/1/Actor -->
 
 
-    <owl:Class rdf:about="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:Class rdf:about="http://urjc_sbc.com/owl/1/Actor"/>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1ActorFamoso -->
+    <!-- http://urjc_sbc.com/owl/1/ActorFamoso -->
 
 
-    <owl:Class rdf:about="http://urjc_sbc.com/owl/1ActorFamoso">
-        <rdfs:subClassOf rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:Class rdf:about="http://urjc_sbc.com/owl/1/ActorFamoso">
+        <rdfs:subClassOf rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:Class>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1Pais -->
+    <!-- http://urjc_sbc.com/owl/1/Pais -->
 
 
-    <owl:Class rdf:about="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:Class rdf:about="http://urjc_sbc.com/owl/1/Pais"/>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1Pelicula -->
+    <!-- http://urjc_sbc.com/owl/1/Pelicula -->
 
 
-    <owl:Class rdf:about="http://urjc_sbc.com/owl/1Pelicula"/>
+    <owl:Class rdf:about="http://urjc_sbc.com/owl/1/Pelicula"/>
     
 
 
@@ -160,3215 +148,2729 @@
     
 
 
-    <!-- http://urjc_sbc.com/owl/Actor de prueba -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Adele_Wong -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Adele_Wong">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Adele_Wong">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/Pelicula de prueba -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Babben_Larsson -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Akari_Hibino">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Babben_Larsson">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Akiho_Yoshizawa -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Brett_Findlay -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Akiho_Yoshizawa">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Brett_Findlay">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Alex_Winters -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Candy_Chen -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Alex_Winters">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Candy_Chen">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Alexis_Amore -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Caryn_Richman -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Alexis_Amore">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Caryn_Richman">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Allie_Haze -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Cha_Katō -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Allie_Haze">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Cha_Katō">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Anastasia_Mayo -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Chen_Zeyu -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Anastasia_Mayo">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Chen_Zeyu">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Aria_Giovanni -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Choc7 -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Aria_Giovanni">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Choc7">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Ariel_Rebel -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Chuy_Bravo -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ariel_Rebel">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Chuy_Bravo">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Babben_Larsson -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/David_Westhead -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Babben_Larsson">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/David_Westhead">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Baron_Chen -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Dicky_Cheung -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Baron_Chen">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Dicky_Cheung">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Barrett_Long -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Dylan_Kuo -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Barrett_Long">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Dylan_Kuo">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Beckett_Bould -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Emily_Jewell -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Beckett_Bould">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Emily_Jewell">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Brian_Trueman -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Eriko_Nakamura -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Brian_Trueman">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Eriko_Nakamura">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Bunko_Kanazawa -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Felix_Lok -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bunko_Kanazawa">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Felix_Lok">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Candy_Chen -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Fiona_Mollison -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Candy_Chen">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Fiona_Mollison">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Carter_Stevens -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Fiona_Xie -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Carter_Stevens">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Fiona_Xie">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Caryn_Richman -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Frankie_Chan -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Caryn_Richman">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Frankie_Chan">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Choc7 -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Frida_Hallgren -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Choc7">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Frida_Hallgren">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Choky_Ice -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Fumie_Kashiyama -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Choky_Ice">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Fumie_Kashiyama">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Chuy_Bravo -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Haruna_Yabuki -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Chuy_Bravo">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Haruna_Yabuki">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Cyrille_Bara -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Isabelle_Amyes -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Cyrille_Bara">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Isabelle_Amyes">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Céline_Bara -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Isabelle_Nanty -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Céline_Bara">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Isabelle_Nanty">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Debbie_Moore -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Isabelle_Sadoyan -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Debbie_Moore">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Isabelle_Sadoyan">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Diesel_Washington -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Janine_Chang -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Diesel_Washington">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Janine_Chang">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Dylan_Kuo -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Jing_Boran -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Dylan_Kuo">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Jing_Boran">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Erika_Mabuchi -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Joanne_Peh -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Erika_Mabuchi">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Joanne_Peh">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Essy_Persson -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Johnny_Ngan -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Essy_Persson">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Johnny_Ngan">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Felix_Lok -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Johnson_Lee -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Felix_Lok">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Johnson_Lee">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Fiona_Xie -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Judy_Holt -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Fiona_Xie">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Judy_Holt">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Francesco_Malcom -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Karen_Ascoe -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Francesco_Malcom">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Karen_Ascoe">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/François_Wong -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Keiko_Yokozawa -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/François_Wong">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Keiko_Yokozawa">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Frederick_William_Matthiessen -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kenji_Akabane -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Frederick_William_Matthiessen">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kenji_Akabane">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Fukumi_Kuroda -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kento_Nakajima -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Fukumi_Kuroda">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kento_Nakajima">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Gary_Bakewell -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kiki_Sheung -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Gary_Bakewell">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kiki_Sheung">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Go_Jibiki -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kong_Lin -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Go_Jibiki">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kong_Lin">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Goro_Ibuki -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Lee_Heung-kam -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Goro_Ibuki">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Lee_Heung-kam">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Haruna_Yabuki -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Liu_Yuxin -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Haruna_Yabuki">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Liu_Yuxin">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Helen_Atkinson-Wood -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Louis_Cheung -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Helen_Atkinson-Wood">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Louis_Cheung">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Hideo_Kanze -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ma_Tianyu -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Hideo_Kanze">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ma_Tianyu">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Hideo_Murota -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Machiko_Washio -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Hideo_Murota">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Machiko_Washio">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Hitomi_Kudo -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Margaret_Ashcroft -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Hitomi_Kudo">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Margaret_Ashcroft">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Honoka -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Marika_Hayashi -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Honoka">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Marika_Hayashi">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Ikki_Sawamura -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Masaki_Okada -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ikki_Sawamura">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Masaki_Okada">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Ilona_Staller -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Masayo_Hosono -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ilona_Staller">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Masayo_Hosono">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Isabelle_Amyes -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/MeiMei_Kuo -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Isabelle_Amyes">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/MeiMei_Kuo">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Isabelle_Corey -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Meng_Jia -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Isabelle_Corey">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Meng_Jia">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Isabelle_Nanty -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Michael_Tse -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Isabelle_Nanty">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Michael_Tse">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Isabelle_Sadoyan -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Minoru_Shiraishi -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Isabelle_Sadoyan">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Minoru_Shiraishi">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Isako_Washio -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Misa_Watanabe -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Isako_Washio">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Misa_Watanabe">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Jacqueline_Lorains -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Misaki_Sekiyama -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jacqueline_Lorains">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Misaki_Sekiyama">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/James_Deen -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Nanaho_Katsuragi -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/James_Deen">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Nanaho_Katsuragi">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Jamie_Gillis -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Naomi_Wakabayashi -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jamie_Gillis">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Naomi_Wakabayashi">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Jamie_Treacher -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ng_Hui -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jamie_Treacher">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ng_Hui">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Janina_Faye -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Paige_Chua -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Janina_Faye">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Paige_Chua">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Janine_Chang -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Prudence_Liew -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Janine_Chang">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Prudence_Liew">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Jing_Boran -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Pu_Cunxin -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jing_Boran">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Pu_Cunxin">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Joanne_Peh -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Rashami_Desai -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Joanne_Peh">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Rashami_Desai">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Johnson_Lee -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Rin_Takanashi -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Johnson_Lee">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Rin_Takanashi">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Katsuo_Nakamura -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Russell_Cheung -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Katsuo_Nakamura">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Russell_Cheung">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Keni_Styles -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ryuya_Wakaba -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Keni_Styles">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ryuya_Wakaba">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Kento_Nakajima -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Tamao_Nakamura -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Kento_Nakajima">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Tamao_Nakamura">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Kong_Lin -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Terence_Siufay -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Kong_Lin">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Terence_Siufay">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Kurumi_Morishita -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Thibault_Vinçon -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Kurumi_Morishita">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Thibault_Vinçon">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Lee_Heung-kam -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Tomoko_Naraoka -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Lee_Heung-kam">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Tomoko_Naraoka">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Lexi_Belle -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Van_Fan -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Lexi_Belle">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Van_Fan">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Lisa_S. -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Wang_Zi -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Lisa_S.">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Wang_Zi">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Lord_Tim_Hudson -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/William_So -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Lord_Tim_Hudson">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/William_So">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Louisa_Moritz -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Xiao_Xun -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Louisa_Moritz">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Xiao_Xun">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Loulou_von_Brochwitz -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yao_Wenlong -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Loulou_von_Brochwitz">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yao_Wenlong">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Lysa_Thatcher -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Youki_Kudoh -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Lysa_Thatcher">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Youki_Kudoh">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Ma_Tianyu -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yuen_Biao -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ma_Tianyu">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yuen_Biao">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Machiko_Washio -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yuka_Terasaki -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Machiko_Washio">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yuka_Terasaki">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Madeleine_Boyd -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Cui_Peng_(actor) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Madeleine_Boyd">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Cui_Peng_(actor)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Maria_Whittaker -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/G.E.M._(singer) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Maria_Whittaker">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/G.E.M._(singer)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Masaki_Okada -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Guy_Boyd_(actor) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Masaki_Okada">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Guy_Boyd_(actor)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Max_Hardcore -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kym_(singer) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Max_Hardcore">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kym_(singer)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/MeiMei_Kuo -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Lucy_Robinson_(actress) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/MeiMei_Kuo">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Lucy_Robinson_(actress)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Meng_Jia -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Mark_Womack_(British_actor) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Meng_Jia">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Mark_Womack_(British_actor)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Michael_Culkin -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Michael_Wong_(actor) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Michael_Culkin">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Michael_Wong_(actor)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Michela_Miti -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ray_Chang_(actor) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Michela_Miti">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ray_Chang_(actor)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Mihiro -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Robert_Hirsch_(actor) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mihiro">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Robert_Hirsch_(actor)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Mike_Aamodt -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Song_Jia_(actress,_born_1980) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mike_Aamodt">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Song_Jia_(actress,_born_1980)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Minami_Aoyama -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Suzanne_Collins_(actress) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Minami_Aoyama">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Suzanne_Collins_(actress)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Minase_Yashiro -->
+    <!-- http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yang_Yang_(actor) -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Minase_Yashiro">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yang_Yang_(actor)">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Minoru_Shiraishi -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Minoru_Shiraishi">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Mirei_Kuroda -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AMSA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mirei_Kuroda">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AMSA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Miwa_Oshiro -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AND/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Miwa_Oshiro">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AND/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Mr._Pam -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ANG/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mr._Pam">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ANG/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Nana_Natsume -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ARU/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Nana_Natsume">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ARU/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Naoki_Kawano -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AUS/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Naoki_Kawano">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AUS/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Natasja_Vermeer -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AXA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Natasja_Vermeer">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AXA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Ng_Hui -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AZ/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ng_Hui">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AZ/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Nina_Mercedez -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/B/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Nina_Mercedez">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/B/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Norma_Stitz -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BD/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Norma_Stitz">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BD/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Paige_Chua -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BDS/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Paige_Chua">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BDS/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Per_Eggers -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BERM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Per_Eggers">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BERM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Princess_Donna -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BF/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Princess_Donna">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BF/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Prudence_Liew -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BG/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Prudence_Liew">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BG/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Rashami_Desai -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BHT/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rashami_Desai">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BHT/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Renée_Faure -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BI/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Renée_Faure">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BI/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Rie_Ishizuka -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BIH/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rie_Ishizuka">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BIH/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Rie_Kanda -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BOL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rie_Kanda">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BOL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Ryōko_Mitake -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ryōko_Mitake">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Ryōko_Nagata -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BRN/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ryōko_Nagata">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BRN/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Samuel_Haus -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BS/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Samuel_Haus">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BS/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Shiro_Kishibe -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BVIR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Shiro_Kishibe">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BVIR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Suzy_Mandel -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BY/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Suzy_Mandel">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BY/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Takayasu_Usui -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BZ/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Takayasu_Usui">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/BZ/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Thibault_Vinçon -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/C/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Thibault_Vinçon">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/C/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Tomiko_Ishii -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CAM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tomiko_Ishii">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CAM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Tsutomu_Kashiwakura -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CAYM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tsutomu_Kashiwakura">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CAYM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Tsutomu_Kitagawa -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CDN/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tsutomu_Kitagawa">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CDN/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Youki_Kudoh -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CEU/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Youki_Kudoh">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CEU/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Édouard_Collin -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CH/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Édouard_Collin">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CH/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Ben_Cartwright_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CI/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ben_Cartwright_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CI/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/G.E.M._(singer) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/G.E.M._(singer)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Guy_Boyd_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CN/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Guy_Boyd_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CN/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Jack_Lawrence_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CO/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jack_Lawrence_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CO/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/James_Lindsay_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/COCO/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/James_Lindsay_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/COCO/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/James_Ryan_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/COM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/James_Ryan_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/COM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/John_Light_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/COOK/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/John_Light_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/COOK/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Jonathan_Scott_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jonathan_Scott_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Kym_(singer) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CUR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Kym_(singer)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CUR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Michael_Wong_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CV/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Michael_Wong_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CV/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Nick_Patrick_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CY/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Nick_Patrick_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CY/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Robert_Baldwin_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CZ/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Robert_Baldwin_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/CZ/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Robert_Hirsch_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/D/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Robert_Hirsch_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/D/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Simon_Cook_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/DJI/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Simon_Cook_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/DJI/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Sir_George_White,_1st_Baronet -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/DK/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sir_George_White,_1st_Baronet">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/DK/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Stephen_Marchant_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/DOM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Stephen_Marchant_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/DOM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Stuart_Smith_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/E/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Stuart_Smith_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/E/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Wang_Yan_(actress) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/EAK/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Wang_Yan_(actress)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/EAK/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Wendy_Williams_(actress) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/EAT/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Wendy_Williams_(actress)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/EAT/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Wendy_Williams_(pornographic_actress) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/EAU/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Wendy_Williams_(pornographic_actress)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/EAU/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Yang_Yang_(actor) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/EC/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Yang_Yang_(actor)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/EC/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/You_(actress) -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ES/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/You_(actress)">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Actor"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ES/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/AL/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ET/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/AL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ET/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/AMSA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ETH/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/AMSA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ETH/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/AND/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/F/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/AND/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/F/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/ANG/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/FARX/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/ANG/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/FARX/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/ARU/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/FGU/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/ARU/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/FGU/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/AUS/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/FJI/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/AUS/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/FJI/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/AXA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/FL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/AXA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/FL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/AZ/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/FSM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/AZ/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/FSM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/B/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/G/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/B/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/G/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BD/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GAZA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BD/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GAZA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BDS/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GBG/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BDS/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GBG/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BERM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GBM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BERM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GBM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BF/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GCA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BF/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GCA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BG/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GE/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BG/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GE/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BHT/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GH/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BHT/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GH/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BI/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GNB/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BI/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GNB/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BIH/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GQ/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BIH/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GQ/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BOL/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BOL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GROX/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GROX/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BRN/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GUAD/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BRN/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GUAD/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BS/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GUAM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BS/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GUAM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BVIR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GUY/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BVIR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/GUY/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BY/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/HCA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BY/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/HCA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/BZ/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/HONX/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/BZ/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/HONX/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/C/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/I/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/C/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/I/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CAM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/IL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CAM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/IL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CAYM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/IND/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CAYM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/IND/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CDN/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/IR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CDN/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/IR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CEU/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/IRQ/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CEU/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/IRQ/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CH/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/IS/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CH/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/IS/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CI/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/J/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CI/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/J/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CL/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/JA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/JA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CN/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/JOR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CN/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/JOR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CO/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/K/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CO/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/K/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/COCO/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KAZ/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/COCO/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KAZ/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/COM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KGZ/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/COM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KGZ/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/COOK/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KIR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/COOK/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KIR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KN/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KN/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CUR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KOS/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CUR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KOS/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CV/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KWT/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CV/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/KWT/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CY/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/L/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CY/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/L/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/CZ/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/LAO/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/CZ/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/LAO/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/D/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/LAR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/D/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/LAR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/DJI/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/LB/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/DJI/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/LB/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/DK/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/LS/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/DK/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/LS/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/DOM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/LV/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/DOM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/LV/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/E/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/M/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/E/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/M/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/EAK/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/EAK/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/EAT/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MACX/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/EAT/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MACX/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/EAU/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MAL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/EAU/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MAL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/EC/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MAYO/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/EC/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MAYO/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/ES/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MEL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/ES/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MEL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/ET/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MEX/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/ET/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MEX/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/ETH/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MH/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/ETH/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MH/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/F/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MK/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/F/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MK/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/FARX/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MNE/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/FARX/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MNE/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/FGU/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MNG/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/FGU/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MNG/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/FJI/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MNTS/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/FJI/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MNTS/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/FL/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MS/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/FL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MS/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/FSM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MW/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/FSM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/MW/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/G/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/N/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/G/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/N/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GAZA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NAM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GAZA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NAM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GBG/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NAU/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GBG/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NAU/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GBM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NCA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GBM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NCA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GCA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NEP/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GCA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NEP/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GE/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NIC/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GE/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NIC/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GH/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NIUE/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GH/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NIUE/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GNB/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GNB/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GQ/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NOK/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GQ/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/NOK/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/OM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/OM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GROX/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/P/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GROX/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/P/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GUAD/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/PE/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GUAD/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/PE/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GUAM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/PITC/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GUAM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/PITC/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/GUY/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/PL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/GUY/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/PL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/HCA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/PNG/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/HCA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/PNG/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/HONX/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/PY/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/HONX/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/PY/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/I/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/Q/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/I/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/Q/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/IL/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/R/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/IL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/R/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/IND/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/IND/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/IR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RCA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/IR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RCA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/IRQ/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RCB/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/IRQ/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RCB/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/IS/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RCH/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/IS/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RCH/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/J/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/REUN/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/J/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/REUN/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/JA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RG/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/JA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RG/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/JOR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RH/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/JOR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RH/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/K/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RI/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/K/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RI/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/KAZ/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RIM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/KAZ/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RIM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/KGZ/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/KGZ/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/KIR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/KIR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/KN/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RMM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/KN/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RMM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/KOS/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RN/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/KOS/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RN/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/KWT/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RO/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/KWT/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RO/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/L/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ROK/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/L/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ROK/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/LAO/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ROU/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/LAO/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ROU/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/LAR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RP/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/LAR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RP/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/LB/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RSA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/LB/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RSA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/LS/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RSM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/LS/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RSM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/LV/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RT/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/LV/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/RT/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/M/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/S/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/M/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/S/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MACX/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SBAR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MACX/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SBAR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MAL/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SD/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MAL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SD/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MAYO/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SGP/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MAYO/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SGP/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MEL/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SK/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MEL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SK/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MEX/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SLB/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MEX/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SLB/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MH/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SLO/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MH/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SLO/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MK/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SMAR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MK/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SMAR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MNE/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SN/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MNE/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SN/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MNG/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SP/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MNG/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SP/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MNTS/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SPMI/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MNTS/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SPMI/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MS/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SRB/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MS/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SRB/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/MW/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SSD/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/MW/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SSD/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/N/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/STP/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/N/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/STP/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/NAM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SVAX/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/NAM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SVAX/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/NAU/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SYR/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/NAU/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/SYR/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/NCA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TAD/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/NCA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TAD/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/NEP/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TCH/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/NEP/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TCH/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/NIC/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/THA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/NIC/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/THA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/NIUE/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/NIUE/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/NL/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TM/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/NL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TM/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/NOK/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TO/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/NOK/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TO/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/OM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TOK/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/OM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TOK/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/P/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TT/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/P/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TT/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/PE/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TUCA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/PE/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TUCA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/PITC/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TUV/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/PITC/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/TUV/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/PL/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/UA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/PL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/UA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/PNG/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/UAE/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/PNG/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/UAE/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/PY/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/USA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/PY/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/USA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/Q/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/UZB/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/Q/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/UZB/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/R/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/V/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/R/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/V/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/VIRG/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/VIRG/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RCA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/VN/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RCA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/VN/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RCB/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/VU/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RCB/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/VU/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RCH/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WAFU/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RCH/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WAFU/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/REUN/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WAG/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/REUN/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WAG/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RG/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WAL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RG/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WAL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RH/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WAN/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RH/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WAN/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RI/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WD/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RI/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WD/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RIM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WL/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RIM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WL/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RL/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WS/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WS/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WSA/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WSA/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RMM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WV/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RMM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/WV/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RN/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/XMAS/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RN/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/XMAS/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RO/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/YE/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RO/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/YE/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/ROK/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/YV/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/ROK/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/YV/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/ROU/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/Z/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/ROU/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/Z/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RP/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ZRE/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RP/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ZRE/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RSA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ZW/ -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RSA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/ZW/">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RSM/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2201 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RSM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2201">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/RT/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2345 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/RT/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2345">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/S/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24933 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/S/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24933">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SA/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24953 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24953">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SBAR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2875 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SBAR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2875">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SD/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q372 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SD/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q372">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SGP/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q593 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SGP/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q593">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SK/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59498 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SK/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59498">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SLB/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q595 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SLB/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q595">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SLO/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59501 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SLO/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59501">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SMAR/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59502 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SMAR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59502">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SN/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59503 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SN/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59503">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SP/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59531 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SP/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59531">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SPMI/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59534 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SPMI/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59534">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SRB/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59543 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SRB/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59543">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SSD/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59566 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SSD/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59566">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/STP/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59567 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/STP/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59567">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semwebtech.org/mondial/10/country/SVAX/ -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59653 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SVAX/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/SYR/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/SYR/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/TAD/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/TAD/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/TCH/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/TCH/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/THA/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/THA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/TL/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/TL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/TM/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/TM/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/TO/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/TO/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/TOK/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/TOK/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/TT/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/TT/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/TUCA/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/TUCA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/TUV/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/TUV/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/UA/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/UA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/UAE/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/UAE/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/USA/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/USA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/UZB/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/UZB/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/V/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/V/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/VIRG/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/VIRG/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/VN/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/VN/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/VU/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/VU/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/WAFU/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/WAFU/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/WAG/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/WAG/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/WAL/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/WAL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/WAN/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/WAN/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/WD/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/WD/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/WL/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/WL/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/WS/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/WS/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/WSA/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/WSA/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/WV/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/WV/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/XMAS/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/XMAS/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/YE/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/YE/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/YV/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/YV/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/Z/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/Z/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/ZRE/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/ZRE/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semwebtech.org/mondial/10/country/ZW/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semwebtech.org/mondial/10/country/ZW/">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pais"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q24515 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q24515">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q24585 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q24585">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q24618 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q24618">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q24732 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q24732">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q24815 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q24815">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q24910 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q24910">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q24911 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q24911">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q24933 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q24933">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q24953 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q24953">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q24980 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q24980">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q25005 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q25005">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q25057 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q25057">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q25069 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q25069">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q25086 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q25086">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q25139 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q25139">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q59498 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q59498">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q59501 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q59501">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q59502 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q59502">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q59503 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q59503">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wikidata.org/entity/Q59534 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q59534">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1Pelicula"/>
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59653">
+        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
