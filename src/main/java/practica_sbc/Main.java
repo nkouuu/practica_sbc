@@ -159,9 +159,9 @@ public class Main {
 		TurtleDocumentFormat turtleFormat = new TurtleDocumentFormat();
 		OWLDocumentFormat ontologyFormat = new RDFJsonLDDocumentFormat();
 
-		manager.saveOntology(filePath + ".jsonld", ontologyFormat);
-		manager.saveOntology(filePath + ".ttl", turtleFormat);
-		manager.saveOntology(filePath + ".owl");
-
+		outputOntologyManager.saveOntology(filePath + ".jsonld", ontologyFormat);
+		outputOntologyManager.saveOntology(filePath + ".ttl", turtleFormat);
+		outputOntologyManager.saveOntology(filePath + ".owl");
+		elkReasoner.finishReasonerThreads();
 	}
 }

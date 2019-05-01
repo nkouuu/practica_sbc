@@ -51,6 +51,7 @@
                   rdfs:domain :Actor ;
                   rdfs:range xsd:integer .
 
+<http://urjc_sbc.com/owl/2> rdf:type owl:Ontology .
 
 #################################################################
 #    Classes

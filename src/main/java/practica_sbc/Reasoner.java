@@ -11,16 +11,25 @@ import org.semanticweb.owlapi.reasoner.InferenceType;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.util.InferredAxiomGenerator;
+import org.semanticweb.owlapi.util.InferredClassAssertionAxiomGenerator;
 import org.semanticweb.owlapi.util.InferredEquivalentClassAxiomGenerator;
+import org.semanticweb.owlapi.util.InferredEquivalentDataPropertiesAxiomGenerator;
+import org.semanticweb.owlapi.util.InferredEquivalentObjectPropertyAxiomGenerator;
 import org.semanticweb.owlapi.util.InferredOntologyGenerator;
+import org.semanticweb.owlapi.util.InferredPropertyAssertionGenerator;
 import org.semanticweb.owlapi.util.InferredSubClassAxiomGenerator;
+import org.semanticweb.owlapi.util.InferredSubDataPropertyAxiomGenerator;
 
 public class Reasoner {
 	private OWLReasoner reasoner;
 	public Reasoner (OWLOntology ontology){
 		OWLReasonerFactory reasonerFactory = new ElkReasonerFactory();
 		this.reasoner = reasonerFactory.createReasoner(ontology);
-		System.out.println(this.reasoner.isConsistent());
+		if(this.reasoner.isConsistent()){
+			System.out.println("The ontology is consistent");
+		} else {
+			System.out.println("The ontology is not consistent");
+		}
 	}
 	
 	public void classifyOntology(){
@@ -31,6 +40,11 @@ public class Reasoner {
 		List<InferredAxiomGenerator<? extends OWLAxiom>> gens = new ArrayList<InferredAxiomGenerator<? extends OWLAxiom>>();
 		gens.add(new InferredSubClassAxiomGenerator());
 		gens.add(new InferredEquivalentClassAxiomGenerator());
+		gens.add(new InferredClassAssertionAxiomGenerator());
+		gens.add(new InferredEquivalentObjectPropertyAxiomGenerator());
+		gens.add(new InferredEquivalentDataPropertiesAxiomGenerator());
+		gens.add(new InferredPropertyAssertionGenerator());
+		gens.add(new InferredSubDataPropertyAxiomGenerator());
 		return gens;
 	}
 	
