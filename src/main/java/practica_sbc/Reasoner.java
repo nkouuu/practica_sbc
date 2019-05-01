@@ -13,8 +13,12 @@ import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.util.InferredAxiomGenerator;
 import org.semanticweb.owlapi.util.InferredClassAssertionAxiomGenerator;
 import org.semanticweb.owlapi.util.InferredEquivalentClassAxiomGenerator;
+import org.semanticweb.owlapi.util.InferredEquivalentDataPropertiesAxiomGenerator;
+import org.semanticweb.owlapi.util.InferredEquivalentObjectPropertyAxiomGenerator;
 import org.semanticweb.owlapi.util.InferredOntologyGenerator;
+import org.semanticweb.owlapi.util.InferredPropertyAssertionGenerator;
 import org.semanticweb.owlapi.util.InferredSubClassAxiomGenerator;
+import org.semanticweb.owlapi.util.InferredSubDataPropertyAxiomGenerator;
 
 public class Reasoner {
 	private OWLReasoner reasoner;
@@ -37,6 +41,10 @@ public class Reasoner {
 		gens.add(new InferredSubClassAxiomGenerator());
 		gens.add(new InferredEquivalentClassAxiomGenerator());
 		gens.add(new InferredClassAssertionAxiomGenerator());
+		gens.add(new InferredEquivalentObjectPropertyAxiomGenerator());
+		gens.add(new InferredEquivalentDataPropertiesAxiomGenerator());
+		gens.add(new InferredPropertyAssertionGenerator());
+		gens.add(new InferredSubDataPropertyAxiomGenerator());
 		return gens;
 	}
 	
