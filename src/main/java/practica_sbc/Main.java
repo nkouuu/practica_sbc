@@ -2,51 +2,29 @@ package practica_sbc;
 
 import java.io.File;
 
-import javax.annotation.Nonnull;
-
 import org.apache.jena.query.*;
-import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
-import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.formats.RDFJsonLDDocumentFormat;
 import org.semanticweb.owlapi.formats.TurtleDocumentFormat;
-import org.semanticweb.owlapi.io.StringDocumentSource;
-import org.semanticweb.owlapi.model.EntityType;
-import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
-import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
-import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
-import org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom;
-import org.semanticweb.owlapi.model.OWLDataPropertyRangeAxiom;
-import org.semanticweb.owlapi.model.OWLDataRange;
 import org.semanticweb.owlapi.model.OWLDatatype;
 import org.semanticweb.owlapi.model.OWLDatatypeRestriction;
-import org.semanticweb.owlapi.model.OWLDeclarationAxiom;
 import org.semanticweb.owlapi.model.OWLDocumentFormat;
-import org.semanticweb.owlapi.model.OWLEntity;
-import org.semanticweb.owlapi.model.OWLLiteral;
-import org.semanticweb.owlapi.model.OWLNamedIndividual;
-import org.semanticweb.owlapi.model.OWLObjectProperty;
-import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom;
-import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
-import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.model.PrefixManager;
 import org.semanticweb.owlapi.util.DefaultPrefixManager;
-import org.semanticweb.owlapi.vocab.OWLFacet;
-
+import org.semanticweb.owlapi.util.InferredAxiomGenerator;
 import java.util.*;
 
 public class Main {
 
 	//Clases
 	static OntologyManager manager;
+	static OntologyManager outputOntologyManager;
 	static OWLClass actorClass;
 	static OWLClass peliculaClass;
 	static OWLClass paisClass;
@@ -105,7 +83,8 @@ public class Main {
 
 	static public void main(String... argv) throws OWLOntologyStorageException, OWLOntologyCreationException {
 		File directory = new File(".");
-		manager = new OntologyManager();
+		manager = new OntologyManager(1);
+		outputOntologyManager = new OntologyManager(2);
 		OWLDataFactory factory = manager.getFactory();
 		OWLOntology ontology = manager.getOntology();
 		PrefixManager dbpm = new DefaultPrefixManager("<http://dbpedia.org/ontology/>");
@@ -131,7 +110,19 @@ public class Main {
 		manager.mappingInstances(actores, actorClass, "Actor_1");
 		manager.mappingInstances(peliculas, peliculaClass, "q");
 		manager.mappingInstances(paises, paisClass, "country");
-		for (OWLAxiom ax : ontology.getLogicalAxioms()) {
+		
+		// Create an ELK reasoner.
+		Reasoner elkReasoner = new Reasoner(ontology);
+		// Classify the ontology.
+		elkReasoner.classifyOntology();
+		// To generate an inferred ontology we use implementations of
+		// inferred axiom generators
+		List<InferredAxiomGenerator<? extends OWLAxiom>> gens = elkReasoner.generateInferredAxioms();
+		
+		// Put the inferred axioms into a fresh empty ontology.
+		OWLOntology infOnt = outputOntologyManager.getOntology();
+		elkReasoner.generateInferredOntology(infOnt, gens,outputOntologyManager.manager );
+		for (OWLAxiom ax : infOnt.getLogicalAxioms()) {
 			System.out.println(ax);
 		}
 		String filePath = directory + File.separator + "ontology";

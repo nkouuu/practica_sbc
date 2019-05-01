@@ -33,10 +33,12 @@ public class OntologyManager {
 	static final OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 	static final OWLDataFactory factory = manager.getOWLDataFactory();
 	private OWLOntology ontology;
-	private IRI ontologyIRI = IRI.create("http://urjc_sbc.com/owl/");
-	private PrefixManager pm = new DefaultPrefixManager(null, null, this.ontologyIRI.toString());
+	private IRI ontologyIRI;
+	private PrefixManager pm;
 
-	public OntologyManager() throws OWLOntologyCreationException {
+	public OntologyManager(int ontologyNumber) throws OWLOntologyCreationException {
+		this.ontologyIRI = IRI.create("http://urjc_sbc.com/owl/"+ontologyNumber);
+		this.pm = new DefaultPrefixManager(null, null, this.ontologyIRI.toString());
 		this.ontology = manager.createOntology(this.ontologyIRI);
 	}
 
