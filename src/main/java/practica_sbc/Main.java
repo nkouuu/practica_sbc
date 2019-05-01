@@ -27,9 +27,11 @@ import org.semanticweb.owlapi.model.OWLDatatypeRestriction;
 import org.semanticweb.owlapi.model.OWLDeclarationAxiom;
 import org.semanticweb.owlapi.model.OWLDocumentFormat;
 import org.semanticweb.owlapi.model.OWLEntity;
+import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
+import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom;
 import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -51,6 +53,13 @@ public class Main {
 	static OWLClass peliculaClass;
 	static OWLClass paisClass;
 	static OWLClass actorFamosoClass;
+	
+	//Propiedades
+	static OWLObjectProperty actuaEn;
+	static OWLObjectProperty premioPor ;
+	static OWLObjectProperty grabadaEn ;
+	static OWLObjectProperty haActuadoEn ;
+	static OWLObjectProperty haTriunfadoGraciasA;
 	
 	// Queries
 	static String dbpedia = "http://dbpedia.org/sparql";
@@ -92,11 +101,11 @@ public class Main {
 
 	// Añadir Propiedades
 	static public void addProperties() {
-		manager.createObjectProperty("actuaEn", actorClass, peliculaClass);
-		manager.createObjectProperty("premioPor", actorClass, peliculaClass);
-		manager.createObjectProperty("grabadaEn", peliculaClass, paisClass);
-		manager.createObjectProperty("haActuadoEn", actorClass, paisClass);
-		manager.createObjectProperty("haTriunfadoGraciasA", peliculaClass, actorClass);
+		 actuaEn = manager.createObjectProperty("actuaEn", actorClass, peliculaClass);
+		 premioPor = manager.createObjectProperty("premioPor", actorClass, peliculaClass);
+		 grabadaEn = manager.createObjectProperty("grabadaEn", peliculaClass, paisClass);
+		 haActuadoEn = manager.createObjectProperty("haActuadoEn", actorClass, paisClass);
+		 haTriunfadoGraciasA = manager.createObjectProperty("haTriunfadoGraciasA", peliculaClass, actorClass);
 	}
 
 	static public String formatString(String stringToFormat) {
@@ -118,7 +127,16 @@ public class Main {
 		OWLDataProperty haHechoPeliculas = manager.createDataProperty("haHechoPeliculas", actorClass, integerDatatype);
 		manager.createDataProperty("haHechoPeliculas", actorFamosoClass, minRestriction);
 //		manager.createDataProperty("comenzoATrabajarComoAdulto", actorClass, minRestriction);
-
+		
+//		Añadir propiedad a instancia
+		OWLIndividual act = factory.getOWLNamedIndividual(":"+"Actor de prueba",manager.getPm());
+		OWLClassAssertionAxiom ax1 = factory.getOWLClassAssertionAxiom(actorClass, act);
+//		OWLIndividual peli = factory.getOWLNamedIndividual(":"+"Pelicula de prueba",manager.getPm());
+//		OWLClassAssertionAxiom ax2 = factory.getOWLClassAssertionAxiom(actorClass, peli);
+		manager.getManager().addAxiom(manager.getOntology(), ax1);
+//		manager.getManager().addAxiom(manager.getOntology(), ax2);
+		OWLDataPropertyAssertionAxiom propertyAssertion = factory.getOWLDataPropertyAssertionAxiom(haHechoPeliculas, act,4);
+	    manager.getManager().addAxiom(ontology, propertyAssertion);
 
 //        OWLClassExpression hasPartSomeNose = factory.getOWLObjectSomeValuesFrom(hasPart, nose);
 
@@ -128,9 +146,9 @@ public class Main {
 		ResultSet actores = getData(actoresQuery, dbpedia);
 		ResultSet peliculas = getData(filmQueryString, wikidata);
 		ResultSet paises = getData(countryQuery, mondial);
-		manager.mappingInstances(actores, actorClass, "Actor_1");
-		manager.mappingInstances(peliculas, peliculaClass, "q");
-		manager.mappingInstances(paises, paisClass, "country");
+//		manager.mappingInstances(actores, actorClass, "Actor_1");
+//		manager.mappingInstances(peliculas, peliculaClass, "q");
+//		manager.mappingInstances(paises, paisClass, "country");
 		for (OWLAxiom ax : ontology.getLogicalAxioms()) {
 			System.out.println(ax);
 		}

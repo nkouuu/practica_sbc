@@ -93,10 +93,26 @@ public class OntologyManager {
 	public void mappingInstances(ResultSet results, OWLClass ontologyClass, String field) {
 		while (results.hasNext()) {
 			QuerySolution soln = results.nextSolution();
-			OWLIndividual ind = factory.getOWLNamedIndividual(soln.get(field).toString());
+			OWLIndividual ind = factory.getOWLNamedIndividual(":"+soln.get(field).toString(),this.pm);
 			OWLClassAssertionAxiom ax = factory.getOWLClassAssertionAxiom(ontologyClass, ind);
 			manager.addAxiom(this.ontology, ax);
 		}
+	}
+
+	public IRI getOntologyIRI() {
+		return ontologyIRI;
+	}
+
+	public void setOntologyIRI(IRI ontologyIRI) {
+		this.ontologyIRI = ontologyIRI;
+	}
+
+	public PrefixManager getPm() {
+		return pm;
+	}
+
+	public void setPm(PrefixManager pm) {
+		this.pm = pm;
 	}
 
 	public OWLOntology getOntology() {
