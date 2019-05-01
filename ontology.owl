@@ -5,6 +5,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl1="http://urjc_sbc.com/owl/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://urjc_sbc.com/owl/1"/>
     
@@ -159,7 +160,7 @@
     
 
 
-    <!-- http://dbpedia.org/resource/Adele_Wong -->
+    <!-- http://urjc_sbc.com/owl/Actor de prueba -->
 
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Adele_Wong">
@@ -168,7 +169,7 @@
     
 
 
-    <!-- http://dbpedia.org/resource/Akari_Hibino -->
+    <!-- http://urjc_sbc.com/owl/Pelicula de prueba -->
 
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Akari_Hibino">
