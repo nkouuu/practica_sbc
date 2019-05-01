@@ -44,6 +44,15 @@ import org.semanticweb.owlapi.vocab.OWLFacet;
 import java.util.*;
 
 public class Main {
+
+	//Clases
+	static OntologyManager manager;
+	static OWLClass actorClass;
+	static OWLClass peliculaClass;
+	static OWLClass paisClass;
+	static OWLClass actorFamosoClass;
+	
+	// Queries
 	static String dbpedia = "http://dbpedia.org/sparql";
 	static String wikidata = "https://query.wikidata.org/sparql";
 	static String mondial = "http://servolis.irisa.fr/mondial/sparql";
@@ -64,11 +73,30 @@ public class Main {
 			+ "?q wdt:P136 ?genreID." + "?genreID rdfs:label ?genre filter (lang(?genre) = \"en\")."
 			+ "?q wdt:P161 ?actorID." + " ?actorID rdfs:label ?actor filter (lang(?actor) = \"en\")." + "}limit 200";
 
+	// Devolver resultados de una query
 	static public ResultSet getData(String queryString, String service) {
 		Query query = QueryFactory.create(queryString);
 		QueryExecution qexec = QueryExecutionFactory.sparqlService(service, query); // Query
 		ResultSet results = qexec.execSelect();
 		return results;
+	}
+
+	static public void addClases() {
+		actorClass = manager.addClass("Actor");
+		peliculaClass = manager.addClass("Pelicula");
+		paisClass = manager.addClass("Pais");
+		actorFamosoClass = manager.addClass("ActorFamoso");
+		manager.createSubclass(actorFamosoClass, actorClass);
+
+	}
+
+	// Añadir Propiedades
+	static public void addProperties() {
+		manager.createObjectProperty("actuaEn", actorClass, peliculaClass);
+		manager.createObjectProperty("premioPor", actorClass, peliculaClass);
+		manager.createObjectProperty("grabadaEn", peliculaClass, paisClass);
+		manager.createObjectProperty("haActuadoEn", actorClass, paisClass);
+		manager.createObjectProperty("haTriunfadoGraciasA", peliculaClass, actorClass);
 	}
 
 	static public String formatString(String stringToFormat) {
@@ -77,33 +105,25 @@ public class Main {
 
 	static public void main(String... argv) throws OWLOntologyStorageException, OWLOntologyCreationException {
 		File directory = new File(".");
-		OntologyManager manager = new OntologyManager();
+		manager = new OntologyManager();
 		OWLDataFactory factory = manager.getFactory();
 		OWLOntology ontology = manager.getOntology();
 		PrefixManager dbpm = new DefaultPrefixManager("<http://dbpedia.org/ontology/>");
-
-		// OWLOntology onto = manager.loadOntologyFromOntologyDocument(file);
-		OWLClass actorClass = manager.addClass("Actor");
-		OWLClass peliculaClass = manager.addClass("Pelicula");
-		OWLClass paisClass = manager.addClass("Pais");
-		OWLClass actorFamosoClass = manager.addClass("ActorFamoso");
+		addClases();
+		addProperties();
 
 		OWLDatatype integerDatatype = factory.getIntegerOWLDatatype();
 
 		OWLDatatypeRestriction minRestriction = factory.getOWLDatatypeMinInclusiveRestriction(2);
 		OWLDataProperty haHechoPeliculas = manager.createDataProperty("haHechoPeliculas", actorClass, integerDatatype);
 		manager.createDataProperty("haHechoPeliculas", actorFamosoClass, minRestriction);
+//		manager.createDataProperty("comenzoATrabajarComoAdulto", actorClass, minRestriction);
 
-		manager.createObjectProperty("actuaEn", actorClass, peliculaClass);
-		manager.createObjectProperty("grabadaEn", peliculaClass, paisClass);
-		manager.createObjectProperty("haActuadoEn", actorClass, paisClass);
+
 //        OWLClassExpression hasPartSomeNose = factory.getOWLObjectSomeValuesFrom(hasPart, nose);
 
-		manager.createSubclass(actorFamosoClass, actorClass);
 //		OWLDataRange intGreaterThan2 = factory.getOWLDatatypeMinInclusiveRestriction(2);
 //		OWLClassExpression actorFamoso = factory.getOWLDataSomeValuesFrom(haHechoPeliculas, intGreaterThan2);
-
-//		manager.createSubclass(actorFamosoClass, actorFamoso);
 
 		ResultSet actores = getData(actoresQuery, dbpedia);
 		ResultSet peliculas = getData(filmQueryString, wikidata);
@@ -115,7 +135,7 @@ public class Main {
 			System.out.println(ax);
 		}
 		String filePath = directory + File.separator + "ontology";
-		
+
 		TurtleDocumentFormat turtleFormat = new TurtleDocumentFormat();
 		OWLDocumentFormat ontologyFormat = new RDFJsonLDDocumentFormat();
 
