@@ -13,72 +13,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/actua_en -->
-
-
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/actua_en">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/famoso_por -->
-
-
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/famoso_por">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/grabada_en -->
-
-
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/grabada_en">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/haActuado_en -->
-
-
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/haActuado_en">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/ha_triunfado_gracias_a -->
-
-
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/ha_triunfado_gracias_a">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/premio_por -->
-
-
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/premio_por">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -101,7 +35,7 @@
 
 
     <owl:Class rdf:about="http://urjc_sbc.com/owl/1/ActorFamoso">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
     </owl:Class>
     
 
@@ -2986,230 +2920,110 @@
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24515 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q1365 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24515">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q1365">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24732 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2201 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24732">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2201">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24815 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2345 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24815">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2345">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24933 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2875 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24933">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2875">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46609 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q32433 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46609">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q32433">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46637 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q35725 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46637">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q35725">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46916 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q372 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46916">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q372">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46918 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q593 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46918">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q593">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47075 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q595 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47075">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q595">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47221 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59567 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47221">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59567">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47296 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59653 -->
 
 
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47296">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47654 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47654">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59498 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59498">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59501 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59501">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59502 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59502">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59503 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59503">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59531 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59531">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59534 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59534">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59543 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59543">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59566 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59566">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59931 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59931">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q60021 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q60021">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q64083 -->
-
-
-    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q64083">
+    <owl:Thing rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59653">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:Thing>

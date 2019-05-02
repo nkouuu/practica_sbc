@@ -1,7 +1,6 @@
 package practica_sbc;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.apache.jena.query.QuerySolution;
@@ -133,6 +132,16 @@ public class OntologyManager {
 		OWLSubClassOfAxiom ax = factory.getOWLSubClassOfAxiom(hijo, padre);
 		manager.addAxiom(this.ontology, ax);
 	}
+	
+	/**
+	 * Quitamos anotacion de idioma en un string
+	 * @param stringToFormat String a formatear
+	 * @return Nuevo string sin anotacion 
+	 */
+	public String formatString(String stringToFormat) {
+		return stringToFormat.split("@en")[0];
+	}
+
 
 	/**
 	 * Añadir todos los resultados de una query a la ontologia en un determinada
@@ -144,44 +153,21 @@ public class OntologyManager {
 	 *                      instancia
 	 */
 	public void mappingInstances(ResultSet results, OWLClass ontologyClass, String field) {
+		OWLDatatype type =  factory.getIntegerOWLDatatype();
 		while (results.hasNext()) {
 			QuerySolution soln = results.nextSolution();
-			OWLIndividual ind = this.addInstance(ontologyClass, soln.get(field).toString());
+			OWLIndividual ind = this.addInstance(ontologyClass, this.formatString(soln.get(field).toString()));
 			//Cogemos los nombres de todos los campos devueltos
 			Iterator<String> it = soln.varNames();
 			while (it.hasNext()) {
 				String prop = it.next();
-				OWLDatatype type =  factory.getIntegerOWLDatatype();
 				OWLDataProperty property = this.createDataProperty(prop, ontologyClass, type);
-				OWLLiteral value = factory.getOWLLiteral(soln.get(prop).toString());
+				OWLLiteral value = factory.getOWLLiteral(this.formatString(soln.get(prop).toString()));
 				this.addDataPropertyToInstance(property, ind, value);			
 			}
 		}
 	}
 
-	/**
-	 * Añadir todos los resultados de una query a la ontologia en un determinada
-	 * clase y ademas cogiendo otras propiedades del resultado
-	 * 
-	 * @param results       Resultados de la query
-	 * @param ontologyClass Clase a la que añadir
-	 * @param field         Campo de la query que referencia el valor de la
-	 *                      instancia
-	 * @param properties    Conjunto de propiedades cada una con su nombre de la
-	 *                      query y su tipo de dato
-	 */
-//	public void mappingInstancesWithProperties(ResultSet results, OWLClass ontologyClass, String field,
-//			ArrayList<Property> properties) {
-//		while (results.hasNext()) {
-//			QuerySolution soln = results.nextSolution();
-//			OWLIndividual ind = this.addInstance(ontologyClass, soln.get(field).toString());
-//			for (Property prop : properties) {
-//				OWLDataProperty property = this.createDataProperty(prop.getName(), ontologyClass, prop.getType());
-//				OWLLiteral value = factory.getOWLLiteral(soln.get(prop.getName()).toString());
-//				this.addDataPropertyToInstance(property, ind, value);
-//			}
-//		}
-//	}
 
 	/**
 	 * Añadir una instancia de una clase
@@ -194,6 +180,11 @@ public class OntologyManager {
 		OWLIndividual ind = factory.getOWLNamedIndividual(":" + value, this.pm);
 		OWLClassAssertionAxiom ax = factory.getOWLClassAssertionAxiom(ontologyClass, ind);
 		manager.addAxiom(this.ontology, ax);
+		return ind;
+	}
+	
+	public OWLIndividual getInstance(String value) {
+		OWLIndividual ind = factory.getOWLNamedIndividual(":" + value, this.pm);
 		return ind;
 	}
 

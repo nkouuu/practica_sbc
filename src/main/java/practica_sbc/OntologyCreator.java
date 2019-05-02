@@ -11,6 +11,8 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLDataRange;
 import org.semanticweb.owlapi.model.OWLDatatype;
+import org.semanticweb.owlapi.model.OWLIndividual;
+import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntology;
 
@@ -54,7 +56,12 @@ public class OntologyCreator {
 			+ "?q wdt:P136 ?genreID." + "?genreID rdfs:label ?genre filter (lang(?genre) = \"en\")."
 			+ "?q wdt:P161 ?actorID." + " ?actorID rdfs:label ?actor filter (lang(?actor) = \"en\")." + "}limit 200";
 
-	// Devolver resultados de una query
+	/**
+	 * Realizar una query y devolver los resultados
+	 * @param queryString Query a realizar
+	 * @param service Ruta sobre la cual realizar la query
+	 * @return Resultados de la query
+	 */
 	public ResultSet getData(String queryString, String service) {
 		Query query = QueryFactory.create(queryString);
 		QueryExecution qexec = QueryExecutionFactory.sparqlService(service, query); // Query
@@ -77,9 +84,9 @@ public class OntologyCreator {
 		this.actuaEn = this.ontologyManager.createObjectProperty("actua_en", this.actorClass, this.peliculaClass);
 		this.premioPor = this.ontologyManager.createObjectProperty("premio_por", this.actorClass, this.peliculaClass);
 		this.grabadaEn = this.ontologyManager.createObjectProperty("grabada_en", this.peliculaClass, this.paisClass);
-		this.haActuadoEn = this.ontologyManager.createObjectProperty("haActuado_en", this.actorClass, this.paisClass);
+		this.haActuadoEn = this.ontologyManager.createObjectProperty("ha_actuado_en", this.actorClass, this.paisClass);
 		this.haTriunfadoGraciasA = this.ontologyManager.createObjectProperty("ha_triunfado_gracias_a",
-				this.peliculaClass, this.actorClass);
+				this.actorClass,this.peliculaClass );
 		this.famosoPor = this.ontologyManager.createObjectProperty("famoso_por", this.actorClass, this.peliculaClass);
 	}
 
@@ -87,11 +94,16 @@ public class OntologyCreator {
 		OWLDataFactory factory = this.ontologyManager.getFactory();
 
 		OWLDatatype integerDatatype = factory.getIntegerOWLDatatype();
-		OWLDataProperty haHechoPeliculas = this.ontologyManager.createDataProperty("haHechoPeliculas", actorClass,
+		OWLDataProperty haHechoPeliculas = this.ontologyManager.createDataProperty("ha_hecho_peliculas", actorClass,
 				integerDatatype);
 		OWLDataRange intGreaterThan2 = factory.getOWLDatatypeMinInclusiveRestriction(2);
 		OWLClassExpression exp = factory.getOWLDataSomeValuesFrom(haHechoPeliculas, intGreaterThan2);
 		this.ontologyManager.createSubclass(this.actorFamosoClass, exp);
+		
+//		OWLDataRange intGreaterThan2 = factory.getOWLDatatypeMinInclusiveRestriction(2);
+//		OWLIndividual esp = this.ontologyManager.addInstance(this.paisClass, "España");
+//		OWLObjectAllValuesFrom exp2 = factory.getOWLObjectAllValuesFrom(this.grabadaEn, esp );
+//		this.ontologyManager.createSubclass(this.actorFamosoClass, exp);
 	}
 
 	public String formatString(String stringToFormat) {
@@ -119,9 +131,6 @@ public class OntologyCreator {
 		this.ontologyManager.mappingInstances(peliculas, peliculaClass, "q");
 		this.ontologyManager.mappingInstances(paises, paisClass, "country");
 
-		// Creamos algunas instancias de prueba
-		// Un actor famoso esta dentro del grupo de actores que han hecho mas de 2
-		// peliculas
 
 		return this.ontologyManager.getOntology();
 	}

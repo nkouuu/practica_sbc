@@ -1,11 +1,7 @@
 package practica_sbc;
 
 import java.io.File;
-
-import org.semanticweb.owlapi.formats.RDFJsonLDDocumentFormat;
-import org.semanticweb.owlapi.formats.TurtleDocumentFormat;
 import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLDocumentFormat;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
@@ -28,6 +24,7 @@ public class Main {
 //        OWLDatatype type = factory.getOWLDatatype(XSDVocabulary.G_YEAR.getIRI());
 
 		// Creamos razonador ELK .
+		
 		Reasoner elkReasoner = new Reasoner(ontology);
 
 		if (elkReasoner.isConsistent()) {

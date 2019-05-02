@@ -30,16 +30,16 @@
             rdfs:range :Pais .
 
 
-###  http://urjc_sbc.com/owl/1/haActuado_en
-:haActuado_en rdf:type owl:ObjectProperty ;
-              rdfs:domain :Actor ;
-              rdfs:range :Pais .
+###  http://urjc_sbc.com/owl/1/ha_actuado_en
+:ha_actuado_en rdf:type owl:ObjectProperty ;
+               rdfs:domain :Actor ;
+               rdfs:range :Pais .
 
 
 ###  http://urjc_sbc.com/owl/1/ha_triunfado_gracias_a
 :ha_triunfado_gracias_a rdf:type owl:ObjectProperty ;
-                        rdfs:domain :Pelicula ;
-                        rdfs:range :Actor .
+                        rdfs:domain :Actor ;
+                        rdfs:range :Pelicula .
 
 
 ###  http://urjc_sbc.com/owl/1/premio_por
@@ -104,7 +104,8 @@
 
 
 ###  http://urjc_sbc.com/owl/1/ActorFamoso
-:ActorFamoso rdf:type owl:Class .
+:ActorFamoso rdf:type owl:Class ;
+             rdfs:subClassOf :Actor .
 
 
 ###  http://urjc_sbc.com/owl/1/Pais
@@ -124,9 +125,9 @@
                                                                             :Actor ;
                                                                    :activeYearsStartYear "2006^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                    :actor "http://dbpedia.org/resource/Adele_Wong" ;
-                                                                   :nombre "Adele Wong@en" ,
-                                                                           "Wáng Huìshān@en" ,
-                                                                           "王惠珊@en" .
+                                                                   :nombre "Adele Wong" ,
+                                                                           "Wáng Huìshān" ,
+                                                                           "王惠珊" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Babben_Larsson
@@ -134,7 +135,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1984^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Babben_Larsson" ;
-                                                                       :nombre "Babben Larsson@en" .
+                                                                       :nombre "Babben Larsson" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Brett_Findlay
@@ -142,7 +143,7 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "2003^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Brett_Findlay" ;
-                                                                      :nombre "Brett Findlay@en" .
+                                                                      :nombre "Brett Findlay" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Candy_Chen
@@ -150,9 +151,9 @@
                                                                             :Actor ;
                                                                    :activeYearsStartYear "2007^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                    :actor "http://dbpedia.org/resource/Candy_Chen" ;
-                                                                   :nombre "Chen Si-Ya@en" ,
-                                                                           "Emily Zheng@en" ,
-                                                                           "Si Ya@en" .
+                                                                   :nombre "Chen Si-Ya" ,
+                                                                           "Emily Zheng" ,
+                                                                           "Si Ya" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Caryn_Richman
@@ -160,7 +161,7 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "1973^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Caryn_Richman" ;
-                                                                      :nombre "Caryn Richman@en" .
+                                                                      :nombre "Caryn Richman" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Cha_Katō
@@ -168,8 +169,8 @@
                                                                           :Actor ;
                                                                  :activeYearsStartYear "1962^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                  :actor "http://dbpedia.org/resource/Cha_Katō" ;
-                                                                 :nombre "Cha Katō@en" ,
-                                                                         "加藤 茶@en" .
+                                                                 :nombre "Cha Katō" ,
+                                                                         "加藤 茶" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Chen_Zeyu
@@ -177,10 +178,10 @@
                                                                            :Actor ;
                                                                   :activeYearsStartYear "2006^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                   :actor "http://dbpedia.org/resource/Chen_Zeyu" ;
-                                                                  :nombre "Chen Zeyu@en" ,
-                                                                          "Chén Zéyǔ@en" ,
-                                                                          "陈泽宇@en" ,
-                                                                          "陳澤宇@en" .
+                                                                  :nombre "Chen Zeyu" ,
+                                                                          "Chén Zéyǔ" ,
+                                                                          "陈泽宇" ,
+                                                                          "陳澤宇" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Choc7
@@ -188,9 +189,9 @@
                                                                        :Actor ;
                                                               :activeYearsStartYear "2009^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                               :actor "http://dbpedia.org/resource/Choc7" ;
-                                                              :nombre "Chao Ke Qi@en" ,
-                                                                      "Choc7@en" ,
-                                                                      "超克7@en" .
+                                                              :nombre "Chao Ke Qi" ,
+                                                                      "Choc7" ,
+                                                                      "超克7" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Chuy_Bravo
@@ -198,7 +199,7 @@
                                                                             :Actor ;
                                                                    :activeYearsStartYear "2005^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                    :actor "http://dbpedia.org/resource/Chuy_Bravo" ;
-                                                                   :nombre "Chuy Bravo@en" .
+                                                                   :nombre "Chuy Bravo" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/David_Westhead
@@ -206,7 +207,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1988^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/David_Westhead" ;
-                                                                       :nombre "David Westhead@en" .
+                                                                       :nombre "David Westhead" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Dicky_Cheung
@@ -214,10 +215,10 @@
                                                                               :Actor ;
                                                                      :activeYearsStartYear "1980^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                      :actor "http://dbpedia.org/resource/Dicky_Cheung" ;
-                                                                     :nombre "Dicky Cheung@en" ,
-                                                                             "Zhāng Wèijiàn@en" ,
-                                                                             "张卫健@en" ,
-                                                                             "張衛健@en" .
+                                                                     :nombre "Dicky Cheung" ,
+                                                                             "Zhāng Wèijiàn" ,
+                                                                             "张卫健" ,
+                                                                             "張衛健" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Dylan_Kuo
@@ -225,10 +226,10 @@
                                                                            :Actor ;
                                                                   :activeYearsStartYear "2003^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                   :actor "http://dbpedia.org/resource/Dylan_Kuo" ;
-                                                                  :nombre "Dylan Kuo@en" ,
-                                                                          "Guō Pǐnchāo@en" ,
-                                                                          "Gwok3 Ban2-ciu1@en" ,
-                                                                          "郭品超@en" .
+                                                                  :nombre "Dylan Kuo" ,
+                                                                          "Guō Pǐnchāo" ,
+                                                                          "Gwok3 Ban2-ciu1" ,
+                                                                          "郭品超" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Emily_Jewell
@@ -236,7 +237,7 @@
                                                                               :Actor ;
                                                                      :activeYearsStartYear "2004^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                      :actor "http://dbpedia.org/resource/Emily_Jewell" ;
-                                                                     :nombre "Emily Jewell@en" .
+                                                                     :nombre "Emily Jewell" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Eriko_Nakamura
@@ -244,7 +245,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "2002^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Eriko_Nakamura" ;
-                                                                       :nombre "Eriko Nakamura@en" .
+                                                                       :nombre "Eriko Nakamura" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Felix_Lok
@@ -252,9 +253,9 @@
                                                                            :Actor ;
                                                                   :activeYearsStartYear "1976^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                   :actor "http://dbpedia.org/resource/Felix_Lok" ;
-                                                                  :nombre "Felix Lok@en" ,
-                                                                          "駱應鈞@en" ,
-                                                                          "骆应钧@en" .
+                                                                  :nombre "Felix Lok" ,
+                                                                          "駱應鈞" ,
+                                                                          "骆应钧" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Fiona_Mollison
@@ -262,7 +263,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1977^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Fiona_Mollison" ;
-                                                                       :nombre "Fiona Mollison@en" .
+                                                                       :nombre "Fiona Mollison" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Fiona_Xie
@@ -270,10 +271,10 @@
                                                                            :Actor ;
                                                                   :activeYearsStartYear "2001^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                   :actor "http://dbpedia.org/resource/Fiona_Xie" ;
-                                                                  :nombre "Fiona Xie@en" ,
-                                                                          "Xiè Wǎnyù@en" ,
-                                                                          "謝宛諭@en" ,
-                                                                          "谢宛谕@en" .
+                                                                  :nombre "Fiona Xie" ,
+                                                                          "Xiè Wǎnyù" ,
+                                                                          "謝宛諭" ,
+                                                                          "谢宛谕" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Frankie_Chan
@@ -281,11 +282,11 @@
                                                                               :Actor ;
                                                                      :activeYearsStartYear "1970^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                      :actor "http://dbpedia.org/resource/Frankie_Chan" ;
-                                                                     :nombre "Chén Xūnqí@en" ,
-                                                                             "Frankie Chan@en" ,
-                                                                             "can4 fan1 kei4@en" ,
-                                                                             "陈勋奇@en" ,
-                                                                             "陳勳奇@en" .
+                                                                     :nombre "Chén Xūnqí" ,
+                                                                             "Frankie Chan" ,
+                                                                             "can4 fan1 kei4" ,
+                                                                             "陈勋奇" ,
+                                                                             "陳勳奇" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Frida_Hallgren
@@ -293,7 +294,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1998^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Frida_Hallgren" ;
-                                                                       :nombre "Frida Hallgren@en" .
+                                                                       :nombre "Frida Hallgren" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Fumie_Kashiyama
@@ -301,7 +302,7 @@
                                                                                  :Actor ;
                                                                         :activeYearsStartYear "1960^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                         :actor "http://dbpedia.org/resource/Fumie_Kashiyama" ;
-                                                                        :nombre "Fumie Kashiyama@en" .
+                                                                        :nombre "Fumie Kashiyama" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Haruna_Yabuki
@@ -309,7 +310,7 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "2001^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Haruna_Yabuki" ;
-                                                                      :nombre "Haruna Yabuki@en" .
+                                                                      :nombre "Haruna Yabuki" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Isabelle_Amyes
@@ -317,7 +318,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1975^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Isabelle_Amyes" ;
-                                                                       :nombre "Isabelle Amyes@en" .
+                                                                       :nombre "Isabelle Amyes" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Isabelle_Nanty
@@ -325,7 +326,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1983^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Isabelle_Nanty" ;
-                                                                       :nombre "Isabelle Nanty@en" .
+                                                                       :nombre "Isabelle Nanty" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Isabelle_Sadoyan
@@ -333,7 +334,7 @@
                                                                                   :Actor ;
                                                                          :activeYearsStartYear "1970^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                          :actor "http://dbpedia.org/resource/Isabelle_Sadoyan" ;
-                                                                         :nombre "Isabelle Sadoyan@en" .
+                                                                         :nombre "Isabelle Sadoyan" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Janine_Chang
@@ -341,10 +342,10 @@
                                                                               :Actor ;
                                                                      :activeYearsStartYear "2003^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                      :actor "http://dbpedia.org/resource/Janine_Chang" ;
-                                                                     :nombre "Janine Chang@en" ,
-                                                                             "Zhāng Jūnníng@en" ,
-                                                                             "张钧甯@en" ,
-                                                                             "張鈞甯@en" .
+                                                                     :nombre "Janine Chang" ,
+                                                                             "Zhāng Jūnníng" ,
+                                                                             "张钧甯" ,
+                                                                             "張鈞甯" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Jing_Boran
@@ -352,9 +353,9 @@
                                                                             :Actor ;
                                                                    :activeYearsStartYear "2007^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                    :actor "http://dbpedia.org/resource/Jing_Boran" ;
-                                                                   :nombre "Jing Boran@en" ,
-                                                                           "Jǐng Bórán@en" ,
-                                                                           "井柏然@en" .
+                                                                   :nombre "Jing Boran" ,
+                                                                           "Jǐng Bórán" ,
+                                                                           "井柏然" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Joanne_Peh
@@ -362,9 +363,9 @@
                                                                             :Actor ;
                                                                    :activeYearsStartYear "2002^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                    :actor "http://dbpedia.org/resource/Joanne_Peh" ;
-                                                                   :nombre "Bái Wēixìu@en" ,
-                                                                           "Joanne Peh@en" ,
-                                                                           "白薇秀@en" .
+                                                                   :nombre "Bái Wēixìu" ,
+                                                                           "Joanne Peh" ,
+                                                                           "白薇秀" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Johnny_Ngan
@@ -372,11 +373,11 @@
                                                                              :Actor ;
                                                                     :activeYearsStartYear "1980^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                     :actor "http://dbpedia.org/resource/Johnny_Ngan" ;
-                                                                    :nombre "Johnny Ngan@en" ,
-                                                                            "Ngaan4 Gwok3 Leong4@en" ,
-                                                                            "Yán Guó Liáng@en" ,
-                                                                            "顏國樑@en" ,
-                                                                            "颜国梁@en" .
+                                                                    :nombre "Johnny Ngan" ,
+                                                                            "Ngaan4 Gwok3 Leong4" ,
+                                                                            "Yán Guó Liáng" ,
+                                                                            "顏國樑" ,
+                                                                            "颜国梁" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Johnson_Lee
@@ -384,10 +385,10 @@
                                                                              :Actor ;
                                                                     :activeYearsStartYear "1998^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                     :actor "http://dbpedia.org/resource/Johnson_Lee" ;
-                                                                    :nombre "Johnson Lee@en" ,
-                                                                            "Lǐ Sījié@en" ,
-                                                                            "lei5 si1 zit3@en" ,
-                                                                            "李思捷@en" .
+                                                                    :nombre "Johnson Lee" ,
+                                                                            "Lǐ Sījié" ,
+                                                                            "lei5 si1 zit3" ,
+                                                                            "李思捷" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Judy_Holt
@@ -395,7 +396,7 @@
                                                                            :Actor ;
                                                                   :activeYearsStartYear "1981^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                   :actor "http://dbpedia.org/resource/Judy_Holt" ;
-                                                                  :nombre "Judy Holt@en" .
+                                                                  :nombre "Judy Holt" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Karen_Ascoe
@@ -403,7 +404,7 @@
                                                                              :Actor ;
                                                                     :activeYearsStartYear "1987^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                     :actor "http://dbpedia.org/resource/Karen_Ascoe" ;
-                                                                    :nombre "Karen Ascoe@en" .
+                                                                    :nombre "Karen Ascoe" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Keiko_Yokozawa
@@ -411,7 +412,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1975^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Keiko_Yokozawa" ;
-                                                                       :nombre "Keiko Yokozawa@en" .
+                                                                       :nombre "Keiko Yokozawa" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kenji_Akabane
@@ -419,7 +420,7 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "2008^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Kenji_Akabane" ;
-                                                                      :nombre "Kenji Akabane@en" .
+                                                                      :nombre "Kenji Akabane" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kento_Nakajima
@@ -427,7 +428,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "2008^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Kento_Nakajima" ;
-                                                                       :nombre "Kento Nakajima@en" .
+                                                                       :nombre "Kento Nakajima" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kiki_Sheung
@@ -435,10 +436,10 @@
                                                                              :Actor ;
                                                                     :activeYearsStartYear "1984^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                     :actor "http://dbpedia.org/resource/Kiki_Sheung" ;
-                                                                    :nombre "Kiki Sheung@en" ,
-                                                                            "Shāng Tiān'é@en" ,
-                                                                            "Soeng1 Tin1 Ngo4@en" ,
-                                                                            "商天娥@en" .
+                                                                    :nombre "Kiki Sheung" ,
+                                                                            "Shāng Tiān'é" ,
+                                                                            "Soeng1 Tin1 Ngo4" ,
+                                                                            "商天娥" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kong_Lin
@@ -446,9 +447,9 @@
                                                                           :Actor ;
                                                                  :activeYearsStartYear "1989^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                  :actor "http://dbpedia.org/resource/Kong_Lin" ;
-                                                                 :nombre "Kong Lin@en" ,
-                                                                         "Kǒng Lín@en" ,
-                                                                         "孔琳@en" .
+                                                                 :nombre "Kong Lin" ,
+                                                                         "Kǒng Lín" ,
+                                                                         "孔琳" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Lee_Heung-kam
@@ -456,10 +457,10 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "1948^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Lee_Heung-kam" ;
-                                                                      :nombre "Lee Heung-kam@en" ,
-                                                                              "Lei5 Hoeng1 Kam4@en" ,
-                                                                              "Lǐ Xiāngqín@en" ,
-                                                                              "李香琴@en" .
+                                                                      :nombre "Lee Heung-kam" ,
+                                                                              "Lei5 Hoeng1 Kam4" ,
+                                                                              "Lǐ Xiāngqín" ,
+                                                                              "李香琴" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Liu_Yuxin
@@ -467,10 +468,10 @@
                                                                            :Actor ;
                                                                   :activeYearsStartYear "2005^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                   :actor "http://dbpedia.org/resource/Liu_Yuxin" ;
-                                                                  :nombre "Liu Yuxin@en" ,
-                                                                          "Líu Yǔxīn@en" ,
-                                                                          "刘雨欣@en" ,
-                                                                          "劉雨欣@en" .
+                                                                  :nombre "Liu Yuxin" ,
+                                                                          "Líu Yǔxīn" ,
+                                                                          "刘雨欣" ,
+                                                                          "劉雨欣" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Louis_Cheung
@@ -478,9 +479,9 @@
                                                                               :Actor ;
                                                                      :activeYearsStartYear "2005^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                      :actor "http://dbpedia.org/resource/Louis_Cheung" ;
-                                                                     :nombre "Louis Cheung@en" ,
-                                                                             "张继聪@en" ,
-                                                                             "張繼聰@en" .
+                                                                     :nombre "Louis Cheung" ,
+                                                                             "张继聪" ,
+                                                                             "張繼聰" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ma_Tianyu
@@ -488,10 +489,10 @@
                                                                            :Actor ;
                                                                   :activeYearsStartYear "2006^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                   :actor "http://dbpedia.org/resource/Ma_Tianyu" ;
-                                                                  :nombre "Ma Tianyu@en" ,
-                                                                          "Ma Tiānyǔ@en" ,
-                                                                          "馬天宇@en" ,
-                                                                          "马天宇@en" .
+                                                                  :nombre "Ma Tianyu" ,
+                                                                          "Ma Tiānyǔ" ,
+                                                                          "馬天宇" ,
+                                                                          "马天宇" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Machiko_Washio
@@ -499,8 +500,8 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1966^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Machiko_Washio" ;
-                                                                       :nombre "Machiko Washio@en" ,
-                                                                               "Shigeo Kiyama@en" .
+                                                                       :nombre "Machiko Washio" ,
+                                                                               "Shigeo Kiyama" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Margaret_Ashcroft
@@ -508,7 +509,7 @@
                                                                                    :Actor ;
                                                                           :activeYearsStartYear "1957^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                           :actor "http://dbpedia.org/resource/Margaret_Ashcroft" ;
-                                                                          :nombre "Margaret Ashcroft@en" .
+                                                                          :nombre "Margaret Ashcroft" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Marika_Hayashi
@@ -516,7 +517,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1998^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Marika_Hayashi" ;
-                                                                       :nombre "Marika Hayashi@en" .
+                                                                       :nombre "Marika Hayashi" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Masaki_Okada
@@ -524,7 +525,7 @@
                                                                               :Actor ;
                                                                      :activeYearsStartYear "2006^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                      :actor "http://dbpedia.org/resource/Masaki_Okada" ;
-                                                                     :nombre "Masaki Okada@en" .
+                                                                     :nombre "Masaki Okada" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Masayo_Hosono
@@ -532,8 +533,8 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "2000^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Masayo_Hosono" ;
-                                                                      :nombre "Masayo Hosono@en" ,
-                                                                              "細野 雅世@en" .
+                                                                      :nombre "Masayo Hosono" ,
+                                                                              "細野 雅世" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/MeiMei_Kuo
@@ -541,10 +542,10 @@
                                                                             :Actor ;
                                                                    :activeYearsStartYear "2005^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                    :actor "http://dbpedia.org/resource/MeiMei_Kuo" ;
-                                                                   :nombre "Guō Jiéqǐ@en" ,
-                                                                           "MeiMei Kuo@en" ,
-                                                                           "MeiMei@en" ,
-                                                                           "郭婕祈@en" .
+                                                                   :nombre "Guō Jiéqǐ" ,
+                                                                           "MeiMei" ,
+                                                                           "MeiMei Kuo" ,
+                                                                           "郭婕祈" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Meng_Jia
@@ -552,9 +553,9 @@
                                                                           :Actor ;
                                                                  :activeYearsStartYear "2010^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                  :actor "http://dbpedia.org/resource/Meng_Jia" ;
-                                                                 :nombre "Meng Jia@en" ,
-                                                                         "Mèng Jia@en" ,
-                                                                         "孟佳@en" .
+                                                                 :nombre "Meng Jia" ,
+                                                                         "Mèng Jia" ,
+                                                                         "孟佳" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Michael_Tse
@@ -562,11 +563,11 @@
                                                                              :Actor ;
                                                                     :activeYearsStartYear "1985^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                     :actor "http://dbpedia.org/resource/Michael_Tse" ;
-                                                                    :nombre "Michael Tse@en" ,
-                                                                            "Xiè Tiánhuá@en" ,
-                                                                            "ze6 tin1 waa4@en" ,
-                                                                            "謝天華@en" ,
-                                                                            "谢天华@en" .
+                                                                    :nombre "Michael Tse" ,
+                                                                            "Xiè Tiánhuá" ,
+                                                                            "ze6 tin1 waa4" ,
+                                                                            "謝天華" ,
+                                                                            "谢天华" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Minoru_Shiraishi
@@ -574,7 +575,7 @@
                                                                                   :Actor ;
                                                                          :activeYearsStartYear "2002^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                          :actor "http://dbpedia.org/resource/Minoru_Shiraishi" ;
-                                                                         :nombre "Minoru Shiraishi@en" .
+                                                                         :nombre "Minoru Shiraishi" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Misa_Watanabe
@@ -582,7 +583,7 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "1991^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Misa_Watanabe" ;
-                                                                      :nombre "Misa Watanabe@en" .
+                                                                      :nombre "Misa Watanabe" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Misaki_Sekiyama
@@ -590,7 +591,7 @@
                                                                                  :Actor ;
                                                                         :activeYearsStartYear "2005^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                         :actor "http://dbpedia.org/resource/Misaki_Sekiyama" ;
-                                                                        :nombre "Misaki Sekiyama@en" .
+                                                                        :nombre "Misaki Sekiyama" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Nanaho_Katsuragi
@@ -598,7 +599,7 @@
                                                                                   :Actor ;
                                                                          :activeYearsStartYear "1987^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                          :actor "http://dbpedia.org/resource/Nanaho_Katsuragi" ;
-                                                                         :nombre "Nanaho Katsuragi@en" .
+                                                                         :nombre "Nanaho Katsuragi" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Naomi_Wakabayashi
@@ -606,7 +607,7 @@
                                                                                    :Actor ;
                                                                           :activeYearsStartYear "1998^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                           :actor "http://dbpedia.org/resource/Naomi_Wakabayashi" ;
-                                                                          :nombre "Naomi Wakabayashi@en" .
+                                                                          :nombre "Naomi Wakabayashi" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ng_Hui
@@ -614,9 +615,9 @@
                                                                         :Actor ;
                                                                :activeYearsStartYear "2000^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                :actor "http://dbpedia.org/resource/Ng_Hui" ;
-                                                               :nombre "Huáng Huì@en" ,
-                                                                       "Ng Hui@en" ,
-                                                                       "黄慧@en" .
+                                                               :nombre "Huáng Huì" ,
+                                                                       "Ng Hui" ,
+                                                                       "黄慧" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Paige_Chua
@@ -624,9 +625,9 @@
                                                                             :Actor ;
                                                                    :activeYearsStartYear "2008^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                    :actor "http://dbpedia.org/resource/Paige_Chua" ;
-                                                                   :nombre "Cài Qíhuì@en" ,
-                                                                           "Paige Chua@en" ,
-                                                                           "蔡琦慧@en" .
+                                                                   :nombre "Cài Qíhuì" ,
+                                                                           "Paige Chua" ,
+                                                                           "蔡琦慧" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Prudence_Liew
@@ -634,11 +635,11 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "1982^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Prudence_Liew" ;
-                                                                      :nombre "Lau4 Mei5 Gwan1@en" ,
-                                                                              "Liú Měijūn@en" ,
-                                                                              "Prudence Liew@en" ,
-                                                                              "刘美君@en" ,
-                                                                              "劉美君@en" .
+                                                                      :nombre "Lau4 Mei5 Gwan1" ,
+                                                                              "Liú Měijūn" ,
+                                                                              "Prudence Liew" ,
+                                                                              "刘美君" ,
+                                                                              "劉美君" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Pu_Cunxin
@@ -646,10 +647,10 @@
                                                                            :Actor ;
                                                                   :activeYearsStartYear "1986^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                   :actor "http://dbpedia.org/resource/Pu_Cunxin" ;
-                                                                  :nombre "Buk6 Cyun4jan1@en" ,
-                                                                          "Pu Cunxin@en" ,
-                                                                          "Pǔ Cúnxīn@en" ,
-                                                                          "濮存昕@en" .
+                                                                  :nombre "Buk6 Cyun4jan1" ,
+                                                                          "Pu Cunxin" ,
+                                                                          "Pǔ Cúnxīn" ,
+                                                                          "濮存昕" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Rashami_Desai
@@ -657,7 +658,7 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "2005^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Rashami_Desai" ;
-                                                                      :nombre "Rashami Desai@en" .
+                                                                      :nombre "Rashami Desai" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Rin_Takanashi
@@ -665,7 +666,7 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "2005^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Rin_Takanashi" ;
-                                                                      :nombre "Rin Takanashi@en" .
+                                                                      :nombre "Rin Takanashi" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Russell_Cheung
@@ -673,10 +674,10 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1999^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Russell_Cheung" ;
-                                                                       :nombre "Cheung Chi Hin@en" ,
-                                                                               "Russell Cheung@en" ,
-                                                                               "Zhāng Zhìxuān@en" ,
-                                                                               "张智轩@en" .
+                                                                       :nombre "Cheung Chi Hin" ,
+                                                                               "Russell Cheung" ,
+                                                                               "Zhāng Zhìxuān" ,
+                                                                               "张智轩" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ryuya_Wakaba
@@ -684,8 +685,8 @@
                                                                               :Actor ;
                                                                      :activeYearsStartYear "1998^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                      :actor "http://dbpedia.org/resource/Ryuya_Wakaba" ;
-                                                                     :nombre "Ryuya Wakaba@en" ,
-                                                                             "Ryūya Wakaba (竜也 若葉)@en" .
+                                                                     :nombre "Ryuya Wakaba" ,
+                                                                             "Ryūya Wakaba (竜也 若葉)" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Tamao_Nakamura
@@ -693,7 +694,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1953^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Tamao_Nakamura" ;
-                                                                       :nombre "Tamao Nakamura@en" .
+                                                                       :nombre "Tamao Nakamura" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Terence_Siufay
@@ -701,9 +702,9 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "2007^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Terence_Siufay" ;
-                                                                       :nombre "Terence Siufay@en" ,
-                                                                               "chui zhi yong@en" ,
-                                                                               "xu zhi yong@en" .
+                                                                       :nombre "Terence Siufay" ,
+                                                                               "chui zhi yong" ,
+                                                                               "xu zhi yong" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Thibault_Vinçon
@@ -711,7 +712,7 @@
                                                                                  :Actor ;
                                                                         :activeYearsStartYear "2003^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                         :actor "http://dbpedia.org/resource/Thibault_Vinçon" ;
-                                                                        :nombre "Thibault Vinçon@en" .
+                                                                        :nombre "Thibault Vinçon" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Tomoko_Naraoka
@@ -719,7 +720,7 @@
                                                                                 :Actor ;
                                                                        :activeYearsStartYear "1948^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                        :actor "http://dbpedia.org/resource/Tomoko_Naraoka" ;
-                                                                       :nombre "Tomoko Naraoka@en" .
+                                                                       :nombre "Tomoko Naraoka" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Van_Fan
@@ -727,9 +728,9 @@
                                                                          :Actor ;
                                                                 :activeYearsStartYear "2002^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                 :actor "http://dbpedia.org/resource/Van_Fan" ;
-                                                                :nombre "Fàn Yìchén@en" ,
-                                                                        "Van Fan@en" ,
-                                                                        "范逸臣@en" .
+                                                                :nombre "Fàn Yìchén" ,
+                                                                        "Van Fan" ,
+                                                                        "范逸臣" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Wang_Zi
@@ -737,10 +738,10 @@
                                                                          :Actor ;
                                                                 :activeYearsStartYear "2006^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                 :actor "http://dbpedia.org/resource/Wang_Zi" ;
-                                                                :nombre "Wang Zi/Prince@en" ,
-                                                                        "Wang Zi@en" ,
-                                                                        "Wáng Zǐ@en" ,
-                                                                        "王子@en" .
+                                                                :nombre "Wang Zi" ,
+                                                                        "Wang Zi/Prince" ,
+                                                                        "Wáng Zǐ" ,
+                                                                        "王子" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/William_So
@@ -748,11 +749,11 @@
                                                                             :Actor ;
                                                                    :activeYearsStartYear "1985^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                    :actor "http://dbpedia.org/resource/William_So" ;
-                                                                   :nombre "William So@en" ,
-                                                                           "sou1 wing5 hong1@en" ,
-                                                                           "su1 yong3 kang1@en" ,
-                                                                           "苏永康@en" ,
-                                                                           "蘇永康@en" .
+                                                                   :nombre "William So" ,
+                                                                           "sou1 wing5 hong1" ,
+                                                                           "su1 yong3 kang1" ,
+                                                                           "苏永康" ,
+                                                                           "蘇永康" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Xiao_Xun
@@ -760,11 +761,11 @@
                                                                           :Actor ;
                                                                  :activeYearsStartYear "2005^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                  :actor "http://dbpedia.org/resource/Xiao_Xun" ;
-                                                                 :nombre "Albee Huang@en" ,
-                                                                         "Huang Jing Yi@en" ,
-                                                                         "Xiao Xun@en" ,
-                                                                         "黃瀞怡@en" ,
-                                                                         "黄瀞怡@en" .
+                                                                 :nombre "Albee Huang" ,
+                                                                         "Huang Jing Yi" ,
+                                                                         "Xiao Xun" ,
+                                                                         "黃瀞怡" ,
+                                                                         "黄瀞怡" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yao_Wenlong
@@ -772,9 +773,9 @@
                                                                              :Actor ;
                                                                     :activeYearsStartYear "1990^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                     :actor "http://dbpedia.org/resource/Yao_Wenlong" ;
-                                                                    :nombre "Yao Wenlong@en" ,
-                                                                            "Yáo Wénlóng@en" ,
-                                                                            "姚玟隆@en" .
+                                                                    :nombre "Yao Wenlong" ,
+                                                                            "Yáo Wénlóng" ,
+                                                                            "姚玟隆" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Youki_Kudoh
@@ -782,7 +783,7 @@
                                                                              :Actor ;
                                                                     :activeYearsStartYear "1984^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                     :actor "http://dbpedia.org/resource/Youki_Kudoh" ;
-                                                                    :nombre "Youki Kudoh@en" .
+                                                                    :nombre "Youki Kudoh" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yuen_Biao
@@ -790,10 +791,10 @@
                                                                            :Actor ;
                                                                   :activeYearsStartYear "1962^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                   :actor "http://dbpedia.org/resource/Yuen_Biao" ;
-                                                                  :nombre "Jyun4 Biu1@en" ,
-                                                                          "Yuen Biao@en" ,
-                                                                          "Yuán Biāo@en" ,
-                                                                          "元彪@en" .
+                                                                  :nombre "Jyun4 Biu1" ,
+                                                                          "Yuen Biao" ,
+                                                                          "Yuán Biāo" ,
+                                                                          "元彪" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yuka_Terasaki
@@ -801,7 +802,7 @@
                                                                                :Actor ;
                                                                       :activeYearsStartYear "2004^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                       :actor "http://dbpedia.org/resource/Yuka_Terasaki" ;
-                                                                      :nombre "Yuka Terasaki@en" .
+                                                                      :nombre "Yuka Terasaki" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Cui_Peng_(actor)
@@ -809,10 +810,10 @@
                                                                                   :Actor ;
                                                                          :activeYearsStartYear "2002^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                          :actor "http://dbpedia.org/resource/Cui_Peng_(actor)" ;
-                                                                         :nombre "Ceoi1 Paang4@en" ,
-                                                                                 "Cui Peng@en" ,
-                                                                                 "Cuī Péng@en" ,
-                                                                                 "崔鹏@en" .
+                                                                         :nombre "Ceoi1 Paang4" ,
+                                                                                 "Cui Peng" ,
+                                                                                 "Cuī Péng" ,
+                                                                                 "崔鹏" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/G.E.M._(singer)
@@ -820,8 +821,8 @@
                                                                                  :Actor ;
                                                                         :activeYearsStartYear "2008^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                         :actor "http://dbpedia.org/resource/G.E.M._(singer)" ;
-                                                                        :nombre "G.E.M.@en" ,
-                                                                                "鄧紫棋@en" .
+                                                                        :nombre "G.E.M." ,
+                                                                                "鄧紫棋" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Guy_Boyd_(actor)
@@ -829,8 +830,8 @@
                                                                                   :Actor ;
                                                                          :activeYearsStartYear "1981^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                          :actor "http://dbpedia.org/resource/Guy_Boyd_(actor)" ;
-                                                                         :nombre "Guy Boyd@en" ,
-                                                                                 "Guy Buyd@en" .
+                                                                         :nombre "Guy Boyd" ,
+                                                                                 "Guy Buyd" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Kym_(singer)
@@ -838,10 +839,10 @@
                                                                               :Actor ;
                                                                      :activeYearsStartYear "2003^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                      :actor "http://dbpedia.org/resource/Kym_(singer)" ;
-                                                                     :nombre "(Jin Sha)@en" ,
-                                                                             "Jin Sha@en" ,
-                                                                             "Kym@en" ,
-                                                                             "金莎@en" .
+                                                                     :nombre "(Jin Sha)" ,
+                                                                             "Jin Sha" ,
+                                                                             "Kym" ,
+                                                                             "金莎" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Lucy_Robinson_(actress)
@@ -849,7 +850,7 @@
                                                                                          :Actor ;
                                                                                 :activeYearsStartYear "1991^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                                 :actor "http://dbpedia.org/resource/Lucy_Robinson_(actress)" ;
-                                                                                :nombre "Lucy Robinson@en" .
+                                                                                :nombre "Lucy Robinson" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Mark_Womack_(British_actor)
@@ -857,7 +858,7 @@
                                                                                              :Actor ;
                                                                                     :activeYearsStartYear "1988^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                                     :actor "http://dbpedia.org/resource/Mark_Womack_(British_actor)" ;
-                                                                                    :nombre "Mark Womack@en" .
+                                                                                    :nombre "Mark Womack" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Michael_Wong_(actor)
@@ -865,8 +866,8 @@
                                                                                       :Actor ;
                                                                              :activeYearsStartYear "1983^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                              :actor "http://dbpedia.org/resource/Michael_Wong_(actor)" ;
-                                                                             :nombre "Michael Wong@en" ,
-                                                                                     "王敏德@en" .
+                                                                             :nombre "Michael Wong" ,
+                                                                                     "王敏德" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Ray_Chang_(actor)
@@ -874,9 +875,9 @@
                                                                                    :Actor ;
                                                                           :activeYearsStartYear "2003^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                           :actor "http://dbpedia.org/resource/Ray_Chang_(actor)" ;
-                                                                          :nombre "Bryant Chang@en" ,
-                                                                                  "Ray Chang@en" ,
-                                                                                  "Zhāng Ruìjiā@en" .
+                                                                          :nombre "Bryant Chang" ,
+                                                                                  "Ray Chang" ,
+                                                                                  "Zhāng Ruìjiā" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Robert_Hirsch_(actor)
@@ -884,7 +885,7 @@
                                                                                        :Actor ;
                                                                               :activeYearsStartYear "1951^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                               :actor "http://dbpedia.org/resource/Robert_Hirsch_(actor)" ;
-                                                                              :nombre "Robert Hirsch@en" .
+                                                                              :nombre "Robert Hirsch" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Song_Jia_(actress,_born_1980)
@@ -892,8 +893,8 @@
                                                                                                :Actor ;
                                                                                       :activeYearsStartYear "2004^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                                       :actor "http://dbpedia.org/resource/Song_Jia_(actress,_born_1980)" ;
-                                                                                      :nombre "Song Jia@en" ,
-                                                                                              "宋佳@en" .
+                                                                                      :nombre "Song Jia" ,
+                                                                                              "宋佳" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Suzanne_Collins_(actress)
@@ -901,7 +902,7 @@
                                                                                            :Actor ;
                                                                                   :activeYearsStartYear "1998^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                                   :actor "http://dbpedia.org/resource/Suzanne_Collins_(actress)" ;
-                                                                                  :nombre "Suzanne Collins@en" .
+                                                                                  :nombre "Suzanne Collins" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://dbpedia.org/resource/Yang_Yang_(actor)
@@ -909,9 +910,9 @@
                                                                                    :Actor ;
                                                                           :activeYearsStartYear "2009^^http://www.w3.org/2001/XMLSchema#gYear" ;
                                                                           :actor "http://dbpedia.org/resource/Yang_Yang_(actor)" ;
-                                                                          :nombre "Yang Yang@en" ,
-                                                                                  "Yáng Yáng@en" ,
-                                                                                  "杨洋@en" .
+                                                                          :nombre "Yang Yang" ,
+                                                                                  "Yáng Yáng" ,
+                                                                                  "杨洋" .
 
 
 ###  http://urjc_sbc.com/owl/1/http://www.semwebtech.org/mondial/10/country/AL/
@@ -2314,365 +2315,281 @@
                                                                              :name_21 "Zimbabwe" .
 
 
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24515
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24515> rdf:type owl:NamedIndividual ,
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q1365
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q1365> rdf:type owl:NamedIndividual ,
+                                                                          :Pelicula ;
+                                                                 :actor "Aldo Puglisi" ,
+                                                                        "Eros Pagni" ,
+                                                                        "Giancarlo Giannini" ,
+                                                                        "Isa Danieli" ,
+                                                                        "Lorenzo Piani" ,
+                                                                        "Mariangela Melato" ,
+                                                                        "Riccardo Salvino" ;
+                                                                 :film_title "Swept Away" ;
+                                                                 :q "http://www.wikidata.org/entity/Q1365" .
+
+
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2201
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2201> rdf:type owl:NamedIndividual ,
+                                                                          :Pelicula ;
+                                                                 :actor "Aaron Taylor-Johnson" ,
+                                                                        "Adrian Martinez" ,
+                                                                        "Chloë Grace Moretz" ,
+                                                                        "Christopher Mintz-Plasse" ,
+                                                                        "Clark Duke" ,
+                                                                        "Corey Johnson" ,
+                                                                        "Craig Ferguson" ,
+                                                                        "Deborah Twiss" ,
+                                                                        "Dexter Fletcher" ,
+                                                                        "Elizabeth McGovern" ,
+                                                                        "Evan Peters" ,
+                                                                        "Jason Flemyng" ,
+                                                                        "Lyndsy Fonseca" ,
+                                                                        "Mark Strong" ,
+                                                                        "Michael Rispoli" ,
+                                                                        "Nicolas Cage" ,
+                                                                        "Omari Hardwick" ,
+                                                                        "Randall Batinkoff" ,
+                                                                        "Sophie Wu" ,
+                                                                        "Stu 'Large' Riley" ,
+                                                                        "Tamer Hassan" ,
+                                                                        "Xander Berkeley" ,
+                                                                        "Yancy Butler" ;
+                                                                 :film_title "Kick-Ass" ;
+                                                                 :q "http://www.wikidata.org/entity/Q2201" .
+
+
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2345
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2345> rdf:type owl:NamedIndividual ,
+                                                                          :Pelicula ;
+                                                                 :actor "Billy Nelson" ,
+                                                                        "E. G. Marshall" ,
+                                                                        "Ed Begley" ,
+                                                                        "Edward Binns" ,
+                                                                        "Henry Fonda" ,
+                                                                        "Jack Klugman" ,
+                                                                        "Jack Warden" ,
+                                                                        "Jiří Voskovec" ,
+                                                                        "John Fiedler" ,
+                                                                        "Joseph Sweeney" ,
+                                                                        "Martin Balsam" ,
+                                                                        "Robert Webber" ,
+                                                                        "Rudy Bond" ;
+                                                                 :film_title "12 Angry Men" ;
+                                                                 :q "http://www.wikidata.org/entity/Q2345" .
+
+
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2875
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2875> rdf:type owl:NamedIndividual ,
+                                                                          :Pelicula ;
+                                                                 :actor "Alicia Rhett" ,
+                                                                        "Ann Rutherford" ,
+                                                                        "Barbara O'Neil" ,
+                                                                        "Butterfly McQueen" ,
+                                                                        "Cammie King" ,
+                                                                        "Carroll Nye" ,
+                                                                        "Clark Gable" ,
+                                                                        "Evelyn Keyes" ,
+                                                                        "Frank Faylen" ,
+                                                                        "George Reeves" ,
+                                                                        "Hattie McDaniel" ,
+                                                                        "Jane Darwell" ,
+                                                                        "Leslie Howard" ,
+                                                                        "Mary Anderson" ,
+                                                                        "Olivia de Havilland" ,
+                                                                        "Ona Munson" ,
+                                                                        "Richard Farnsworth" ,
+                                                                        "Thomas Mitchell" ,
+                                                                        "Vivien Leigh" ;
+                                                                 :film_title "Gone with the Wind" ;
+                                                                 :q "http://www.wikidata.org/entity/Q2875" .
+
+
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q32433
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q32433> rdf:type owl:NamedIndividual ,
                                                                            :Pelicula ;
-                                                                  :actor "Xing Yu@en" ;
-                                                                  :film_title "Shaolin@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q24515" .
+                                                                  :actor "Adam Driver" ,
+                                                                         "Bill Camp" ,
+                                                                         "Bill Raymond" ,
+                                                                         "Boris McGiver" ,
+                                                                         "Bruce McGill" ,
+                                                                         "Colman Domingo" ,
+                                                                         "Dakin Matthews" ,
+                                                                         "Dane DeHaan" ,
+                                                                         "Daniel Day-Lewis" ,
+                                                                         "David Costabile" ,
+                                                                         "David Oyelowo" ,
+                                                                         "David Strathairn" ,
+                                                                         "David Warshofsky" ,
+                                                                         "Elizabeth Marvel" ,
+                                                                         "Gloria Reuben" ,
+                                                                         "Grainger Hines" ,
+                                                                         "Gregory Itzin" ,
+                                                                         "Gulliver McGrath" ,
+                                                                         "Hal Holbrook" ,
+                                                                         "Jackie Earle Haley" ,
+                                                                         "James Spader" ,
+                                                                         "Jared Harris" ,
+                                                                         "Jeremy Strong" ,
+                                                                         "John Hawkes" ,
+                                                                         "Joseph Cross" ,
+                                                                         "Joseph Gordon-Levitt" ,
+                                                                         "Julie White" ,
+                                                                         "Lee Pace" ,
+                                                                         "Lukas Haas" ,
+                                                                         "Michael Stuhlbarg" ,
+                                                                         "Peter McRobbie" ,
+                                                                         "Raynor Scheine" ,
+                                                                         "S. Epatha Merkerson" ,
+                                                                         "Sally Field" ,
+                                                                         "Stephen Henderson" ,
+                                                                         "Stephen Spinella" ,
+                                                                         "Tommy Lee Jones" ,
+                                                                         "Walton Goggins" ,
+                                                                         "Wayne Duvall" ;
+                                                                  :film_title "Lincoln" ;
+                                                                  :q "http://www.wikidata.org/entity/Q32433" .
 
 
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24732
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24732> rdf:type owl:NamedIndividual ,
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q35725
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q35725> rdf:type owl:NamedIndividual ,
                                                                            :Pelicula ;
-                                                                  :actor "Grace Cunard@en" ,
-                                                                         "Neil Hardin@en" ;
-                                                                  :film_title "The Broken Coin@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q24732" .
+                                                                  :actor "Alfred Molina" ,
+                                                                         "Andrew Tiernan" ,
+                                                                         "Anthony Hopkins" ,
+                                                                         "David Thewlis" ,
+                                                                         "Douglas Hodge" ,
+                                                                         "Jason Robards" ,
+                                                                         "Jean Stapleton" ,
+                                                                         "Jiří Schmitzer" ,
+                                                                         "John Woodvine" ,
+                                                                         "Juliet Stevenson" ,
+                                                                         "Karel Augusta" ,
+                                                                         "Kyle MacLachlan" ,
+                                                                         "Martin Faltýn" ,
+                                                                         "Michael Kitchen" ,
+                                                                         "Ondřej Vetchý" ,
+                                                                         "Paul Brooke" ,
+                                                                         "Petr Skarke" ,
+                                                                         "Polly Walker" ,
+                                                                         "Roger Lloyd-Pack" ,
+                                                                         "Tony Haygarth" ,
+                                                                         "Valerie Kaplanová" ;
+                                                                  :film_title "The Trial" ;
+                                                                  :q "http://www.wikidata.org/entity/Q35725" .
 
 
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24815
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24815> rdf:type owl:NamedIndividual ,
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q372
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q372> rdf:type owl:NamedIndividual ,
+                                                                         :Pelicula ;
+                                                                :actor "Josh Harris" ;
+                                                                :film_title "We Live in Public" ;
+                                                                :q "http://www.wikidata.org/entity/Q372" .
+
+
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q593
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q593> rdf:type owl:NamedIndividual ,
+                                                                         :Pelicula ;
+                                                                :actor "Christophe Kourotchkine" ,
+                                                                       "Daniel Duval" ,
+                                                                       "Dimitri Storoge" ,
+                                                                       "Estelle Skornik" ,
+                                                                       "Francis Renaud" ,
+                                                                       "François Levantal" ,
+                                                                       "Gérard Lanvin" ,
+                                                                       "Jacques Chambon" ,
+                                                                       "Laurent Olmedo" ,
+                                                                       "Lionnel Astier" ,
+                                                                       "Olivier Chantreau" ,
+                                                                       "Olivier Rabourdin" ,
+                                                                       "Patrick Catalifo" ,
+                                                                       "Simon Astier" ,
+                                                                       "Stéphane Caillard" ,
+                                                                       "Tchéky Karyo" ,
+                                                                       "Valeria Cavalli" ,
+                                                                       "Étienne Chicot" ;
+                                                                :film_title "A Gang Story" ;
+                                                                :q "http://www.wikidata.org/entity/Q593" .
+
+
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q595
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q595> rdf:type owl:NamedIndividual ,
+                                                                         :Pelicula ;
+                                                                :actor "Alba Gaïa Bellugi" ,
+                                                                       "Anne Le Ny" ,
+                                                                       "Audrey Fleurot" ,
+                                                                       "Benjamin Baroche" ,
+                                                                       "Caroline Bourg" ,
+                                                                       "Christian Ameri" ,
+                                                                       "Clotilde Mollet" ,
+                                                                       "Cyril Mendy" ,
+                                                                       "François Bureloup" ,
+                                                                       "François Caron" ,
+                                                                       "François Cluzet" ,
+                                                                       "Grégoire Oestermann" ,
+                                                                       "Jean-François Cayrey" ,
+                                                                       "Joséphine de Meaux" ,
+                                                                       "Jérôme Pauwels" ,
+                                                                       "Marie-Laure Descoureaux" ,
+                                                                       "Michel Winogradoff" ,
+                                                                       "Nicky Marbot" ,
+                                                                       "Omar Sy" ,
+                                                                       "Philippe Pozzo di Borgo" ,
+                                                                       "Thomas Solivéres" ,
+                                                                       "Émilie Caen" ;
+                                                                :film_title "The Intouchables" ;
+                                                                :q "http://www.wikidata.org/entity/Q595" .
+
+
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59567
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59567> rdf:type owl:NamedIndividual ,
                                                                            :Pelicula ;
-                                                                  :actor "Agnes Moorehead@en" ,
-                                                                         "Charles Bennett@en" ,
-                                                                         "Dorothy Comingore@en" ,
-                                                                         "Erskine Sanford@en" ,
-                                                                         "Everett Sloane@en" ,
-                                                                         "Gino Corrado@en" ,
-                                                                         "Harry Shannon@en" ,
-                                                                         "Joseph Cotten@en" ,
-                                                                         "Orson Welles@en" ,
-                                                                         "Philip Van Zandt@en" ,
-                                                                         "Ray Collins@en" ,
-                                                                         "Roland Winters@en" ,
-                                                                         "Ruth Warrick@en" ,
-                                                                         "Sonny Bupp@en" ,
-                                                                         "Walter Sande@en" ;
-                                                                  :film_title "Citizen Kane@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q24815" .
+                                                                  :actor "Alain Attal" ,
+                                                                         "André Dussollier" ,
+                                                                         "Andrée Damant" ,
+                                                                         "Anne Marivin" ,
+                                                                         "Arnaud Henriet" ,
+                                                                         "Brigitte Catillon" ,
+                                                                         "Christian Carion" ,
+                                                                         "Christophe Rossignon" ,
+                                                                         "Daniel Znyk" ,
+                                                                         "Danièle Ajoret" ,
+                                                                         "Florence Thomassin" ,
+                                                                         "François Berléand" ,
+                                                                         "François Cluzet" ,
+                                                                         "Françoise Bertin" ,
+                                                                         "Gilles Lellouche" ,
+                                                                         "Guillaume Canet" ,
+                                                                         "Harlan Coben" ,
+                                                                         "Jalil Lespert" ,
+                                                                         "Jean-Pierre Lorit" ,
+                                                                         "Jérémie Covillault" ,
+                                                                         "Karim Adda" ,
+                                                                         "Laurent Lafitte" ,
+                                                                         "Marie Martin" ,
+                                                                         "Martine Chevallier" ,
+                                                                         "Mika'ela Fisher" ,
+                                                                         "Olivier Marchal" ,
+                                                                         "Philippe Lefebvre" ,
+                                                                         "Pierre-Benoist Varoclier" ,
+                                                                         "Samir Guesmi" ,
+                                                                         "Sara Martins" ,
+                                                                         "Thierry Neuvic" ,
+                                                                         "Yodelice" ,
+                                                                         "Éric Naggar" ,
+                                                                         "Éric Savin" ;
+                                                                  :film_title "Tell No One" ;
+                                                                  :q "http://www.wikidata.org/entity/Q59567" .
 
 
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24933
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24933> rdf:type owl:NamedIndividual ,
+###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59653
+<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59653> rdf:type owl:NamedIndividual ,
                                                                            :Pelicula ;
-                                                                  :actor "Hans Richter@en" ;
-                                                                  :film_title "The Haunted Castle@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q24933" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46609
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46609> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Angelo Infanti@en" ,
-                                                                         "Anthony Delon@en" ,
-                                                                         "Antonella Lualdi@en" ,
-                                                                         "Carola Stagnaro@en" ,
-                                                                         "Gastone Moschin@en" ,
-                                                                         "Leonardo Treviglio@en" ;
-                                                                  :film_title "Una spina nel cuore@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q46609" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46637
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46637> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Emilio Estevez@en" ,
-                                                                         "Evan A. Lottman@en" ,
-                                                                         "Frankie Faison@en" ,
-                                                                         "Giancarlo Esposito@en" ,
-                                                                         "J. C. Quinn@en" ,
-                                                                         "John Short@en" ,
-                                                                         "Laura Harrington@en" ,
-                                                                         "Leon Rippy@en" ,
-                                                                         "Marla Maples@en" ,
-                                                                         "Milton Subotsky@en" ,
-                                                                         "Pat Hingle@en" ,
-                                                                         "Stephen King@en" ,
-                                                                         "Yeardley Smith@en" ;
-                                                                  :film_title "Maximum Overdrive@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q46637" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46916
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46916> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Carla Peterson@en" ,
-                                                                         "Esteban Prol@en" ,
-                                                                         "Fabio Di Tomaso@en" ,
-                                                                         "Lali Esposito@en" ,
-                                                                         "Luis Machin@en" ,
-                                                                         "Luisana Lopilato@en" ,
-                                                                         "Mike Amigorena@en" ,
-                                                                         "Mirta Wons@en" ,
-                                                                         "Peto Menahem@en" ;
-                                                                  :film_title "Plumíferos@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q46916" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46918
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46918> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Javed Jaffrey@en" ,
-                                                                         "Kareena Kapoor@en" ,
-                                                                         "Saif Ali Khan@en" ;
-                                                                  :film_title "Roadside Romeo@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q46918" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47075
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47075> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Al Israel@en" ,
-                                                                         "Al Pacino@en" ,
-                                                                         "Angela Aames@en" ,
-                                                                         "Brett Ratner@en" ,
-                                                                         "F. Murray Abraham@en" ,
-                                                                         "Geno Silva@en" ,
-                                                                         "Gregg Henry@en" ,
-                                                                         "Harris Yulin@en" ,
-                                                                         "Katt Shea@en" ,
-                                                                         "Lana Clarkson@en" ,
-                                                                         "Luis Guzmán@en" ,
-                                                                         "Mario Machado@en" ,
-                                                                         "Mark Margolis@en" ,
-                                                                         "Mary Elizabeth Mastrantonio@en" ,
-                                                                         "Michael Alldredge@en" ,
-                                                                         "Michelle Pfeiffer@en" ,
-                                                                         "Míriam Colón@en" ,
-                                                                         "Paul Shenar@en" ,
-                                                                         "Richard Belzer@en" ,
-                                                                         "Robert Loggia@en" ,
-                                                                         "Roberto Contreras@en" ,
-                                                                         "Steven Bauer@en" ,
-                                                                         "Tammy Lynn Leppert@en" ,
-                                                                         "Ted Beniades@en" ,
-                                                                         "Tony Pérez@en" ;
-                                                                  :film_title "Scarface@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q47075" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47221
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47221> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Albert Brooks@en" ,
-                                                                         "Cybill Shepherd@en" ,
-                                                                         "Diahnne Abbott@en" ,
-                                                                         "Harry Cohn@en" ,
-                                                                         "Harry Fischler@en" ,
-                                                                         "Harry Northup@en" ,
-                                                                         "Harvey Keitel@en" ,
-                                                                         "Jodie Foster@en" ,
-                                                                         "Joe Spinell@en" ,
-                                                                         "Leonard Harris@en" ,
-                                                                         "Martin Scorsese@en" ,
-                                                                         "Peter Boyle@en" ,
-                                                                         "Peter Savage@en" ,
-                                                                         "Robert De Niro@en" ,
-                                                                         "Victor Argo@en" ;
-                                                                  :film_title "Taxi Driver@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q47221" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47296
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47296> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Charles Tyner@en" ,
-                                                                         "Louise Lorimer@en" ,
-                                                                         "Warren J. Kemmerling@en" ;
-                                                                  :film_title "Family Plot@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q47296" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47654
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47654> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Adrienne King@en" ,
-                                                                         "Barry Miller@en" ,
-                                                                         "Bruce Ornstein@en" ,
-                                                                         "Denny Dillon@en" ,
-                                                                         "Donna Pescow@en" ,
-                                                                         "Fran Drescher@en" ,
-                                                                         "John Travolta@en" ,
-                                                                         "Joseph Cali@en" ,
-                                                                         "Julie Bovasso@en" ,
-                                                                         "Karen Lynn Gorney@en" ,
-                                                                         "Lisa Peluso@en" ,
-                                                                         "Martin Shakar@en" ,
-                                                                         "Paul Pape@en" ,
-                                                                         "Robert Costanzo@en" ,
-                                                                         "Sam Coppola@en" ,
-                                                                         "Val Bisoglio@en" ;
-                                                                  :film_title "Saturday Night Fever@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q47654" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59498
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59498> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Briana Evigan@en" ,
-                                                                         "Dolph Lundgren@en" ,
-                                                                         "Jon Huertas@en" ,
-                                                                         "Sean Faris@en" ;
-                                                                  :film_title "Stash House@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q59498" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59501
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59501> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Ben Whishaw@en" ,
-                                                                         "Béatrice Agenin@en" ,
-                                                                         "Daniel Auteuil@en" ,
-                                                                         "Frances Barber@en" ,
-                                                                         "Noah Taylor@en" ,
-                                                                         "Stanislas Forlani@en" ,
-                                                                         "Stuart Townsend@en" ;
-                                                                  :film_title "The Escort@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q59501" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59502
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59502> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Aladin Reibel@en" ,
-                                                                         "Alain Libolt@en" ,
-                                                                         "Catherine Mouchet@en" ,
-                                                                         "Daniel Auteuil@en" ,
-                                                                         "Dinara Drukarova@en" ,
-                                                                         "Emmanuelle Devos@en" ,
-                                                                         "Hanns Zischler@en" ,
-                                                                         "Jean Yanne@en" ,
-                                                                         "Jérémie Lippmann@en" ,
-                                                                         "Kristin Scott Thomas@en" ,
-                                                                         "Louis-Do de Lencquesaing@en" ,
-                                                                         "Ludivine Sagnier@en" ,
-                                                                         "Pascale Bussières@en" ;
-                                                                  :film_title "Small Cuts@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q59502" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59503
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59503> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Arsinée Khanjian@en" ,
-                                                                         "Laura Betti@en" ,
-                                                                         "Libero De Rienzo@en" ,
-                                                                         "Pierre Renverseau@en" ,
-                                                                         "Romain Goupil@en" ,
-                                                                         "Roxane Mesquida@en" ;
-                                                                  :film_title "Fat Girl@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q59503" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59531
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59531> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Amira Casar@en" ,
-                                                                         "Rocco Siffredi@en" ;
-                                                                  :film_title "Anatomy of Hell@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q59531" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59534
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59534> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Billy Curtis@en" ,
-                                                                         "Charlton Heston@en" ,
-                                                                         "Felix Silla@en" ,
-                                                                         "James Bacon@en" ,
-                                                                         "James Daly@en" ,
-                                                                         "James Whitmore@en" ,
-                                                                         "Jeff Burton@en" ,
-                                                                         "Kim Hunter@en" ,
-                                                                         "Linda Harrison@en" ,
-                                                                         "Lou Wagner@en" ,
-                                                                         "Maurice Evans@en" ,
-                                                                         "Norman Burton@en" ,
-                                                                         "Roddy McDowall@en" ;
-                                                                  :film_title "Planet of the apes@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q59534" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59543
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59543> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Adrián Suar@en" ,
-                                                                         "Alfredo Alcón@en" ,
-                                                                         "Amanda Beitia@en" ,
-                                                                         "Atilio Pozzobón@en" ,
-                                                                         "Carlos Álvarez-Nóvoa@en" ,
-                                                                         "Claudia Fontán@en" ,
-                                                                         "David Masajnik@en" ,
-                                                                         "Diego Mackenzie@en" ,
-                                                                         "Eduardo Blanco@en" ,
-                                                                         "Fabián Arenillas@en" ,
-                                                                         "Gimena Nóbile@en" ,
-                                                                         "Humberto Serrano@en" ,
-                                                                         "Héctor Alterio@en" ,
-                                                                         "Juan J. Campanella@en" ,
-                                                                         "León Dogodny@en" ,
-                                                                         "Mónica Cabrera@en" ,
-                                                                         "Natalia Verbeke@en" ,
-                                                                         "Norma Aleandro@en" ,
-                                                                         "Ricardo Darín@en" ,
-                                                                         "Rogelio Romano@en" ,
-                                                                         "Rubén Green@en" ,
-                                                                         "Salo Pasik@en" ;
-                                                                  :film_title "Son of the Bride@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q59543" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59566
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59566> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Alicia Witt@en" ,
-                                                                         "Erika Christensen@en" ,
-                                                                         "Evan Rachel Wood@en" ,
-                                                                         "Joan Allen@en" ,
-                                                                         "Keri Russell@en" ,
-                                                                         "Kevin Costner@en" ;
-                                                                  :film_title "The Upside of Anger@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q59566" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59931
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59931> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Aunjanue Ellis@en" ,
-                                                                         "Ian Holm@en" ,
-                                                                         "Jean Smart@en" ,
-                                                                         "Jim Parsons@en" ,
-                                                                         "Method Man@en" ,
-                                                                         "Peter Sarsgaard@en" ,
-                                                                         "Zach Braff@en" ;
-                                                                  :film_title "Garden State@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q59931" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q60021
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q60021> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Ljuba Tadić@en" ,
-                                                                         "Velimir Bata Živojinović@en" ;
-                                                                  :film_title "Cabaret Balkan@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q60021" .
-
-
-###  http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q64083
-<http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q64083> rdf:type owl:NamedIndividual ,
-                                                                           :Pelicula ;
-                                                                  :actor "Eddy Waller@en" ,
-                                                                         "Edmund Mortimer@en" ,
-                                                                         "Edward Earle@en" ,
-                                                                         "Edward Keane@en" ,
-                                                                         "Hal K. Dawson@en" ,
-                                                                         "John Dilson@en" ,
-                                                                         "Milton Parsons@en" ,
-                                                                         "Oliver Blake@en" ,
-                                                                         "Phil Regan@en" ;
-                                                                  :film_title "Sweet Rosie O'Grady@en" ;
-                                                                  :q "http://www.wikidata.org/entity/Q64083" .
+                                                                  :actor "Chris Messina" ,
+                                                                         "Christopher Stanley" ,
+                                                                         "Tom Lenk" ;
+                                                                  :film_title "Argo" ;
+                                                                  :q "http://www.wikidata.org/entity/Q59653" .
 
 
 ###  Generated by the OWL API (version 5.1.10) https://github.com/owlcs/owlapi/

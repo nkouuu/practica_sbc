@@ -53,10 +53,10 @@
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/haActuado_en -->
+    <!-- http://urjc_sbc.com/owl/1/ha_actuado_en -->
 
 
-    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/haActuado_en">
+    <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/ha_actuado_en">
         <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1/Pais"/>
     </owl:ObjectProperty>
@@ -67,8 +67,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://urjc_sbc.com/owl/1/ha_triunfado_gracias_a">
-        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
+        <rdfs:domain rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
+        <rdfs:range rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
     </owl:ObjectProperty>
     
 
@@ -188,7 +188,9 @@
     <!-- http://urjc_sbc.com/owl/1/ActorFamoso -->
 
 
-    <owl:Class rdf:about="http://urjc_sbc.com/owl/1/ActorFamoso"/>
+    <owl:Class rdf:about="http://urjc_sbc.com/owl/1/ActorFamoso">
+        <rdfs:subClassOf rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
+    </owl:Class>
     
 
 
@@ -225,9 +227,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2006^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Adele_Wong</actor>
-        <nombre>Adele Wong@en</nombre>
-        <nombre>Wáng Huìshān@en</nombre>
-        <nombre>王惠珊@en</nombre>
+        <nombre>Adele Wong</nombre>
+        <nombre>Wáng Huìshān</nombre>
+        <nombre>王惠珊</nombre>
     </owl:NamedIndividual>
     
 
@@ -239,7 +241,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1984^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Babben_Larsson</actor>
-        <nombre>Babben Larsson@en</nombre>
+        <nombre>Babben Larsson</nombre>
     </owl:NamedIndividual>
     
 
@@ -251,7 +253,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2003^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Brett_Findlay</actor>
-        <nombre>Brett Findlay@en</nombre>
+        <nombre>Brett Findlay</nombre>
     </owl:NamedIndividual>
     
 
@@ -263,9 +265,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2007^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Candy_Chen</actor>
-        <nombre>Chen Si-Ya@en</nombre>
-        <nombre>Emily Zheng@en</nombre>
-        <nombre>Si Ya@en</nombre>
+        <nombre>Chen Si-Ya</nombre>
+        <nombre>Emily Zheng</nombre>
+        <nombre>Si Ya</nombre>
     </owl:NamedIndividual>
     
 
@@ -277,7 +279,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1973^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Caryn_Richman</actor>
-        <nombre>Caryn Richman@en</nombre>
+        <nombre>Caryn Richman</nombre>
     </owl:NamedIndividual>
     
 
@@ -289,8 +291,8 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1962^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Cha_Katō</actor>
-        <nombre>Cha Katō@en</nombre>
-        <nombre>加藤 茶@en</nombre>
+        <nombre>Cha Katō</nombre>
+        <nombre>加藤 茶</nombre>
     </owl:NamedIndividual>
     
 
@@ -302,10 +304,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2006^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Chen_Zeyu</actor>
-        <nombre>Chen Zeyu@en</nombre>
-        <nombre>Chén Zéyǔ@en</nombre>
-        <nombre>陈泽宇@en</nombre>
-        <nombre>陳澤宇@en</nombre>
+        <nombre>Chen Zeyu</nombre>
+        <nombre>Chén Zéyǔ</nombre>
+        <nombre>陈泽宇</nombre>
+        <nombre>陳澤宇</nombre>
     </owl:NamedIndividual>
     
 
@@ -317,9 +319,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2009^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Choc7</actor>
-        <nombre>Chao Ke Qi@en</nombre>
-        <nombre>Choc7@en</nombre>
-        <nombre>超克7@en</nombre>
+        <nombre>Chao Ke Qi</nombre>
+        <nombre>Choc7</nombre>
+        <nombre>超克7</nombre>
     </owl:NamedIndividual>
     
 
@@ -331,7 +333,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2005^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Chuy_Bravo</actor>
-        <nombre>Chuy Bravo@en</nombre>
+        <nombre>Chuy Bravo</nombre>
     </owl:NamedIndividual>
     
 
@@ -343,7 +345,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1988^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/David_Westhead</actor>
-        <nombre>David Westhead@en</nombre>
+        <nombre>David Westhead</nombre>
     </owl:NamedIndividual>
     
 
@@ -355,10 +357,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1980^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Dicky_Cheung</actor>
-        <nombre>Dicky Cheung@en</nombre>
-        <nombre>Zhāng Wèijiàn@en</nombre>
-        <nombre>张卫健@en</nombre>
-        <nombre>張衛健@en</nombre>
+        <nombre>Dicky Cheung</nombre>
+        <nombre>Zhāng Wèijiàn</nombre>
+        <nombre>张卫健</nombre>
+        <nombre>張衛健</nombre>
     </owl:NamedIndividual>
     
 
@@ -370,10 +372,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2003^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Dylan_Kuo</actor>
-        <nombre>Dylan Kuo@en</nombre>
-        <nombre>Guō Pǐnchāo@en</nombre>
-        <nombre>Gwok3 Ban2-ciu1@en</nombre>
-        <nombre>郭品超@en</nombre>
+        <nombre>Dylan Kuo</nombre>
+        <nombre>Guō Pǐnchāo</nombre>
+        <nombre>Gwok3 Ban2-ciu1</nombre>
+        <nombre>郭品超</nombre>
     </owl:NamedIndividual>
     
 
@@ -385,7 +387,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2004^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Emily_Jewell</actor>
-        <nombre>Emily Jewell@en</nombre>
+        <nombre>Emily Jewell</nombre>
     </owl:NamedIndividual>
     
 
@@ -397,7 +399,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2002^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Eriko_Nakamura</actor>
-        <nombre>Eriko Nakamura@en</nombre>
+        <nombre>Eriko Nakamura</nombre>
     </owl:NamedIndividual>
     
 
@@ -409,9 +411,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1976^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Felix_Lok</actor>
-        <nombre>Felix Lok@en</nombre>
-        <nombre>駱應鈞@en</nombre>
-        <nombre>骆应钧@en</nombre>
+        <nombre>Felix Lok</nombre>
+        <nombre>駱應鈞</nombre>
+        <nombre>骆应钧</nombre>
     </owl:NamedIndividual>
     
 
@@ -423,7 +425,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1977^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Fiona_Mollison</actor>
-        <nombre>Fiona Mollison@en</nombre>
+        <nombre>Fiona Mollison</nombre>
     </owl:NamedIndividual>
     
 
@@ -435,10 +437,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2001^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Fiona_Xie</actor>
-        <nombre>Fiona Xie@en</nombre>
-        <nombre>Xiè Wǎnyù@en</nombre>
-        <nombre>謝宛諭@en</nombre>
-        <nombre>谢宛谕@en</nombre>
+        <nombre>Fiona Xie</nombre>
+        <nombre>Xiè Wǎnyù</nombre>
+        <nombre>謝宛諭</nombre>
+        <nombre>谢宛谕</nombre>
     </owl:NamedIndividual>
     
 
@@ -450,11 +452,11 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1970^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Frankie_Chan</actor>
-        <nombre>Chén Xūnqí@en</nombre>
-        <nombre>Frankie Chan@en</nombre>
-        <nombre>can4 fan1 kei4@en</nombre>
-        <nombre>陈勋奇@en</nombre>
-        <nombre>陳勳奇@en</nombre>
+        <nombre>Chén Xūnqí</nombre>
+        <nombre>Frankie Chan</nombre>
+        <nombre>can4 fan1 kei4</nombre>
+        <nombre>陈勋奇</nombre>
+        <nombre>陳勳奇</nombre>
     </owl:NamedIndividual>
     
 
@@ -466,7 +468,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1998^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Frida_Hallgren</actor>
-        <nombre>Frida Hallgren@en</nombre>
+        <nombre>Frida Hallgren</nombre>
     </owl:NamedIndividual>
     
 
@@ -478,7 +480,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1960^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Fumie_Kashiyama</actor>
-        <nombre>Fumie Kashiyama@en</nombre>
+        <nombre>Fumie Kashiyama</nombre>
     </owl:NamedIndividual>
     
 
@@ -490,7 +492,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2001^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Haruna_Yabuki</actor>
-        <nombre>Haruna Yabuki@en</nombre>
+        <nombre>Haruna Yabuki</nombre>
     </owl:NamedIndividual>
     
 
@@ -502,7 +504,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1975^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Isabelle_Amyes</actor>
-        <nombre>Isabelle Amyes@en</nombre>
+        <nombre>Isabelle Amyes</nombre>
     </owl:NamedIndividual>
     
 
@@ -514,7 +516,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1983^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Isabelle_Nanty</actor>
-        <nombre>Isabelle Nanty@en</nombre>
+        <nombre>Isabelle Nanty</nombre>
     </owl:NamedIndividual>
     
 
@@ -526,7 +528,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1970^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Isabelle_Sadoyan</actor>
-        <nombre>Isabelle Sadoyan@en</nombre>
+        <nombre>Isabelle Sadoyan</nombre>
     </owl:NamedIndividual>
     
 
@@ -538,10 +540,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2003^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Janine_Chang</actor>
-        <nombre>Janine Chang@en</nombre>
-        <nombre>Zhāng Jūnníng@en</nombre>
-        <nombre>张钧甯@en</nombre>
-        <nombre>張鈞甯@en</nombre>
+        <nombre>Janine Chang</nombre>
+        <nombre>Zhāng Jūnníng</nombre>
+        <nombre>张钧甯</nombre>
+        <nombre>張鈞甯</nombre>
     </owl:NamedIndividual>
     
 
@@ -553,9 +555,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2007^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Jing_Boran</actor>
-        <nombre>Jing Boran@en</nombre>
-        <nombre>Jǐng Bórán@en</nombre>
-        <nombre>井柏然@en</nombre>
+        <nombre>Jing Boran</nombre>
+        <nombre>Jǐng Bórán</nombre>
+        <nombre>井柏然</nombre>
     </owl:NamedIndividual>
     
 
@@ -567,9 +569,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2002^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Joanne_Peh</actor>
-        <nombre>Bái Wēixìu@en</nombre>
-        <nombre>Joanne Peh@en</nombre>
-        <nombre>白薇秀@en</nombre>
+        <nombre>Bái Wēixìu</nombre>
+        <nombre>Joanne Peh</nombre>
+        <nombre>白薇秀</nombre>
     </owl:NamedIndividual>
     
 
@@ -581,11 +583,11 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1980^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Johnny_Ngan</actor>
-        <nombre>Johnny Ngan@en</nombre>
-        <nombre>Ngaan4 Gwok3 Leong4@en</nombre>
-        <nombre>Yán Guó Liáng@en</nombre>
-        <nombre>顏國樑@en</nombre>
-        <nombre>颜国梁@en</nombre>
+        <nombre>Johnny Ngan</nombre>
+        <nombre>Ngaan4 Gwok3 Leong4</nombre>
+        <nombre>Yán Guó Liáng</nombre>
+        <nombre>顏國樑</nombre>
+        <nombre>颜国梁</nombre>
     </owl:NamedIndividual>
     
 
@@ -597,10 +599,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1998^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Johnson_Lee</actor>
-        <nombre>Johnson Lee@en</nombre>
-        <nombre>Lǐ Sījié@en</nombre>
-        <nombre>lei5 si1 zit3@en</nombre>
-        <nombre>李思捷@en</nombre>
+        <nombre>Johnson Lee</nombre>
+        <nombre>Lǐ Sījié</nombre>
+        <nombre>lei5 si1 zit3</nombre>
+        <nombre>李思捷</nombre>
     </owl:NamedIndividual>
     
 
@@ -612,7 +614,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1981^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Judy_Holt</actor>
-        <nombre>Judy Holt@en</nombre>
+        <nombre>Judy Holt</nombre>
     </owl:NamedIndividual>
     
 
@@ -624,7 +626,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1987^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Karen_Ascoe</actor>
-        <nombre>Karen Ascoe@en</nombre>
+        <nombre>Karen Ascoe</nombre>
     </owl:NamedIndividual>
     
 
@@ -636,7 +638,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1975^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Keiko_Yokozawa</actor>
-        <nombre>Keiko Yokozawa@en</nombre>
+        <nombre>Keiko Yokozawa</nombre>
     </owl:NamedIndividual>
     
 
@@ -648,7 +650,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2008^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Kenji_Akabane</actor>
-        <nombre>Kenji Akabane@en</nombre>
+        <nombre>Kenji Akabane</nombre>
     </owl:NamedIndividual>
     
 
@@ -660,7 +662,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2008^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Kento_Nakajima</actor>
-        <nombre>Kento Nakajima@en</nombre>
+        <nombre>Kento Nakajima</nombre>
     </owl:NamedIndividual>
     
 
@@ -672,10 +674,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1984^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Kiki_Sheung</actor>
-        <nombre>Kiki Sheung@en</nombre>
-        <nombre>Shāng Tiān&apos;é@en</nombre>
-        <nombre>Soeng1 Tin1 Ngo4@en</nombre>
-        <nombre>商天娥@en</nombre>
+        <nombre>Kiki Sheung</nombre>
+        <nombre>Shāng Tiān&apos;é</nombre>
+        <nombre>Soeng1 Tin1 Ngo4</nombre>
+        <nombre>商天娥</nombre>
     </owl:NamedIndividual>
     
 
@@ -687,9 +689,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1989^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Kong_Lin</actor>
-        <nombre>Kong Lin@en</nombre>
-        <nombre>Kǒng Lín@en</nombre>
-        <nombre>孔琳@en</nombre>
+        <nombre>Kong Lin</nombre>
+        <nombre>Kǒng Lín</nombre>
+        <nombre>孔琳</nombre>
     </owl:NamedIndividual>
     
 
@@ -701,10 +703,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1948^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Lee_Heung-kam</actor>
-        <nombre>Lee Heung-kam@en</nombre>
-        <nombre>Lei5 Hoeng1 Kam4@en</nombre>
-        <nombre>Lǐ Xiāngqín@en</nombre>
-        <nombre>李香琴@en</nombre>
+        <nombre>Lee Heung-kam</nombre>
+        <nombre>Lei5 Hoeng1 Kam4</nombre>
+        <nombre>Lǐ Xiāngqín</nombre>
+        <nombre>李香琴</nombre>
     </owl:NamedIndividual>
     
 
@@ -716,10 +718,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2005^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Liu_Yuxin</actor>
-        <nombre>Liu Yuxin@en</nombre>
-        <nombre>Líu Yǔxīn@en</nombre>
-        <nombre>刘雨欣@en</nombre>
-        <nombre>劉雨欣@en</nombre>
+        <nombre>Liu Yuxin</nombre>
+        <nombre>Líu Yǔxīn</nombre>
+        <nombre>刘雨欣</nombre>
+        <nombre>劉雨欣</nombre>
     </owl:NamedIndividual>
     
 
@@ -731,9 +733,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2005^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Louis_Cheung</actor>
-        <nombre>Louis Cheung@en</nombre>
-        <nombre>张继聪@en</nombre>
-        <nombre>張繼聰@en</nombre>
+        <nombre>Louis Cheung</nombre>
+        <nombre>张继聪</nombre>
+        <nombre>張繼聰</nombre>
     </owl:NamedIndividual>
     
 
@@ -745,10 +747,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2006^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Ma_Tianyu</actor>
-        <nombre>Ma Tianyu@en</nombre>
-        <nombre>Ma Tiānyǔ@en</nombre>
-        <nombre>馬天宇@en</nombre>
-        <nombre>马天宇@en</nombre>
+        <nombre>Ma Tianyu</nombre>
+        <nombre>Ma Tiānyǔ</nombre>
+        <nombre>馬天宇</nombre>
+        <nombre>马天宇</nombre>
     </owl:NamedIndividual>
     
 
@@ -760,8 +762,8 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1966^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Machiko_Washio</actor>
-        <nombre>Machiko Washio@en</nombre>
-        <nombre>Shigeo Kiyama@en</nombre>
+        <nombre>Machiko Washio</nombre>
+        <nombre>Shigeo Kiyama</nombre>
     </owl:NamedIndividual>
     
 
@@ -773,7 +775,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1957^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Margaret_Ashcroft</actor>
-        <nombre>Margaret Ashcroft@en</nombre>
+        <nombre>Margaret Ashcroft</nombre>
     </owl:NamedIndividual>
     
 
@@ -785,7 +787,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1998^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Marika_Hayashi</actor>
-        <nombre>Marika Hayashi@en</nombre>
+        <nombre>Marika Hayashi</nombre>
     </owl:NamedIndividual>
     
 
@@ -797,7 +799,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2006^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Masaki_Okada</actor>
-        <nombre>Masaki Okada@en</nombre>
+        <nombre>Masaki Okada</nombre>
     </owl:NamedIndividual>
     
 
@@ -809,8 +811,8 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2000^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Masayo_Hosono</actor>
-        <nombre>Masayo Hosono@en</nombre>
-        <nombre>細野 雅世@en</nombre>
+        <nombre>Masayo Hosono</nombre>
+        <nombre>細野 雅世</nombre>
     </owl:NamedIndividual>
     
 
@@ -822,10 +824,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2005^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/MeiMei_Kuo</actor>
-        <nombre>Guō Jiéqǐ@en</nombre>
-        <nombre>MeiMei Kuo@en</nombre>
-        <nombre>MeiMei@en</nombre>
-        <nombre>郭婕祈@en</nombre>
+        <nombre>Guō Jiéqǐ</nombre>
+        <nombre>MeiMei</nombre>
+        <nombre>MeiMei Kuo</nombre>
+        <nombre>郭婕祈</nombre>
     </owl:NamedIndividual>
     
 
@@ -837,9 +839,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2010^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Meng_Jia</actor>
-        <nombre>Meng Jia@en</nombre>
-        <nombre>Mèng Jia@en</nombre>
-        <nombre>孟佳@en</nombre>
+        <nombre>Meng Jia</nombre>
+        <nombre>Mèng Jia</nombre>
+        <nombre>孟佳</nombre>
     </owl:NamedIndividual>
     
 
@@ -851,11 +853,11 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1985^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Michael_Tse</actor>
-        <nombre>Michael Tse@en</nombre>
-        <nombre>Xiè Tiánhuá@en</nombre>
-        <nombre>ze6 tin1 waa4@en</nombre>
-        <nombre>謝天華@en</nombre>
-        <nombre>谢天华@en</nombre>
+        <nombre>Michael Tse</nombre>
+        <nombre>Xiè Tiánhuá</nombre>
+        <nombre>ze6 tin1 waa4</nombre>
+        <nombre>謝天華</nombre>
+        <nombre>谢天华</nombre>
     </owl:NamedIndividual>
     
 
@@ -867,7 +869,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2002^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Minoru_Shiraishi</actor>
-        <nombre>Minoru Shiraishi@en</nombre>
+        <nombre>Minoru Shiraishi</nombre>
     </owl:NamedIndividual>
     
 
@@ -879,7 +881,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1991^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Misa_Watanabe</actor>
-        <nombre>Misa Watanabe@en</nombre>
+        <nombre>Misa Watanabe</nombre>
     </owl:NamedIndividual>
     
 
@@ -891,7 +893,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2005^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Misaki_Sekiyama</actor>
-        <nombre>Misaki Sekiyama@en</nombre>
+        <nombre>Misaki Sekiyama</nombre>
     </owl:NamedIndividual>
     
 
@@ -903,7 +905,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1987^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Nanaho_Katsuragi</actor>
-        <nombre>Nanaho Katsuragi@en</nombre>
+        <nombre>Nanaho Katsuragi</nombre>
     </owl:NamedIndividual>
     
 
@@ -915,7 +917,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1998^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Naomi_Wakabayashi</actor>
-        <nombre>Naomi Wakabayashi@en</nombre>
+        <nombre>Naomi Wakabayashi</nombre>
     </owl:NamedIndividual>
     
 
@@ -927,9 +929,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2000^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Ng_Hui</actor>
-        <nombre>Huáng Huì@en</nombre>
-        <nombre>Ng Hui@en</nombre>
-        <nombre>黄慧@en</nombre>
+        <nombre>Huáng Huì</nombre>
+        <nombre>Ng Hui</nombre>
+        <nombre>黄慧</nombre>
     </owl:NamedIndividual>
     
 
@@ -941,9 +943,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2008^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Paige_Chua</actor>
-        <nombre>Cài Qíhuì@en</nombre>
-        <nombre>Paige Chua@en</nombre>
-        <nombre>蔡琦慧@en</nombre>
+        <nombre>Cài Qíhuì</nombre>
+        <nombre>Paige Chua</nombre>
+        <nombre>蔡琦慧</nombre>
     </owl:NamedIndividual>
     
 
@@ -955,11 +957,11 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1982^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Prudence_Liew</actor>
-        <nombre>Lau4 Mei5 Gwan1@en</nombre>
-        <nombre>Liú Měijūn@en</nombre>
-        <nombre>Prudence Liew@en</nombre>
-        <nombre>刘美君@en</nombre>
-        <nombre>劉美君@en</nombre>
+        <nombre>Lau4 Mei5 Gwan1</nombre>
+        <nombre>Liú Měijūn</nombre>
+        <nombre>Prudence Liew</nombre>
+        <nombre>刘美君</nombre>
+        <nombre>劉美君</nombre>
     </owl:NamedIndividual>
     
 
@@ -971,10 +973,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1986^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Pu_Cunxin</actor>
-        <nombre>Buk6 Cyun4jan1@en</nombre>
-        <nombre>Pu Cunxin@en</nombre>
-        <nombre>Pǔ Cúnxīn@en</nombre>
-        <nombre>濮存昕@en</nombre>
+        <nombre>Buk6 Cyun4jan1</nombre>
+        <nombre>Pu Cunxin</nombre>
+        <nombre>Pǔ Cúnxīn</nombre>
+        <nombre>濮存昕</nombre>
     </owl:NamedIndividual>
     
 
@@ -986,7 +988,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2005^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Rashami_Desai</actor>
-        <nombre>Rashami Desai@en</nombre>
+        <nombre>Rashami Desai</nombre>
     </owl:NamedIndividual>
     
 
@@ -998,7 +1000,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2005^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Rin_Takanashi</actor>
-        <nombre>Rin Takanashi@en</nombre>
+        <nombre>Rin Takanashi</nombre>
     </owl:NamedIndividual>
     
 
@@ -1010,10 +1012,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1999^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Russell_Cheung</actor>
-        <nombre>Cheung Chi Hin@en</nombre>
-        <nombre>Russell Cheung@en</nombre>
-        <nombre>Zhāng Zhìxuān@en</nombre>
-        <nombre>张智轩@en</nombre>
+        <nombre>Cheung Chi Hin</nombre>
+        <nombre>Russell Cheung</nombre>
+        <nombre>Zhāng Zhìxuān</nombre>
+        <nombre>张智轩</nombre>
     </owl:NamedIndividual>
     
 
@@ -1025,8 +1027,8 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1998^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Ryuya_Wakaba</actor>
-        <nombre>Ryuya Wakaba@en</nombre>
-        <nombre>Ryūya Wakaba (竜也 若葉)@en</nombre>
+        <nombre>Ryuya Wakaba</nombre>
+        <nombre>Ryūya Wakaba (竜也 若葉)</nombre>
     </owl:NamedIndividual>
     
 
@@ -1038,7 +1040,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1953^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Tamao_Nakamura</actor>
-        <nombre>Tamao Nakamura@en</nombre>
+        <nombre>Tamao Nakamura</nombre>
     </owl:NamedIndividual>
     
 
@@ -1050,9 +1052,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2007^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Terence_Siufay</actor>
-        <nombre>Terence Siufay@en</nombre>
-        <nombre>chui zhi yong@en</nombre>
-        <nombre>xu zhi yong@en</nombre>
+        <nombre>Terence Siufay</nombre>
+        <nombre>chui zhi yong</nombre>
+        <nombre>xu zhi yong</nombre>
     </owl:NamedIndividual>
     
 
@@ -1064,7 +1066,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2003^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Thibault_Vinçon</actor>
-        <nombre>Thibault Vinçon@en</nombre>
+        <nombre>Thibault Vinçon</nombre>
     </owl:NamedIndividual>
     
 
@@ -1076,7 +1078,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1948^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Tomoko_Naraoka</actor>
-        <nombre>Tomoko Naraoka@en</nombre>
+        <nombre>Tomoko Naraoka</nombre>
     </owl:NamedIndividual>
     
 
@@ -1088,9 +1090,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2002^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Van_Fan</actor>
-        <nombre>Fàn Yìchén@en</nombre>
-        <nombre>Van Fan@en</nombre>
-        <nombre>范逸臣@en</nombre>
+        <nombre>Fàn Yìchén</nombre>
+        <nombre>Van Fan</nombre>
+        <nombre>范逸臣</nombre>
     </owl:NamedIndividual>
     
 
@@ -1102,10 +1104,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2006^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Wang_Zi</actor>
-        <nombre>Wang Zi/Prince@en</nombre>
-        <nombre>Wang Zi@en</nombre>
-        <nombre>Wáng Zǐ@en</nombre>
-        <nombre>王子@en</nombre>
+        <nombre>Wang Zi</nombre>
+        <nombre>Wang Zi/Prince</nombre>
+        <nombre>Wáng Zǐ</nombre>
+        <nombre>王子</nombre>
     </owl:NamedIndividual>
     
 
@@ -1117,11 +1119,11 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1985^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/William_So</actor>
-        <nombre>William So@en</nombre>
-        <nombre>sou1 wing5 hong1@en</nombre>
-        <nombre>su1 yong3 kang1@en</nombre>
-        <nombre>苏永康@en</nombre>
-        <nombre>蘇永康@en</nombre>
+        <nombre>William So</nombre>
+        <nombre>sou1 wing5 hong1</nombre>
+        <nombre>su1 yong3 kang1</nombre>
+        <nombre>苏永康</nombre>
+        <nombre>蘇永康</nombre>
     </owl:NamedIndividual>
     
 
@@ -1133,11 +1135,11 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2005^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Xiao_Xun</actor>
-        <nombre>Albee Huang@en</nombre>
-        <nombre>Huang Jing Yi@en</nombre>
-        <nombre>Xiao Xun@en</nombre>
-        <nombre>黃瀞怡@en</nombre>
-        <nombre>黄瀞怡@en</nombre>
+        <nombre>Albee Huang</nombre>
+        <nombre>Huang Jing Yi</nombre>
+        <nombre>Xiao Xun</nombre>
+        <nombre>黃瀞怡</nombre>
+        <nombre>黄瀞怡</nombre>
     </owl:NamedIndividual>
     
 
@@ -1149,9 +1151,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1990^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Yao_Wenlong</actor>
-        <nombre>Yao Wenlong@en</nombre>
-        <nombre>Yáo Wénlóng@en</nombre>
-        <nombre>姚玟隆@en</nombre>
+        <nombre>Yao Wenlong</nombre>
+        <nombre>Yáo Wénlóng</nombre>
+        <nombre>姚玟隆</nombre>
     </owl:NamedIndividual>
     
 
@@ -1163,7 +1165,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1984^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Youki_Kudoh</actor>
-        <nombre>Youki Kudoh@en</nombre>
+        <nombre>Youki Kudoh</nombre>
     </owl:NamedIndividual>
     
 
@@ -1175,10 +1177,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1962^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Yuen_Biao</actor>
-        <nombre>Jyun4 Biu1@en</nombre>
-        <nombre>Yuen Biao@en</nombre>
-        <nombre>Yuán Biāo@en</nombre>
-        <nombre>元彪@en</nombre>
+        <nombre>Jyun4 Biu1</nombre>
+        <nombre>Yuen Biao</nombre>
+        <nombre>Yuán Biāo</nombre>
+        <nombre>元彪</nombre>
     </owl:NamedIndividual>
     
 
@@ -1190,7 +1192,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2004^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Yuka_Terasaki</actor>
-        <nombre>Yuka Terasaki@en</nombre>
+        <nombre>Yuka Terasaki</nombre>
     </owl:NamedIndividual>
     
 
@@ -1202,10 +1204,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2002^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Cui_Peng_(actor)</actor>
-        <nombre>Ceoi1 Paang4@en</nombre>
-        <nombre>Cui Peng@en</nombre>
-        <nombre>Cuī Péng@en</nombre>
-        <nombre>崔鹏@en</nombre>
+        <nombre>Ceoi1 Paang4</nombre>
+        <nombre>Cui Peng</nombre>
+        <nombre>Cuī Péng</nombre>
+        <nombre>崔鹏</nombre>
     </owl:NamedIndividual>
     
 
@@ -1217,8 +1219,8 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2008^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/G.E.M._(singer)</actor>
-        <nombre>G.E.M.@en</nombre>
-        <nombre>鄧紫棋@en</nombre>
+        <nombre>G.E.M.</nombre>
+        <nombre>鄧紫棋</nombre>
     </owl:NamedIndividual>
     
 
@@ -1230,8 +1232,8 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1981^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Guy_Boyd_(actor)</actor>
-        <nombre>Guy Boyd@en</nombre>
-        <nombre>Guy Buyd@en</nombre>
+        <nombre>Guy Boyd</nombre>
+        <nombre>Guy Buyd</nombre>
     </owl:NamedIndividual>
     
 
@@ -1243,10 +1245,10 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2003^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Kym_(singer)</actor>
-        <nombre>(Jin Sha)@en</nombre>
-        <nombre>Jin Sha@en</nombre>
-        <nombre>Kym@en</nombre>
-        <nombre>金莎@en</nombre>
+        <nombre>(Jin Sha)</nombre>
+        <nombre>Jin Sha</nombre>
+        <nombre>Kym</nombre>
+        <nombre>金莎</nombre>
     </owl:NamedIndividual>
     
 
@@ -1258,7 +1260,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1991^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Lucy_Robinson_(actress)</actor>
-        <nombre>Lucy Robinson@en</nombre>
+        <nombre>Lucy Robinson</nombre>
     </owl:NamedIndividual>
     
 
@@ -1270,7 +1272,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1988^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Mark_Womack_(British_actor)</actor>
-        <nombre>Mark Womack@en</nombre>
+        <nombre>Mark Womack</nombre>
     </owl:NamedIndividual>
     
 
@@ -1282,8 +1284,8 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1983^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Michael_Wong_(actor)</actor>
-        <nombre>Michael Wong@en</nombre>
-        <nombre>王敏德@en</nombre>
+        <nombre>Michael Wong</nombre>
+        <nombre>王敏德</nombre>
     </owl:NamedIndividual>
     
 
@@ -1295,9 +1297,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2003^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Ray_Chang_(actor)</actor>
-        <nombre>Bryant Chang@en</nombre>
-        <nombre>Ray Chang@en</nombre>
-        <nombre>Zhāng Ruìjiā@en</nombre>
+        <nombre>Bryant Chang</nombre>
+        <nombre>Ray Chang</nombre>
+        <nombre>Zhāng Ruìjiā</nombre>
     </owl:NamedIndividual>
     
 
@@ -1309,7 +1311,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1951^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Robert_Hirsch_(actor)</actor>
-        <nombre>Robert Hirsch@en</nombre>
+        <nombre>Robert Hirsch</nombre>
     </owl:NamedIndividual>
     
 
@@ -1321,8 +1323,8 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2004^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Song_Jia_(actress,_born_1980)</actor>
-        <nombre>Song Jia@en</nombre>
-        <nombre>宋佳@en</nombre>
+        <nombre>Song Jia</nombre>
+        <nombre>宋佳</nombre>
     </owl:NamedIndividual>
     
 
@@ -1334,7 +1336,7 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>1998^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Suzanne_Collins_(actress)</actor>
-        <nombre>Suzanne Collins@en</nombre>
+        <nombre>Suzanne Collins</nombre>
     </owl:NamedIndividual>
     
 
@@ -1346,9 +1348,9 @@
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Actor"/>
         <activeYearsStartYear>2009^^http://www.w3.org/2001/XMLSchema#gYear</activeYearsStartYear>
         <actor>http://dbpedia.org/resource/Yang_Yang_(actor)</actor>
-        <nombre>Yang Yang@en</nombre>
-        <nombre>Yáng Yáng@en</nombre>
-        <nombre>杨洋@en</nombre>
+        <nombre>Yang Yang</nombre>
+        <nombre>Yáng Yáng</nombre>
+        <nombre>杨洋</nombre>
     </owl:NamedIndividual>
     
 
@@ -3553,455 +3555,323 @@
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24515 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q1365 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24515">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q1365">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Xing Yu@en</actor>
-        <film_title>Shaolin@en</film_title>
-        <q>http://www.wikidata.org/entity/Q24515</q>
+        <actor>Aldo Puglisi</actor>
+        <actor>Eros Pagni</actor>
+        <actor>Giancarlo Giannini</actor>
+        <actor>Isa Danieli</actor>
+        <actor>Lorenzo Piani</actor>
+        <actor>Mariangela Melato</actor>
+        <actor>Riccardo Salvino</actor>
+        <film_title>Swept Away</film_title>
+        <q>http://www.wikidata.org/entity/Q1365</q>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24732 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2201 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24732">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2201">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Grace Cunard@en</actor>
-        <actor>Neil Hardin@en</actor>
-        <film_title>The Broken Coin@en</film_title>
-        <q>http://www.wikidata.org/entity/Q24732</q>
+        <actor>Aaron Taylor-Johnson</actor>
+        <actor>Adrian Martinez</actor>
+        <actor>Chloë Grace Moretz</actor>
+        <actor>Christopher Mintz-Plasse</actor>
+        <actor>Clark Duke</actor>
+        <actor>Corey Johnson</actor>
+        <actor>Craig Ferguson</actor>
+        <actor>Deborah Twiss</actor>
+        <actor>Dexter Fletcher</actor>
+        <actor>Elizabeth McGovern</actor>
+        <actor>Evan Peters</actor>
+        <actor>Jason Flemyng</actor>
+        <actor>Lyndsy Fonseca</actor>
+        <actor>Mark Strong</actor>
+        <actor>Michael Rispoli</actor>
+        <actor>Nicolas Cage</actor>
+        <actor>Omari Hardwick</actor>
+        <actor>Randall Batinkoff</actor>
+        <actor>Sophie Wu</actor>
+        <actor>Stu &apos;Large&apos; Riley</actor>
+        <actor>Tamer Hassan</actor>
+        <actor>Xander Berkeley</actor>
+        <actor>Yancy Butler</actor>
+        <film_title>Kick-Ass</film_title>
+        <q>http://www.wikidata.org/entity/Q2201</q>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24815 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2345 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24815">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2345">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Agnes Moorehead@en</actor>
-        <actor>Charles Bennett@en</actor>
-        <actor>Dorothy Comingore@en</actor>
-        <actor>Erskine Sanford@en</actor>
-        <actor>Everett Sloane@en</actor>
-        <actor>Gino Corrado@en</actor>
-        <actor>Harry Shannon@en</actor>
-        <actor>Joseph Cotten@en</actor>
-        <actor>Orson Welles@en</actor>
-        <actor>Philip Van Zandt@en</actor>
-        <actor>Ray Collins@en</actor>
-        <actor>Roland Winters@en</actor>
-        <actor>Ruth Warrick@en</actor>
-        <actor>Sonny Bupp@en</actor>
-        <actor>Walter Sande@en</actor>
-        <film_title>Citizen Kane@en</film_title>
-        <q>http://www.wikidata.org/entity/Q24815</q>
+        <actor>Billy Nelson</actor>
+        <actor>E. G. Marshall</actor>
+        <actor>Ed Begley</actor>
+        <actor>Edward Binns</actor>
+        <actor>Henry Fonda</actor>
+        <actor>Jack Klugman</actor>
+        <actor>Jack Warden</actor>
+        <actor>Jiří Voskovec</actor>
+        <actor>John Fiedler</actor>
+        <actor>Joseph Sweeney</actor>
+        <actor>Martin Balsam</actor>
+        <actor>Robert Webber</actor>
+        <actor>Rudy Bond</actor>
+        <film_title>12 Angry Men</film_title>
+        <q>http://www.wikidata.org/entity/Q2345</q>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24933 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2875 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q24933">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q2875">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Hans Richter@en</actor>
-        <film_title>The Haunted Castle@en</film_title>
-        <q>http://www.wikidata.org/entity/Q24933</q>
+        <actor>Alicia Rhett</actor>
+        <actor>Ann Rutherford</actor>
+        <actor>Barbara O&apos;Neil</actor>
+        <actor>Butterfly McQueen</actor>
+        <actor>Cammie King</actor>
+        <actor>Carroll Nye</actor>
+        <actor>Clark Gable</actor>
+        <actor>Evelyn Keyes</actor>
+        <actor>Frank Faylen</actor>
+        <actor>George Reeves</actor>
+        <actor>Hattie McDaniel</actor>
+        <actor>Jane Darwell</actor>
+        <actor>Leslie Howard</actor>
+        <actor>Mary Anderson</actor>
+        <actor>Olivia de Havilland</actor>
+        <actor>Ona Munson</actor>
+        <actor>Richard Farnsworth</actor>
+        <actor>Thomas Mitchell</actor>
+        <actor>Vivien Leigh</actor>
+        <film_title>Gone with the Wind</film_title>
+        <q>http://www.wikidata.org/entity/Q2875</q>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46609 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q32433 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46609">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q32433">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Angelo Infanti@en</actor>
-        <actor>Anthony Delon@en</actor>
-        <actor>Antonella Lualdi@en</actor>
-        <actor>Carola Stagnaro@en</actor>
-        <actor>Gastone Moschin@en</actor>
-        <actor>Leonardo Treviglio@en</actor>
-        <film_title>Una spina nel cuore@en</film_title>
-        <q>http://www.wikidata.org/entity/Q46609</q>
+        <actor>Adam Driver</actor>
+        <actor>Bill Camp</actor>
+        <actor>Bill Raymond</actor>
+        <actor>Boris McGiver</actor>
+        <actor>Bruce McGill</actor>
+        <actor>Colman Domingo</actor>
+        <actor>Dakin Matthews</actor>
+        <actor>Dane DeHaan</actor>
+        <actor>Daniel Day-Lewis</actor>
+        <actor>David Costabile</actor>
+        <actor>David Oyelowo</actor>
+        <actor>David Strathairn</actor>
+        <actor>David Warshofsky</actor>
+        <actor>Elizabeth Marvel</actor>
+        <actor>Gloria Reuben</actor>
+        <actor>Grainger Hines</actor>
+        <actor>Gregory Itzin</actor>
+        <actor>Gulliver McGrath</actor>
+        <actor>Hal Holbrook</actor>
+        <actor>Jackie Earle Haley</actor>
+        <actor>James Spader</actor>
+        <actor>Jared Harris</actor>
+        <actor>Jeremy Strong</actor>
+        <actor>John Hawkes</actor>
+        <actor>Joseph Cross</actor>
+        <actor>Joseph Gordon-Levitt</actor>
+        <actor>Julie White</actor>
+        <actor>Lee Pace</actor>
+        <actor>Lukas Haas</actor>
+        <actor>Michael Stuhlbarg</actor>
+        <actor>Peter McRobbie</actor>
+        <actor>Raynor Scheine</actor>
+        <actor>S. Epatha Merkerson</actor>
+        <actor>Sally Field</actor>
+        <actor>Stephen Henderson</actor>
+        <actor>Stephen Spinella</actor>
+        <actor>Tommy Lee Jones</actor>
+        <actor>Walton Goggins</actor>
+        <actor>Wayne Duvall</actor>
+        <film_title>Lincoln</film_title>
+        <q>http://www.wikidata.org/entity/Q32433</q>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46637 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q35725 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46637">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q35725">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Emilio Estevez@en</actor>
-        <actor>Evan A. Lottman@en</actor>
-        <actor>Frankie Faison@en</actor>
-        <actor>Giancarlo Esposito@en</actor>
-        <actor>J. C. Quinn@en</actor>
-        <actor>John Short@en</actor>
-        <actor>Laura Harrington@en</actor>
-        <actor>Leon Rippy@en</actor>
-        <actor>Marla Maples@en</actor>
-        <actor>Milton Subotsky@en</actor>
-        <actor>Pat Hingle@en</actor>
-        <actor>Stephen King@en</actor>
-        <actor>Yeardley Smith@en</actor>
-        <film_title>Maximum Overdrive@en</film_title>
-        <q>http://www.wikidata.org/entity/Q46637</q>
+        <actor>Alfred Molina</actor>
+        <actor>Andrew Tiernan</actor>
+        <actor>Anthony Hopkins</actor>
+        <actor>David Thewlis</actor>
+        <actor>Douglas Hodge</actor>
+        <actor>Jason Robards</actor>
+        <actor>Jean Stapleton</actor>
+        <actor>Jiří Schmitzer</actor>
+        <actor>John Woodvine</actor>
+        <actor>Juliet Stevenson</actor>
+        <actor>Karel Augusta</actor>
+        <actor>Kyle MacLachlan</actor>
+        <actor>Martin Faltýn</actor>
+        <actor>Michael Kitchen</actor>
+        <actor>Ondřej Vetchý</actor>
+        <actor>Paul Brooke</actor>
+        <actor>Petr Skarke</actor>
+        <actor>Polly Walker</actor>
+        <actor>Roger Lloyd-Pack</actor>
+        <actor>Tony Haygarth</actor>
+        <actor>Valerie Kaplanová</actor>
+        <film_title>The Trial</film_title>
+        <q>http://www.wikidata.org/entity/Q35725</q>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46916 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q372 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46916">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q372">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Carla Peterson@en</actor>
-        <actor>Esteban Prol@en</actor>
-        <actor>Fabio Di Tomaso@en</actor>
-        <actor>Lali Esposito@en</actor>
-        <actor>Luis Machin@en</actor>
-        <actor>Luisana Lopilato@en</actor>
-        <actor>Mike Amigorena@en</actor>
-        <actor>Mirta Wons@en</actor>
-        <actor>Peto Menahem@en</actor>
-        <film_title>Plumíferos@en</film_title>
-        <q>http://www.wikidata.org/entity/Q46916</q>
+        <actor>Josh Harris</actor>
+        <film_title>We Live in Public</film_title>
+        <q>http://www.wikidata.org/entity/Q372</q>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46918 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q593 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q46918">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q593">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Javed Jaffrey@en</actor>
-        <actor>Kareena Kapoor@en</actor>
-        <actor>Saif Ali Khan@en</actor>
-        <film_title>Roadside Romeo@en</film_title>
-        <q>http://www.wikidata.org/entity/Q46918</q>
+        <actor>Christophe Kourotchkine</actor>
+        <actor>Daniel Duval</actor>
+        <actor>Dimitri Storoge</actor>
+        <actor>Estelle Skornik</actor>
+        <actor>Francis Renaud</actor>
+        <actor>François Levantal</actor>
+        <actor>Gérard Lanvin</actor>
+        <actor>Jacques Chambon</actor>
+        <actor>Laurent Olmedo</actor>
+        <actor>Lionnel Astier</actor>
+        <actor>Olivier Chantreau</actor>
+        <actor>Olivier Rabourdin</actor>
+        <actor>Patrick Catalifo</actor>
+        <actor>Simon Astier</actor>
+        <actor>Stéphane Caillard</actor>
+        <actor>Tchéky Karyo</actor>
+        <actor>Valeria Cavalli</actor>
+        <actor>Étienne Chicot</actor>
+        <film_title>A Gang Story</film_title>
+        <q>http://www.wikidata.org/entity/Q593</q>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47075 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q595 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47075">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q595">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Al Israel@en</actor>
-        <actor>Al Pacino@en</actor>
-        <actor>Angela Aames@en</actor>
-        <actor>Brett Ratner@en</actor>
-        <actor>F. Murray Abraham@en</actor>
-        <actor>Geno Silva@en</actor>
-        <actor>Gregg Henry@en</actor>
-        <actor>Harris Yulin@en</actor>
-        <actor>Katt Shea@en</actor>
-        <actor>Lana Clarkson@en</actor>
-        <actor>Luis Guzmán@en</actor>
-        <actor>Mario Machado@en</actor>
-        <actor>Mark Margolis@en</actor>
-        <actor>Mary Elizabeth Mastrantonio@en</actor>
-        <actor>Michael Alldredge@en</actor>
-        <actor>Michelle Pfeiffer@en</actor>
-        <actor>Míriam Colón@en</actor>
-        <actor>Paul Shenar@en</actor>
-        <actor>Richard Belzer@en</actor>
-        <actor>Robert Loggia@en</actor>
-        <actor>Roberto Contreras@en</actor>
-        <actor>Steven Bauer@en</actor>
-        <actor>Tammy Lynn Leppert@en</actor>
-        <actor>Ted Beniades@en</actor>
-        <actor>Tony Pérez@en</actor>
-        <film_title>Scarface@en</film_title>
-        <q>http://www.wikidata.org/entity/Q47075</q>
+        <actor>Alba Gaïa Bellugi</actor>
+        <actor>Anne Le Ny</actor>
+        <actor>Audrey Fleurot</actor>
+        <actor>Benjamin Baroche</actor>
+        <actor>Caroline Bourg</actor>
+        <actor>Christian Ameri</actor>
+        <actor>Clotilde Mollet</actor>
+        <actor>Cyril Mendy</actor>
+        <actor>François Bureloup</actor>
+        <actor>François Caron</actor>
+        <actor>François Cluzet</actor>
+        <actor>Grégoire Oestermann</actor>
+        <actor>Jean-François Cayrey</actor>
+        <actor>Joséphine de Meaux</actor>
+        <actor>Jérôme Pauwels</actor>
+        <actor>Marie-Laure Descoureaux</actor>
+        <actor>Michel Winogradoff</actor>
+        <actor>Nicky Marbot</actor>
+        <actor>Omar Sy</actor>
+        <actor>Philippe Pozzo di Borgo</actor>
+        <actor>Thomas Solivéres</actor>
+        <actor>Émilie Caen</actor>
+        <film_title>The Intouchables</film_title>
+        <q>http://www.wikidata.org/entity/Q595</q>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47221 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59567 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47221">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59567">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Albert Brooks@en</actor>
-        <actor>Cybill Shepherd@en</actor>
-        <actor>Diahnne Abbott@en</actor>
-        <actor>Harry Cohn@en</actor>
-        <actor>Harry Fischler@en</actor>
-        <actor>Harry Northup@en</actor>
-        <actor>Harvey Keitel@en</actor>
-        <actor>Jodie Foster@en</actor>
-        <actor>Joe Spinell@en</actor>
-        <actor>Leonard Harris@en</actor>
-        <actor>Martin Scorsese@en</actor>
-        <actor>Peter Boyle@en</actor>
-        <actor>Peter Savage@en</actor>
-        <actor>Robert De Niro@en</actor>
-        <actor>Victor Argo@en</actor>
-        <film_title>Taxi Driver@en</film_title>
-        <q>http://www.wikidata.org/entity/Q47221</q>
+        <actor>Alain Attal</actor>
+        <actor>André Dussollier</actor>
+        <actor>Andrée Damant</actor>
+        <actor>Anne Marivin</actor>
+        <actor>Arnaud Henriet</actor>
+        <actor>Brigitte Catillon</actor>
+        <actor>Christian Carion</actor>
+        <actor>Christophe Rossignon</actor>
+        <actor>Daniel Znyk</actor>
+        <actor>Danièle Ajoret</actor>
+        <actor>Florence Thomassin</actor>
+        <actor>François Berléand</actor>
+        <actor>François Cluzet</actor>
+        <actor>Françoise Bertin</actor>
+        <actor>Gilles Lellouche</actor>
+        <actor>Guillaume Canet</actor>
+        <actor>Harlan Coben</actor>
+        <actor>Jalil Lespert</actor>
+        <actor>Jean-Pierre Lorit</actor>
+        <actor>Jérémie Covillault</actor>
+        <actor>Karim Adda</actor>
+        <actor>Laurent Lafitte</actor>
+        <actor>Marie Martin</actor>
+        <actor>Martine Chevallier</actor>
+        <actor>Mika&apos;ela Fisher</actor>
+        <actor>Olivier Marchal</actor>
+        <actor>Philippe Lefebvre</actor>
+        <actor>Pierre-Benoist Varoclier</actor>
+        <actor>Samir Guesmi</actor>
+        <actor>Sara Martins</actor>
+        <actor>Thierry Neuvic</actor>
+        <actor>Yodelice</actor>
+        <actor>Éric Naggar</actor>
+        <actor>Éric Savin</actor>
+        <film_title>Tell No One</film_title>
+        <q>http://www.wikidata.org/entity/Q59567</q>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47296 -->
+    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59653 -->
 
 
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47296">
+    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59653">
         <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Charles Tyner@en</actor>
-        <actor>Louise Lorimer@en</actor>
-        <actor>Warren J. Kemmerling@en</actor>
-        <film_title>Family Plot@en</film_title>
-        <q>http://www.wikidata.org/entity/Q47296</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47654 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q47654">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Adrienne King@en</actor>
-        <actor>Barry Miller@en</actor>
-        <actor>Bruce Ornstein@en</actor>
-        <actor>Denny Dillon@en</actor>
-        <actor>Donna Pescow@en</actor>
-        <actor>Fran Drescher@en</actor>
-        <actor>John Travolta@en</actor>
-        <actor>Joseph Cali@en</actor>
-        <actor>Julie Bovasso@en</actor>
-        <actor>Karen Lynn Gorney@en</actor>
-        <actor>Lisa Peluso@en</actor>
-        <actor>Martin Shakar@en</actor>
-        <actor>Paul Pape@en</actor>
-        <actor>Robert Costanzo@en</actor>
-        <actor>Sam Coppola@en</actor>
-        <actor>Val Bisoglio@en</actor>
-        <film_title>Saturday Night Fever@en</film_title>
-        <q>http://www.wikidata.org/entity/Q47654</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59498 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59498">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Briana Evigan@en</actor>
-        <actor>Dolph Lundgren@en</actor>
-        <actor>Jon Huertas@en</actor>
-        <actor>Sean Faris@en</actor>
-        <film_title>Stash House@en</film_title>
-        <q>http://www.wikidata.org/entity/Q59498</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59501 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59501">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Ben Whishaw@en</actor>
-        <actor>Béatrice Agenin@en</actor>
-        <actor>Daniel Auteuil@en</actor>
-        <actor>Frances Barber@en</actor>
-        <actor>Noah Taylor@en</actor>
-        <actor>Stanislas Forlani@en</actor>
-        <actor>Stuart Townsend@en</actor>
-        <film_title>The Escort@en</film_title>
-        <q>http://www.wikidata.org/entity/Q59501</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59502 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59502">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Aladin Reibel@en</actor>
-        <actor>Alain Libolt@en</actor>
-        <actor>Catherine Mouchet@en</actor>
-        <actor>Daniel Auteuil@en</actor>
-        <actor>Dinara Drukarova@en</actor>
-        <actor>Emmanuelle Devos@en</actor>
-        <actor>Hanns Zischler@en</actor>
-        <actor>Jean Yanne@en</actor>
-        <actor>Jérémie Lippmann@en</actor>
-        <actor>Kristin Scott Thomas@en</actor>
-        <actor>Louis-Do de Lencquesaing@en</actor>
-        <actor>Ludivine Sagnier@en</actor>
-        <actor>Pascale Bussières@en</actor>
-        <film_title>Small Cuts@en</film_title>
-        <q>http://www.wikidata.org/entity/Q59502</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59503 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59503">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Arsinée Khanjian@en</actor>
-        <actor>Laura Betti@en</actor>
-        <actor>Libero De Rienzo@en</actor>
-        <actor>Pierre Renverseau@en</actor>
-        <actor>Romain Goupil@en</actor>
-        <actor>Roxane Mesquida@en</actor>
-        <film_title>Fat Girl@en</film_title>
-        <q>http://www.wikidata.org/entity/Q59503</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59531 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59531">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Amira Casar@en</actor>
-        <actor>Rocco Siffredi@en</actor>
-        <film_title>Anatomy of Hell@en</film_title>
-        <q>http://www.wikidata.org/entity/Q59531</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59534 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59534">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Billy Curtis@en</actor>
-        <actor>Charlton Heston@en</actor>
-        <actor>Felix Silla@en</actor>
-        <actor>James Bacon@en</actor>
-        <actor>James Daly@en</actor>
-        <actor>James Whitmore@en</actor>
-        <actor>Jeff Burton@en</actor>
-        <actor>Kim Hunter@en</actor>
-        <actor>Linda Harrison@en</actor>
-        <actor>Lou Wagner@en</actor>
-        <actor>Maurice Evans@en</actor>
-        <actor>Norman Burton@en</actor>
-        <actor>Roddy McDowall@en</actor>
-        <film_title>Planet of the apes@en</film_title>
-        <q>http://www.wikidata.org/entity/Q59534</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59543 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59543">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Adrián Suar@en</actor>
-        <actor>Alfredo Alcón@en</actor>
-        <actor>Amanda Beitia@en</actor>
-        <actor>Atilio Pozzobón@en</actor>
-        <actor>Carlos Álvarez-Nóvoa@en</actor>
-        <actor>Claudia Fontán@en</actor>
-        <actor>David Masajnik@en</actor>
-        <actor>Diego Mackenzie@en</actor>
-        <actor>Eduardo Blanco@en</actor>
-        <actor>Fabián Arenillas@en</actor>
-        <actor>Gimena Nóbile@en</actor>
-        <actor>Humberto Serrano@en</actor>
-        <actor>Héctor Alterio@en</actor>
-        <actor>Juan J. Campanella@en</actor>
-        <actor>León Dogodny@en</actor>
-        <actor>Mónica Cabrera@en</actor>
-        <actor>Natalia Verbeke@en</actor>
-        <actor>Norma Aleandro@en</actor>
-        <actor>Ricardo Darín@en</actor>
-        <actor>Rogelio Romano@en</actor>
-        <actor>Rubén Green@en</actor>
-        <actor>Salo Pasik@en</actor>
-        <film_title>Son of the Bride@en</film_title>
-        <q>http://www.wikidata.org/entity/Q59543</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59566 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59566">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Alicia Witt@en</actor>
-        <actor>Erika Christensen@en</actor>
-        <actor>Evan Rachel Wood@en</actor>
-        <actor>Joan Allen@en</actor>
-        <actor>Keri Russell@en</actor>
-        <actor>Kevin Costner@en</actor>
-        <film_title>The Upside of Anger@en</film_title>
-        <q>http://www.wikidata.org/entity/Q59566</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59931 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q59931">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Aunjanue Ellis@en</actor>
-        <actor>Ian Holm@en</actor>
-        <actor>Jean Smart@en</actor>
-        <actor>Jim Parsons@en</actor>
-        <actor>Method Man@en</actor>
-        <actor>Peter Sarsgaard@en</actor>
-        <actor>Zach Braff@en</actor>
-        <film_title>Garden State@en</film_title>
-        <q>http://www.wikidata.org/entity/Q59931</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q60021 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q60021">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Ljuba Tadić@en</actor>
-        <actor>Velimir Bata Živojinović@en</actor>
-        <film_title>Cabaret Balkan@en</film_title>
-        <q>http://www.wikidata.org/entity/Q60021</q>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q64083 -->
-
-
-    <owl:NamedIndividual rdf:about="http://urjc_sbc.com/owl/1/http://www.wikidata.org/entity/Q64083">
-        <rdf:type rdf:resource="http://urjc_sbc.com/owl/1/Pelicula"/>
-        <actor>Eddy Waller@en</actor>
-        <actor>Edmund Mortimer@en</actor>
-        <actor>Edward Earle@en</actor>
-        <actor>Edward Keane@en</actor>
-        <actor>Hal K. Dawson@en</actor>
-        <actor>John Dilson@en</actor>
-        <actor>Milton Parsons@en</actor>
-        <actor>Oliver Blake@en</actor>
-        <actor>Phil Regan@en</actor>
-        <film_title>Sweet Rosie O&apos;Grady@en</film_title>
-        <q>http://www.wikidata.org/entity/Q64083</q>
+        <actor>Chris Messina</actor>
+        <actor>Christopher Stanley</actor>
+        <actor>Tom Lenk</actor>
+        <film_title>Argo</film_title>
+        <q>http://www.wikidata.org/entity/Q59653</q>
     </owl:NamedIndividual>
 </rdf:RDF>
 
