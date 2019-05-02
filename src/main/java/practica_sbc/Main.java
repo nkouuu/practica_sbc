@@ -2,165 +2,68 @@ package practica_sbc;
 
 import java.io.File;
 
-import org.apache.jena.query.*;
 import org.semanticweb.owlapi.formats.RDFJsonLDDocumentFormat;
 import org.semanticweb.owlapi.formats.TurtleDocumentFormat;
 import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLClass;
-import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
-import org.semanticweb.owlapi.model.OWLClassExpression;
-import org.semanticweb.owlapi.model.OWLDataFactory;
-import org.semanticweb.owlapi.model.OWLDataProperty;
-import org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom;
-import org.semanticweb.owlapi.model.OWLDataRange;
-import org.semanticweb.owlapi.model.OWLDatatype;
-import org.semanticweb.owlapi.model.OWLDatatypeRestriction;
 import org.semanticweb.owlapi.model.OWLDocumentFormat;
-import org.semanticweb.owlapi.model.OWLEntity;
-import org.semanticweb.owlapi.model.OWLIndividual;
-import org.semanticweb.owlapi.model.OWLLiteral;
-import org.semanticweb.owlapi.model.OWLNamedIndividual;
-import org.semanticweb.owlapi.model.OWLObjectProperty;
-import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
-import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom;
-import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
-import org.semanticweb.owlapi.model.PrefixManager;
-import org.semanticweb.owlapi.util.DefaultPrefixManager;
 import org.semanticweb.owlapi.util.InferredAxiomGenerator;
-import org.semanticweb.owlapi.vocab.XSDVocabulary;
 
 import java.util.*;
 
 public class Main {
 
-	//Clases
-	static OntologyManager manager;
-	static OntologyManager outputOntologyManager;
-	static OWLClass actorClass;
-	static OWLClass peliculaClass;
-	static OWLClass paisClass;
-	static OWLClass actorFamosoClass;
-	
-	//Propiedades
-	static OWLObjectProperty actuaEn;
-	static OWLObjectProperty premioPor ;
-	static OWLObjectProperty grabadaEn ;
-	static OWLObjectProperty haActuadoEn ;
-	static OWLObjectProperty haTriunfadoGraciasA;
-	static OWLObjectProperty famosoPor;
-	
-	// Queries
-	static String dbpedia = "http://dbpedia.org/sparql";
-	static String wikidata = "https://query.wikidata.org/sparql";
-	static String mondial = "http://servolis.irisa.fr/mondial/sparql";
-	static String actoresQuery = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
-			+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT ?actor ?nombre ?activeYearsStartYear \n"
-			+ "WHERE { ?actor a dbo:Actor .\n" + "?actor foaf:name ?nombre."
-			+ "        FILTER ( NOT EXISTS { ?actor dbo:activeYearsEndYear ?activeYearsEndYear_21 . } )"
-			+ " ?actor dbo:activeYearsStartYear ?activeYearsStartYear ."
-			+ " }\n"
-			+ "LIMIT 200";
-	static String countryQuery = "PREFIX n1: <http://www.semwebtech.org/mondial/10/meta#>"
-			+ "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + "SELECT DISTINCT *" + "WHERE { ?country a n1:Country ."
-			+ " ?country n1:name ?name_21 ." + "}" + "LIMIT 200";
-	static String filmQueryString = "PREFIX wd: <http://www.wikidata.org/entity/>"
-			+ "PREFIX wdt: <http://www.wikidata.org/prop/direct/>" + "PREFIX wikibase: <http://wikiba.se/ontology#>"
-			+ "PREFIX p: <http://www.wikidata.org/prop/>" + "PREFIX v: <http://www.wikidata.org/prop/statement/>"
-			+ "PREFIX q: <http://www.wikidata.org/prop/qualifier/>"
-			+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" + "SELECT DISTINCT ?q ?film_title ?actor ?genre"
-			+ "WHERE {" + " ?q wdt:P31 wd:Q11424." + "?q rdfs:label ?film_title filter (lang(?film_title) = \"en\")."
-			+ "?q wdt:P136 ?genreID." + "?genreID rdfs:label ?genre filter (lang(?genre) = \"en\")."
-			+ "?q wdt:P161 ?actorID." + " ?actorID rdfs:label ?actor filter (lang(?actor) = \"en\")." + "}limit 200";
-
-	// Devolver resultados de una query
-	static public ResultSet getData(String queryString, String service) {
-		Query query = QueryFactory.create(queryString);
-		QueryExecution qexec = QueryExecutionFactory.sparqlService(service, query); // Query
-		ResultSet results = qexec.execSelect();
-		return results;
-	}
-
-	static public void addClases() {
-		actorClass = manager.addClass("Actor");
-		peliculaClass = manager.addClass("Pelicula");
-		paisClass = manager.addClass("Pais");
-		actorFamosoClass = manager.addClass("ActorFamoso");
-		manager.createSubclass(actorFamosoClass, actorClass);
-
-	}
-
-	// Añadir Propiedades
-	static public void addProperties() {
-		 actuaEn = manager.createObjectProperty("actuaEn", actorClass, peliculaClass);
-		 premioPor = manager.createObjectProperty("premioPor", actorClass, peliculaClass);
-		 grabadaEn = manager.createObjectProperty("grabadaEn", peliculaClass, paisClass);
-		 haActuadoEn = manager.createObjectProperty("haActuadoEn", actorClass, paisClass);
-		 haTriunfadoGraciasA = manager.createObjectProperty("haTriunfadoGraciasA", peliculaClass, actorClass);
-		 famosoPor = manager.createObjectProperty("famosoPor", actorClass,peliculaClass );
-	}
-
-	static public String formatString(String stringToFormat) {
-		return stringToFormat.split("@en")[0];
-	}
-
 	static public void main(String... argv) throws OWLOntologyStorageException, OWLOntologyCreationException {
-		File directory = new File(".");
-		manager = new OntologyManager(1);
-		outputOntologyManager = new OntologyManager(2);
-		OWLDataFactory factory = manager.getFactory();
-		OWLOntology ontology = manager.getOntology();
-		PrefixManager dbpm = new DefaultPrefixManager("<http://dbpedia.org/ontology/>");
+		//Creamos dos managers, uno para crear la ontologia y el otro para guardar la ontologia tras aplicarle el razonador
+		OntologyManager manager = new OntologyManager(1);
+		OntologyManager outputOntologyManager = new OntologyManager(2);
 		
-		//Creamos la ontologia creado las clases y las propiedades entre ellas
-		addClases();
-		addProperties();
+		//Creamos la ontologia
+		OntologyCreator ontologyCreator = new OntologyCreator(manager);
+		OWLOntology ontology = ontologyCreator.create();
+		
+//		PrefixManager dbpm = new DefaultPrefixManager("<http://dbpedia.org/ontology/>");
+		
+		
 
-		OWLDatatype integerDatatype = factory.getIntegerOWLDatatype();
-
-		OWLDatatypeRestriction minRestriction = factory.getOWLDatatypeMinInclusiveRestriction(2);
-		OWLDataProperty haHechoPeliculas = manager.createDataProperty("haHechoPeliculas", actorClass, integerDatatype);
+//		OWLDatatype integerDatatype = factory.getIntegerOWLDatatype();
+//
+//		OWLDatatypeRestriction minRestriction = factory.getOWLDatatypeMinInclusiveRestriction(2);
+//		OWLDataProperty haHechoPeliculas = manager.createDataProperty("haHechoPeliculas", actorClass, integerDatatype);
 
 	
-		OWLDataRange intGreaterThan2 = factory.getOWLDatatypeMinInclusiveRestriction(2);
+//		OWLDataRange intGreaterThan2 = factory.getOWLDatatypeMinInclusiveRestriction(2);
 //		OWLClassExpression actorFamoso = factory.getOWLDataSomeValuesFrom(haHechoPeliculas, intGreaterThan2);
-
-		//Hacemos las querys por los tres tipos de datos
-		ResultSet actores = getData(actoresQuery, dbpedia);
-		ResultSet peliculas = getData(filmQueryString, wikidata);
-		ResultSet paises = getData(countryQuery, mondial);
-		
-		manager.mappingInstances(actores, actorClass, "actor");
-		manager.mappingInstances(peliculas, peliculaClass, "q");
-		manager.mappingInstances(paises, paisClass, "country");
-		
-		//Creamos listas con las propiedades que hay que guardar de cada 
-//		ArrayList<Property> actorProperties = new ArrayList();
+	
 //        OWLDatatype type = factory.getOWLDatatype(XSDVocabulary.G_YEAR.getIRI());
-//        actorProperties.add(new Property("activeYearsStartYear",type));
-//		manager.mappingInstancesWithProperties(actores, actorClass, "Actor_1", actorProperties);
 
-		// Create an ELK reasoner.
+		// Creamos razonador ELK .
 		Reasoner elkReasoner = new Reasoner(ontology);
-		// Classify the ontology.
+		
+		// Clasificamos la ontologia.
 		elkReasoner.classifyOntology();
-		// To generate an inferred ontology we use implementations of
-		// inferred axiom generators
+		
+		// Generamos axiomas inferenciados
 		List<InferredAxiomGenerator<? extends OWLAxiom>> gens = elkReasoner.generateInferredAxioms();
 		
-		// Put the inferred axioms into a fresh empty ontology.
+		// Metemos los axiomas en una nueva ontologia vacia.
 		OWLOntology infOnt = outputOntologyManager.getOntology();
 		elkReasoner.generateInferredOntology(infOnt, gens,outputOntologyManager.manager );
-		for (OWLAxiom ax : infOnt.getLogicalAxioms()) {
-			System.out.println(ax);
-		}
+//		for (OWLAxiom ax : infOnt.getLogicalAxioms()) {
+//			System.out.println(ax);
+//		}
+		
+		//Creamos ruta para la ontologia en el directorio actual
+		File directory = new File(".");
 		String filePath = directory + File.separator + "ontology";
 
+		//Creamos los formatos a exportar
 		TurtleDocumentFormat turtleFormat = new TurtleDocumentFormat();
 		OWLDocumentFormat ontologyFormat = new RDFJsonLDDocumentFormat();
 
+		//Guardamos la ontologia en los diferentes formatos
 		manager.saveOntology(filePath + ".jsonld", ontologyFormat);
 		manager.saveOntology(filePath + ".ttl", turtleFormat);
 		manager.saveOntology(filePath + ".owl");
