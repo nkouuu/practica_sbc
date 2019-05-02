@@ -67,8 +67,8 @@ public class OntologyCreator {
 		this.actorClass = this.ontologyManager.addClass("Actor");
 		this.peliculaClass = this.ontologyManager.addClass("Pelicula");
 		this.paisClass = this.ontologyManager.addClass("Pais");
-		 this.actorFamosoClass = this.ontologyManager.addClass("ActorFamoso");
-		// this.ontologyManager.createSubclass(actorFamosoClass, actorClass);
+		this.actorFamosoClass = this.ontologyManager.addClass("ActorFamoso");
+		this.ontologyManager.createSubclass(actorFamosoClass, actorClass);
 
 	}
 
@@ -78,15 +78,17 @@ public class OntologyCreator {
 		this.premioPor = this.ontologyManager.createObjectProperty("premio_por", this.actorClass, this.peliculaClass);
 		this.grabadaEn = this.ontologyManager.createObjectProperty("grabada_en", this.peliculaClass, this.paisClass);
 		this.haActuadoEn = this.ontologyManager.createObjectProperty("haActuado_en", this.actorClass, this.paisClass);
-		this.haTriunfadoGraciasA = this.ontologyManager.createObjectProperty("ha_triunfado_gracias_a", this.peliculaClass, this.actorClass);
+		this.haTriunfadoGraciasA = this.ontologyManager.createObjectProperty("ha_triunfado_gracias_a",
+				this.peliculaClass, this.actorClass);
 		this.famosoPor = this.ontologyManager.createObjectProperty("famoso_por", this.actorClass, this.peliculaClass);
 	}
-	
+
 	public void addDataProperties() {
 		OWLDataFactory factory = this.ontologyManager.getFactory();
 
 		OWLDatatype integerDatatype = factory.getIntegerOWLDatatype();
-		OWLDataProperty haHechoPeliculas = this.ontologyManager.createDataProperty("haHechoPeliculas", actorClass, integerDatatype);
+		OWLDataProperty haHechoPeliculas = this.ontologyManager.createDataProperty("haHechoPeliculas", actorClass,
+				integerDatatype);
 		OWLDataRange intGreaterThan2 = factory.getOWLDatatypeMinInclusiveRestriction(2);
 		OWLClassExpression exp = factory.getOWLDataSomeValuesFrom(haHechoPeliculas, intGreaterThan2);
 		this.ontologyManager.createSubclass(this.actorFamosoClass, exp);
@@ -102,7 +104,7 @@ public class OntologyCreator {
 
 	// Funcion principal que controla la creacion de la ontologia
 	public OWLOntology create() {
-		
+
 		// Creamos las clases y las propiedades entre ellas.
 		this.addClases();
 		this.addObjectProperties();
@@ -116,11 +118,10 @@ public class OntologyCreator {
 		this.ontologyManager.mappingInstances(actores, actorClass, "actor");
 		this.ontologyManager.mappingInstances(peliculas, peliculaClass, "q");
 		this.ontologyManager.mappingInstances(paises, paisClass, "country");
-		
-		//Creamos algunas instancias de prueba 
-		//Un actor famoso esta dentro del grupo de actores que han hecho mas de 2 peliculas
-		
 
+		// Creamos algunas instancias de prueba
+		// Un actor famoso esta dentro del grupo de actores que han hecho mas de 2
+		// peliculas
 
 		return this.ontologyManager.getOntology();
 	}

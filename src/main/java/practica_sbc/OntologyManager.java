@@ -7,6 +7,8 @@ import java.util.Iterator;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.formats.RDFJsonLDDocumentFormat;
+import org.semanticweb.owlapi.formats.TurtleDocumentFormat;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
@@ -210,7 +212,7 @@ public class OntologyManager {
 	/**
 	 * Guardar la ontologia en un archivo
 	 * 
-	 * @param filePath Ruta del archivo en el que guardar
+	 * @param filePath Ruta del archivo con extension incluida 
 	 * @throws OWLOntologyStorageException
 	 */
 	public void saveOntology(String filePath) throws OWLOntologyStorageException {
@@ -221,16 +223,23 @@ public class OntologyManager {
 	}
 
 	/**
-	 * Guardar ontologia con formato especifico
+	 * Guardar ontologia en todos los formatos disponibles
 	 * 
-	 * @param filePath Ruta del archivo en el que guardar
-	 * @param format   Formato
+	 * @param filePath Ruta del archivo sin extension
 	 * @throws OWLOntologyStorageException
 	 */
-	public void saveOntology(String filePath, OWLDocumentFormat format) throws OWLOntologyStorageException {
-		File file = new File(filePath);
+	public void saveOntologyAllFormats(String filePath) throws OWLOntologyStorageException {
+		File file = new File(filePath+".owl");
+		File fileTTL = new File(filePath+".ttl");
+		File fileJSONLD = new File(filePath+".jsonld");
 
-		manager.saveOntology(this.ontology, format, IRI.create(file.toURI()));
+		// Creamos los formatos a exportar
+		TurtleDocumentFormat ttl = new TurtleDocumentFormat();
+		OWLDocumentFormat jsonld = new RDFJsonLDDocumentFormat();
+
+		manager.saveOntology(this.ontology, ttl, IRI.create(fileTTL.toURI()));
+		manager.saveOntology(this.ontology, jsonld, IRI.create(fileJSONLD.toURI()));
+		manager.saveOntology(this.ontology, IRI.create(file.toURI()));
 
 	}
 

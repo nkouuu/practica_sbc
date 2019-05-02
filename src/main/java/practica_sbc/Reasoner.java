@@ -33,13 +33,11 @@ public class Reasoner {
 	public Reasoner(OWLOntology ontology) {
 		OWLReasonerFactory reasonerFactory = new ElkReasonerFactory();
 		this.reasoner = reasonerFactory.createReasoner(ontology);
-		if (this.reasoner.isConsistent()) {
-			System.out.println("The ontology is consistent");
-		} else {
-			System.out.println("The ontology is not consistent");
-		}
 	}
 	
+	public boolean isConsistent() {
+		return this.reasoner.isConsistent();
+	}
 	
 	/**
 	 * Indicamos al razonador que tipos de datos queremos que procese
