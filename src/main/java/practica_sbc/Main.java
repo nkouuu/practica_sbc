@@ -32,10 +32,6 @@ public class Main {
 //
 //		OWLDatatypeRestriction minRestriction = factory.getOWLDatatypeMinInclusiveRestriction(2);
 //		OWLDataProperty haHechoPeliculas = manager.createDataProperty("haHechoPeliculas", actorClass, integerDatatype);
-
-	
-//		OWLDataRange intGreaterThan2 = factory.getOWLDatatypeMinInclusiveRestriction(2);
-//		OWLClassExpression actorFamoso = factory.getOWLDataSomeValuesFrom(haHechoPeliculas, intGreaterThan2);
 	
 //        OWLDatatype type = factory.getOWLDatatype(XSDVocabulary.G_YEAR.getIRI());
 
@@ -64,9 +60,9 @@ public class Main {
 		OWLDocumentFormat ontologyFormat = new RDFJsonLDDocumentFormat();
 
 		//Guardamos la ontologia en los diferentes formatos
-		manager.saveOntology(filePath + ".jsonld", ontologyFormat);
-		manager.saveOntology(filePath + ".ttl", turtleFormat);
-		manager.saveOntology(filePath + ".owl");
+		outputOntologyManager.saveOntology(filePath + ".jsonld", ontologyFormat);
+		outputOntologyManager.saveOntology(filePath + ".ttl", turtleFormat);
+		outputOntologyManager.saveOntology(filePath + ".owl");
 		elkReasoner.finishReasonerThreads();
 	}
 }
